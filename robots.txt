@@ -1,0 +1,45 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or sensitive directories if any
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_*
+Disallow: /.well-known/
+
+# Allow important pages
+Allow: /index.html
+Allow: /privacy-policy.html
+Allow: /terms-of-service.html
+Allow: /support.html
+
+# Allow CSS, JS, and images
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap location
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Crawl delay (optional - adjust as needed)
+Crawl-delay: 1
+
+# Specific directives for different bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block any potential scraping bots (optional)
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
