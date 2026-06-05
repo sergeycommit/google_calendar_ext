@@ -13,14 +13,6 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- Main index page -->
-    <url>
-        <loc>https://calendar-extension.site/index.html</loc>
-        <lastmod>2024-12-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
     <!-- Privacy Policy -->
     <url>
         <loc>https://calendar-extension.site/privacy-policy.html</loc>

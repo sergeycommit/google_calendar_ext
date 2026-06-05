@@ -1,40 +1,22 @@
 User-agent: *
 Allow: /
-
-# Disallow admin or sensitive directories if any
 Disallow: /admin/
 Disallow: /private/
 Disallow: /_*
 Disallow: /.well-known/
 
-# Allow important pages
-Allow: /index.html
-Allow: /privacy-policy.html
-Allow: /terms-of-service.html
-Allow: /support.html
+# Syndication drafts and the publication scheduler — duplicate / non-public
+# content that must never be indexed.
+Disallow: /blog/medium/
+Disallow: /blog/substack/
+Disallow: /blog/devto/
+Disallow: /blog/hackernews/
+Disallow: /cal_blog_scheduler/
 
-# Allow CSS, JS, and images
-Allow: /css/
-Allow: /js/
-Allow: /images/
-
-# Sitemap location
-Sitemap: https://calendar-extension.site/sitemap.xml
-
-# Crawl delay (optional - adjust as needed)
+# Bing/Yandex honor crawl-delay (Google ignores it).
 Crawl-delay: 1
 
-# Specific directives for different bots
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-# Block any potential scraping bots (optional)
+# Block aggressive commercial crawlers.
 User-agent: SemrushBot
 Disallow: /
 
@@ -43,3 +25,5 @@ Disallow: /
 
 User-agent: MJ12bot
 Disallow: /
+
+Sitemap: https://calendar-extension.site/sitemap.xml

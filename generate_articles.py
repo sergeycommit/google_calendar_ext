@@ -1058,9 +1058,14 @@ HTML_TEMPLATE = """\
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{meta_description}">
     <meta property="og:image" content="{site_url}/images/screenshot1.png">
+    <meta property="og:url" content="{site_url}/blog/{slug}.html">
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="{pub_date}">
     <meta property="article:author" content="Schedule Calendar Team">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{title}">
+    <meta name="twitter:description" content="{meta_description}">
+    <meta name="twitter:image" content="{site_url}/images/screenshot1.png">
     <link rel="stylesheet" href="../css/style.css?v=20260606">
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
