@@ -4,6 +4,12 @@ cal_blog_scheduler/
 .DS_Store
 __pycache__/
 
+# Blog syndication drafts (belong with the publication scheduler, not the public site)
+blog/medium/
+blog/substack/
+blog/devto/
+blog/hackernews/
+
 # gstack tool working directory
 .gstack/
 
