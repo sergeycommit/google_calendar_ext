@@ -46,6 +46,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 toggleMenu(false);
             });
         });
+
+        // Close the menu (and clear the dim overlay) when widening past the
+        // mobile breakpoint, so the overlay can't get stuck on resize/rotate.
+        const desktopQuery = window.matchMedia('(min-width: 961px)');
+        const closeOnDesktop = e => {
+            if (e.matches && hamburger.classList.contains('active')) {
+                toggleMenu(false);
+            }
+        };
+        if (desktopQuery.addEventListener) {
+            desktopQuery.addEventListener('change', closeOnDesktop);
+        } else if (desktopQuery.addListener) {
+            desktopQuery.addListener(closeOnDesktop);
+        }
     }
 
     // Make non-linked brand blocks behave like a consistent home affordance.

@@ -21,8 +21,8 @@ button:focus-visible {
     /* Google Product Design Palette */
     --color-primary: #1A73E8;
     --color-primary-dark: #1557B0;
-    --color-accent: #00E676;
-    /* Active Green */
+    --color-accent: #34A853;
+    /* Google active green */
     --color-grey: #5F6368;
     --color-text: #202124;
     --color-text-secondary: #5F6368;
@@ -2009,7 +2009,7 @@ body.schedule-article {
     --schedule-shadow: 0 1px 3px rgba(60, 64, 67, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
     --schedule-shadow-soft: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
 
-    font-family: 'Google Sans', 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', 'Google Sans', 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: var(--schedule-text);
     background: #FFFFFF;
 }
@@ -2109,7 +2109,7 @@ body.schedule-article::after {
 .schedule-home .footer-brand-name,
 .schedule-blog .footer-brand-name,
 .schedule-article .footer-brand-name {
-    font-family: 'Google Sans', 'Inter', 'Roboto', sans-serif;
+    font-family: 'Inter', 'Google Sans', 'Roboto', sans-serif;
     font-size: 1.125rem;
     font-weight: 500;
     letter-spacing: 0;
@@ -2288,7 +2288,7 @@ body.schedule-article::after {
 /* --- Typography: Google native --- */
 .schedule-home .hero-title,
 .schedule-article .article-title {
-    font-family: 'Google Sans', 'Inter', 'Roboto', sans-serif;
+    font-family: 'Inter', 'Google Sans', 'Roboto', sans-serif;
     font-size: clamp(2.5rem, 5vw, 3.75rem);
     font-weight: 400;
     line-height: 1.2;
@@ -2301,7 +2301,7 @@ body.schedule-article::after {
 .schedule-blog .section-title,
 .schedule-article .section-title {
     max-width: 720px;
-    font-family: 'Google Sans', 'Inter', 'Roboto', sans-serif;
+    font-family: 'Inter', 'Google Sans', 'Roboto', sans-serif;
     font-size: clamp(1.75rem, 3.5vw, 2.5rem);
     font-weight: 400;
     line-height: 1.25;
@@ -2450,7 +2450,7 @@ body.schedule-article::after {
 .schedule-article .article-sidebar h3,
 .schedule-article .article-body-card h2,
 .schedule-article .related-card h3 {
-    font-family: 'Google Sans', 'Inter', 'Roboto', sans-serif;
+    font-family: 'Inter', 'Google Sans', 'Roboto', sans-serif;
     letter-spacing: 0;
     font-weight: 500;
     margin-bottom: 0.5rem;
@@ -2591,14 +2591,19 @@ body.schedule-article::after {
 }
 
 .schedule-home .workflow-list li::before {
-    content: "";
+    content: "✓";
     position: absolute;
     left: 0.75rem;
-    top: 0.875rem;
-    width: 1rem;
-    height: 1rem;
+    top: 0.8125rem;
+    width: 1.1rem;
+    height: 1.1rem;
     border-radius: 50%;
-    background: #E8F0FE;
+    background: #34A853;
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.1rem;
+    text-align: center;
     box-shadow: none;
 }
 
@@ -2713,7 +2718,7 @@ body.schedule-article::after {
 
 .schedule-home .workflow-float {
     right: 24px;
-    top: 24px;
+    bottom: 24px;
     width: auto;
     max-width: 220px;
 }
@@ -2740,10 +2745,12 @@ body.schedule-article::after {
     bottom: 64px;
 }
 
-.schedule-home .hero-note h3 {
-    margin-bottom: 0.25rem;
+.schedule-home .hero-note h3,
+.schedule-home .hero-note .hero-note-title {
+    margin: 0 0 0.25rem;
     font-size: 0.875rem;
     font-weight: 500;
+    color: #202124;
 }
 
 .schedule-home .hero-note p {
@@ -2925,9 +2932,14 @@ body.schedule-article::after {
 }
 
 .schedule-home .faq-answer {
-    max-height: 0;
+    display: grid;
+    grid-template-rows: 0fr;
     overflow: hidden;
-    transition: max-height 0.25s ease;
+    transition: grid-template-rows 0.25s ease;
+}
+
+.schedule-home .faq-answer > * {
+    min-height: 0;
 }
 
 .schedule-home .faq-answer p {
@@ -2939,7 +2951,41 @@ body.schedule-article::after {
 }
 
 .schedule-home .faq-item.active .faq-answer {
-    max-height: 600px;
+    grid-template-rows: 1fr;
+}
+
+/* --- Final CTA --- */
+.schedule-home .final-cta-card {
+    text-align: center;
+    padding: 56px 32px;
+    border-radius: 16px;
+    background: #F8F9FA;
+    border: 1px solid #DADCE0;
+}
+
+.schedule-home .final-cta-card .section-kicker {
+    justify-content: center;
+}
+
+.schedule-home .final-cta-card .section-title,
+.schedule-home .final-cta-card .section-subtitle {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.schedule-home .final-cta-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.schedule-home .final-cta-meta {
+    font-size: 0.875rem;
+    color: #5F6368;
 }
 
 /* --- Product mockup: clean Google style --- */
@@ -3761,7 +3807,7 @@ body.schedule-article::after {
 }
 
 .schedule-article .page-aside h3 {
-    font-family: 'Google Sans', 'Inter', 'Roboto', sans-serif;
+    font-family: 'Inter', 'Google Sans', 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 0.75rem;
@@ -4261,7 +4307,7 @@ body.schedule-article::after {
 }
 
 .schedule-article .legal-header h1 {
-    font-family: 'Google Sans', 'Inter', 'Roboto', sans-serif;
+    font-family: 'Inter', 'Google Sans', 'Roboto', sans-serif;
     font-size: clamp(2rem, 4vw, 2.5rem);
     font-weight: 400;
     color: #202124;
@@ -4333,7 +4379,7 @@ body.schedule-article::after {
 }
 
 .schedule-article .legal-section h2 {
-    font-family: 'Google Sans', 'Inter', 'Roboto', sans-serif;
+    font-family: 'Inter', 'Google Sans', 'Roboto', sans-serif;
     font-size: 1.375rem;
     font-weight: 500;
     color: #202124;
