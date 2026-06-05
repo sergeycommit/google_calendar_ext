@@ -1061,8 +1061,7 @@ HTML_TEMPLATE = """\
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="{pub_date}">
     <meta property="article:author" content="Schedule Calendar Team">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/site-refresh.css?v=20260326">
+    <link rel="stylesheet" href="../css/style.css?v=20260605">
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
