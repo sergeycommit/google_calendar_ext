@@ -1,0 +1,24 @@
+{
+  "name": "Schedule Calendar",
+  "short_name": "Schedule Calendar",
+  "description": "A fast Chrome companion for Google Calendar with quick agenda access, meeting joins, and lightweight planning.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f2e8",
+  "theme_color": "#18324a",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

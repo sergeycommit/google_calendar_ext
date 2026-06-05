@@ -1,0 +1,11 @@
+# Blog publication scheduler — its own git repo (sergeycommit/cal_blog_scheduler)
+cal_blog_scheduler/
+
+.DS_Store
+__pycache__/
+
+# gstack tool working directory
+.gstack/
+
+# Playwright MCP artifacts
+.playwright-mcp/

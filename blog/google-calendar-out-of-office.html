@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Setting up out-of-office and focus time in Google Calendar. How to block unavailable time, auto-decline meetings, and signal availability to your team.">
+    <title>Google Calendar Out of Office and Focus Time: Setup Guide | Schedule Calendar</title>
+    <link rel="canonical" href="https://calendar-extension.site/blog/google-calendar-out-of-office.html">
+    <meta property="og:title" content="Setting Up Out-of-Office and Focus Time in Google Calendar">
+    <meta property="og:description" content="Setting up out-of-office and focus time in Google Calendar. How to block unavailable time, auto-decline meetings, and signal availability to your team.">
+    <meta property="og:image" content="https://calendar-extension.site/images/screenshot1.png">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-07-06">
+    <meta property="article:author" content="Schedule Calendar Team">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/site-refresh.css?v=20260326">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"Setting Up Out-of-Office and Focus Time in Google Calendar","description":"Setting up out-of-office and focus time in Google Calendar. How to block unavailable time, auto-decline meetings, and signal availability to your team.","author":{"@type":"Organization","name":"Schedule Calendar Team"},"publisher":{"@type":"Organization","name":"Schedule Calendar","logo":{"@type":"ImageObject","url":"https://calendar-extension.site/images/logo.png"}},"datePublished":"2026-07-06","dateModified":"2026-07-06","mainEntityOfPage":"https://calendar-extension.site/blog/google-calendar-out-of-office.html","image":"https://calendar-extension.site/images/screenshot1.png"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Out of Office do in Google Calendar?","acceptedAnswer":{"@type":"Answer","text":"Out of Office is a special event type in Google Workspace that automatically declines meeting invitations received during the specified period. When someone tries to schedule a meeting with you during your Out of Office dates, they receive an automatic declination with a custom message you write. This prevents the need to manually decline each invitation while you are away."}},
+        {"@type":"Question","name":"How do I set up Out of Office in Google Calendar?","acceptedAnswer":{"@type":"Answer","text":"Create a new event and change the event type to Out of Office (or click a time slot and select Out of Office). Set the date range of your absence, write a custom message that will be sent when meetings are declined, and choose whether to decline only meetings where you are the sole invitee or all meetings. Save the event and the auto-decline activates automatically."}},
+        {"@type":"Question","name":"What is Focus Time in Google Calendar?","acceptedAnswer":{"@type":"Answer","text":"Focus Time is an event type in Google Workspace Calendar that marks blocks of time for uninterrupted work. It signals to organizers that you have a focus commitment during that period and can automatically activate Do Not Disturb in Google Chat. Unlike Out of Office, Focus Time does not auto-decline meeting invitations — it serves as a visible signal of intent rather than a hard block."}},
+        {"@type":"Question","name":"Does Out of Office in Google Calendar auto-decline meetings?","acceptedAnswer":{"@type":"Answer","text":"Yes, for Google Workspace accounts. When you create an Out of Office event, any meeting invitation received for a time during that period is automatically declined with your custom message. The organizer receives a notification explaining that you are out of office and when you return. This works only on meetings invited during the Out of Office period — existing accepted meetings are not automatically removed."}},
+        {"@type":"Question","name":"Can I use Out of Office on a personal Gmail account?","acceptedAnswer":{"@type":"Answer","text":"The Out of Office event type with automatic meeting declination is a Google Workspace feature and is not available on personal Gmail accounts. Personal Gmail users can block time as Busy, which signals unavailability to anyone who has access to your calendar, but this does not automatically decline incoming meeting invitations."}},
+        {"@type":"Question","name":"How do I make Focus Time automatically activate Do Not Disturb in Google Chat?","acceptedAnswer":{"@type":"Answer","text":"When creating a Focus Time event, there is an option to turn on Do Not Disturb in Google Chat during the focus block. Enable this option when creating the event. This mutes Chat notifications for the duration of the focus session without requiring you to manually toggle it. You can configure this separately for each Focus Time event or set it as a default preference."}}]}
+    </script>
+</head>
+<body class="schedule-article">
+    <div class="scroll-progress"></div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="../images/logo.png" alt="Schedule Calendar logo" class="logo" width="42" height="42">
+                    <span class="brand-name">Schedule Calendar</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#features">Features</a></li>
+                    <li><a href="./">Blog</a></li>
+                    <li><a href="../support.html">Support</a></li>
+                    <li><a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Add to Chrome</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
+                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="nav-overlay"></div>
+    <main class="blog-main">
+        <div class="container">
+            <section class="article-hero">
+                <div class="article-breadcrumbs">
+                    <a href="./" class="text-link">Blog</a><span>/</span><span>Google Calendar features</span>
+                </div>
+                <div class="eyebrow">Published July 6, 2026</div>
+                <h1 class="article-title">Setting Up Out-of-Office and Focus Time in Google Calendar</h1>
+                <p class="article-intro">Out-of-office and Focus Time blocks in Google Calendar do more than mark you as unavailable — configured correctly, they actively protect your schedule so you do not have to.</p>
+                <p class="article-meta">5 min read · Written by the Schedule Calendar Team</p>
+            </section>
+            <section class="article-layout">
+                <article class="article-body-card">
+                    <img src="../images/screenshot1.png" alt="Schedule Calendar Chrome extension showing upcoming events" class="article-cover" width="1365" height="768">
+                    <h2>Out-of-Office Events: More Than a Label</h2>
+
+<p>When you create an Out of Office event in Google Calendar (available in Google Workspace), meetings scheduled during that time are automatically declined. The declination includes the dates of your absence and an optional custom message — something like 'Back on [date], will respond then.'</p>
+
+<p>This works differently from a regular blocked event. A blocked event marks you as busy. An Out of Office event actively declines new meeting invitations during the period, which prevents the inbox filling up with invites that require manual action.</p>
+
+<h2>How to Set Up an Out-of-Office Event</h2>
+
+<p>Click any time slot in Google Calendar and select 'Out of office' from the event type options (or create a new event and change the type to Out of office). Set the date range, write a custom decline message, and save. Google Workspace accounts will auto-decline incoming meetings during the period. You can also set this to apply only to events where you are the only attendee versus all events.</p>
+
+<h2>Focus Time: Protecting Deep Work Hours</h2>
+
+<p>Focus Time is a separate event type in Google Workspace that marks a block for uninterrupted work. Unlike Out of Office, Focus Time does not auto-decline meetings — it signals to meeting organizers that you have a focus commitment. The status can be configured to automatically turn on Do Not Disturb in Google Chat during Focus Time blocks.</p>
+
+<p>Focus Time is most useful for protecting morning deep work, project work sessions, or preparation time before important events.</p>
+
+<h2>Best Practices for Both Features</h2>
+
+<ul>
+<li>Set Out of Office with a custom message that includes your return date.</li>
+<li>Create Focus Time blocks for recurring deep work sessions — not just one-offs.</li>
+<li>Configure Focus Time to activate Do Not Disturb in Google Chat automatically.</li>
+<li>Review Focus Time blocks weekly to ensure they are still positioned in the right windows.</li>
+<li>Combine Out of Office with Gmail's auto-reply for complete coverage during absences.</li>
+</ul>
+
+<div class="article-note">
+<p>Out of Office auto-decline and Focus Time are Google Workspace features. Users on personal Gmail accounts have standard busy events but without the auto-decline or Focus Time functionality.</p>
+</div>
+
+<h2>How Schedule Calendar helps</h2>
+
+<p>Out of Office and Focus Time events appear in Schedule Calendar's popup view just like regular events. Before stepping away for a vacation or a deep work session, a quick glance at the toolbar popup shows what events are scheduled around the absence — making it easier to prepare and brief any dependencies before you go offline.</p>
+                    <section class="article-faq" aria-label="Frequently asked questions">
+                        <h2>Frequently asked questions</h2>
+                        <div class="faq-list">
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-1" aria-controls="faq-answer-1" aria-expanded="false">
+    <h3>What does Out of Office do in Google Calendar?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+    <p>Out of Office is a special event type in Google Workspace that automatically declines meeting invitations received during the specified period. When someone tries to schedule a meeting with you during your Out of Office dates, they receive an automatic declination with a custom message you write. This prevents the need to manually decline each invitation while you are away.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-2" aria-controls="faq-answer-2" aria-expanded="false">
+    <h3>How do I set up Out of Office in Google Calendar?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+    <p>Create a new event and change the event type to Out of Office (or click a time slot and select Out of Office). Set the date range of your absence, write a custom message that will be sent when meetings are declined, and choose whether to decline only meetings where you are the sole invitee or all meetings. Save the event and the auto-decline activates automatically.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-3" aria-controls="faq-answer-3" aria-expanded="false">
+    <h3>What is Focus Time in Google Calendar?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+    <p>Focus Time is an event type in Google Workspace Calendar that marks blocks of time for uninterrupted work. It signals to organizers that you have a focus commitment during that period and can automatically activate Do Not Disturb in Google Chat. Unlike Out of Office, Focus Time does not auto-decline meeting invitations — it serves as a visible signal of intent rather than a hard block.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-4" aria-controls="faq-answer-4" aria-expanded="false">
+    <h3>Does Out of Office in Google Calendar auto-decline meetings?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+    <p>Yes, for Google Workspace accounts. When you create an Out of Office event, any meeting invitation received for a time during that period is automatically declined with your custom message. The organizer receives a notification explaining that you are out of office and when you return. This works only on meetings invited during the Out of Office period — existing accepted meetings are not automatically removed.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-5" aria-controls="faq-answer-5" aria-expanded="false">
+    <h3>Can I use Out of Office on a personal Gmail account?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+    <p>The Out of Office event type with automatic meeting declination is a Google Workspace feature and is not available on personal Gmail accounts. Personal Gmail users can block time as Busy, which signals unavailability to anyone who has access to your calendar, but this does not automatically decline incoming meeting invitations.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-6" aria-controls="faq-answer-6" aria-expanded="false">
+    <h3>How do I make Focus Time automatically activate Do Not Disturb in Google Chat?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+    <p>When creating a Focus Time event, there is an option to turn on Do Not Disturb in Google Chat during the focus block. Enable this option when creating the event. This mutes Chat notifications for the duration of the focus session without requiring you to manually toggle it. You can configure this separately for each Focus Time event or set it as a default preference.</p>
+  </div>
+</div>
+</div>
+                    </section>
+                </article>
+                <aside class="article-sidebar">
+                    <h3>Key takeaways</h3>
+                    <ul><li>Out of Office auto-declines new meeting invites during your absence.</li>
+<li>Include your return date in the custom decline message.</li>
+<li>Use Focus Time for recurring deep work blocks, not just vacations.</li>
+<li>Configure Focus Time to activate Do Not Disturb in Chat.</li></ul>
+                    <h3>Try next</h3>
+                    <p>See what is around your Focus Time blocks at a glance. Schedule Calendar for Chrome.</p>
+                    <a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary" target="_blank" rel="noopener">Add to Chrome</a>
+                </aside>
+            </section>
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-kicker">Related reading</span>
+                    <h2 class="section-title">See also: How to Protect Focus Time Before Meetings Claim It</h2>
+                </div>
+                <div class="related-grid"><article class="related-card">
+  <h3>How to Build a Color-Coding System in Google Calendar</h3>
+  <p>From the Google Calendar Features series.</p>
+  <a href="./google-calendar-color-coding.html" class="read-more">Read article →</a>
+</article>
+<article class="related-card">
+  <h3>Google Calendar Keyboard Shortcuts That Save Real Time</h3>
+  <p>From the Google Calendar Features series.</p>
+  <a href="./google-calendar-keyboard-shortcuts.html" class="read-more">Read article →</a>
+</article></div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-card">
+                    <div class="nav-brand">
+                        <img src="../images/logo.png" alt="Schedule Calendar logo" class="footer-logo" width="42" height="42">
+                        <span class="footer-brand-name">Schedule Calendar</span>
+                    </div>
+                    <p class="footer-description">Workflow notes for people who want their calendar to support the day, not dominate it.</p>
+                </div>
+                <div class="footer-card">
+                    <h4>Read next</h4>
+                    <ul class="footer-links"><li><a href="./">Blog home</a></li>
+<li><a href="./google-calendar-color-coding.html">How to Build a Color-Coding System in Google Calendar</a></li>
+<li><a href="./google-calendar-keyboard-shortcuts.html">Google Calendar Keyboard Shortcuts That Save Real Time</a></li></ul>
+                </div>
+                <div class="footer-card">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../support.html">Support</a></li>
+                        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Schedule Calendar. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+    <script src="../js/script.js?v=20260326"></script>
+</body>
+</html>

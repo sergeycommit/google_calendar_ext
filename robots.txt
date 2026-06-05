@@ -19,7 +19,7 @@ Allow: /js/
 Allow: /images/
 
 # Sitemap location
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://calendar-extension.site/sitemap.xml
 
 # Crawl delay (optional - adjust as needed)
 Crawl-delay: 1

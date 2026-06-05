@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A practical guide to time blocking in Google Calendar. Learn how to create focus blocks, protect deep work sessions, and keep your schedule working for you.">
+    <title>Time Blocking in Google Calendar: A Practical Setup Guide | Schedule Calendar</title>
+    <link rel="canonical" href="https://calendar-extension.site/blog/time-blocking-guide-google-calendar.html">
+    <meta property="og:title" content="How to Set Up Time Blocking in Google Calendar">
+    <meta property="og:description" content="A practical guide to time blocking in Google Calendar. Learn how to create focus blocks, protect deep work sessions, and keep your schedule working for you.">
+    <meta property="og:image" content="https://calendar-extension.site/images/screenshot1.png">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-04-01">
+    <meta property="article:author" content="Schedule Calendar Team">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/site-refresh.css?v=20260326">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"How to Set Up Time Blocking in Google Calendar","description":"A practical guide to time blocking in Google Calendar. Learn how to create focus blocks, protect deep work sessions, and keep your schedule working for you.","author":{"@type":"Organization","name":"Schedule Calendar Team"},"publisher":{"@type":"Organization","name":"Schedule Calendar","logo":{"@type":"ImageObject","url":"https://calendar-extension.site/images/logo.png"}},"datePublished":"2026-04-01","dateModified":"2026-04-01","mainEntityOfPage":"https://calendar-extension.site/blog/time-blocking-guide-google-calendar.html","image":"https://calendar-extension.site/images/screenshot1.png"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is time blocking in Google Calendar?","acceptedAnswer":{"@type":"Answer","text":"Time blocking in Google Calendar means creating calendar events for specific tasks — not just meetings. Each block reserves a time slot for a piece of work, makes it visible alongside your other commitments, and makes it harder to schedule over accidentally."}},
+        {"@type":"Question","name":"How long should a time block be?","acceptedAnswer":{"@type":"Answer","text":"Deep work blocks work best between 90 and 120 minutes. Shallow work batches (email, admin, reviews) fit well into 30–45 minute windows. The right length depends on your task type and how long you can maintain focus without a meaningful break."}},
+        {"@type":"Question","name":"Should I time block every hour of my day?","acceptedAnswer":{"@type":"Answer","text":"No. Blocking 60–70% of your available hours is a more durable approach. The remaining time absorbs unexpected tasks, context switches, and recovery from disruptions. An over-blocked schedule breaks down the moment anything changes."}},
+        {"@type":"Question","name":"How do I stop meetings from landing inside my focus blocks?","acceptedAnswer":{"@type":"Answer","text":"Set your focus blocks to Busy status in Google Calendar. This signals to anyone who can view your calendar that the time is taken. You can still choose to accept a meeting over a block, but the default will protect the space."}},
+        {"@type":"Question","name":"What is the difference between time blocking and time boxing?","acceptedAnswer":{"@type":"Answer","text":"Time blocking reserves a slot for a task. Time boxing adds a strict time limit: you work on the task until the box ends, then stop regardless of progress. Time boxing is useful for tasks that tend to expand indefinitely; time blocking is more flexible about when you finish."}},
+        {"@type":"Question","name":"Does a Chrome calendar extension help with time blocking?","acceptedAnswer":{"@type":"Answer","text":"A compact calendar extension like Schedule Calendar helps with the ongoing monitoring of time blocks — checking how much time remains, whether a meeting is approaching, and whether you have room to start a new task. It does not create blocks, but it reduces the tab-switching cost of staying aware of your schedule."}}]}
+    </script>
+</head>
+<body class="schedule-article">
+    <div class="scroll-progress"></div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="../images/logo.png" alt="Schedule Calendar logo" class="logo" width="42" height="42">
+                    <span class="brand-name">Schedule Calendar</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#features">Features</a></li>
+                    <li><a href="./">Blog</a></li>
+                    <li><a href="../support.html">Support</a></li>
+                    <li><a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Add to Chrome</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
+                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="nav-overlay"></div>
+    <main class="blog-main">
+        <div class="container">
+            <section class="article-hero">
+                <div class="article-breadcrumbs">
+                    <a href="./" class="text-link">Blog</a><span>/</span><span>Time blocking</span>
+                </div>
+                <div class="eyebrow">Published April 1, 2026</div>
+                <h1 class="article-title">How to Set Up Time Blocking in Google Calendar</h1>
+                <p class="article-intro">Time blocking is the habit that separates people who plan their week from people who react to it. Google Calendar has everything you need to do it well — no additional tools required.</p>
+                <p class="article-meta">7 min read · Written by the Schedule Calendar Team</p>
+            </section>
+            <section class="article-layout">
+                <article class="article-body-card">
+                    <img src="../images/screenshot1.png" alt="Schedule Calendar Chrome extension showing upcoming events" class="article-cover" width="1365" height="768">
+                    <h2>What time blocking means in practice</h2>
+
+<p>Time blocking means assigning a specific calendar slot to a specific task — not just meetings. A focus block at 9am on Tuesday is treated the same as a meeting: it shows up in your calendar, it has a visible duration, and it crowds out other things that might try to fill that space.</p>
+
+<p>The key difference from a to-do list: a to-do item sits waiting to be done whenever time appears. A time block defines when the work happens. That shift from reactive to intentional is the entire value of the method.</p>
+
+<h2>The three types of blocks worth creating</h2>
+
+<h3>Deep work blocks (90–120 min)</h3>
+
+<p>Deep work blocks are for tasks that require sustained concentration — writing, coding, analysis, design. Protect these from interruptions by marking them Busy. Choose your highest-energy window of the day.</p>
+
+<h3>Shallow work batches (30–45 min)</h3>
+
+<p>Shallow work batches group low-cognitive tasks: email, Slack catch-up, admin, form-filling. Batching them into one or two windows prevents them from fragmenting your day.</p>
+
+<h3>Buffer blocks (15–20 min)</h3>
+
+<p>Buffer blocks are transition gaps — a 15-minute window after a dense meeting or before a difficult task. They give you room to decompress, prepare, and avoid the cost of abrupt context switches.</p>
+
+<h2>How to set up time blocks in Google Calendar</h2>
+
+<p>Create a new event in Google Calendar and give it a specific task name — not just "Focus time" but "Draft Q3 report" or "Review product spec." Vague block names force you to recall context every time you see them.</p>
+
+<p>Set the event color to something distinct from your meetings. Most people use blue for meetings; orange or green for work blocks makes the visual difference immediate. Enable the Busy status so the slot shows as unavailable to people who can book your calendar.</p>
+
+<p>For recurring blocks, use the repeat function. A daily deep work block at 9am is more resilient than one you have to recreate each week.</p>
+
+<div class="article-note">
+<p>Rule of thumb: block 60–70% of your available hours, not 100%. The remaining time absorbs the unexpected — a delayed meeting, an urgent request, or a task that ran longer than estimated. An over-blocked week collapses the moment anything changes.</p>
+</div>
+
+<h2>The mistakes that make time blocking fail</h2>
+
+<p>Over-blocking is the most common error. When every minute is scheduled, one disruption cascades through the day. Leave white space.</p>
+
+<p>Vague naming is the second mistake. A block called 'Work' tells you nothing when you arrive at 9am. The name should answer the question: what exactly happens here?</p>
+
+<p>Accepting meetings over blocks is the third. Blocks need to be defended. If your calendar shows a focus block as Free, meeting invites will land inside it. Set status to Busy — and protect the blocks from your own impulse to reschedule them when the week gets complicated.</p>
+
+<h2>How Schedule Calendar helps</h2>
+
+<p>Time blocking requires regular check-ins throughout the day: how long until this block ends, is the next meeting close, do I have time to start a new task? Opening Google Calendar for each of these questions interrupts the focus you're trying to protect.</p>
+
+<p>Schedule Calendar puts the answer in the toolbar. A quick glance shows the time until your next event and a compact day view without switching tabs. It does not create or manage blocks — it just makes monitoring your existing blocks lighter.</p>
+
+<div class="article-cta">
+<p>The goal of time blocking is not a perfect schedule. It is a schedule where the work that matters has a reserved slot — and that slot is honest about how long things actually take.</p>
+</div>
+                    <section class="article-faq" aria-label="Frequently asked questions">
+                        <h2>Frequently asked questions</h2>
+                        <div class="faq-list">
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-1" aria-controls="faq-answer-1" aria-expanded="false">
+    <h3>What is time blocking in Google Calendar?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+    <p>Time blocking in Google Calendar means creating calendar events for specific tasks — not just meetings. Each block reserves a time slot for a piece of work, makes it visible alongside your other commitments, and makes it harder to schedule over accidentally.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-2" aria-controls="faq-answer-2" aria-expanded="false">
+    <h3>How long should a time block be?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+    <p>Deep work blocks work best between 90 and 120 minutes. Shallow work batches (email, admin, reviews) fit well into 30–45 minute windows. The right length depends on your task type and how long you can maintain focus without a meaningful break.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-3" aria-controls="faq-answer-3" aria-expanded="false">
+    <h3>Should I time block every hour of my day?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+    <p>No. Blocking 60–70% of your available hours is a more durable approach. The remaining time absorbs unexpected tasks, context switches, and recovery from disruptions. An over-blocked schedule breaks down the moment anything changes.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-4" aria-controls="faq-answer-4" aria-expanded="false">
+    <h3>How do I stop meetings from landing inside my focus blocks?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+    <p>Set your focus blocks to Busy status in Google Calendar. This signals to anyone who can view your calendar that the time is taken. You can still choose to accept a meeting over a block, but the default will protect the space.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-5" aria-controls="faq-answer-5" aria-expanded="false">
+    <h3>What is the difference between time blocking and time boxing?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+    <p>Time blocking reserves a slot for a task. Time boxing adds a strict time limit: you work on the task until the box ends, then stop regardless of progress. Time boxing is useful for tasks that tend to expand indefinitely; time blocking is more flexible about when you finish.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-6" aria-controls="faq-answer-6" aria-expanded="false">
+    <h3>Does a Chrome calendar extension help with time blocking?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+    <p>A compact calendar extension like Schedule Calendar helps with the ongoing monitoring of time blocks — checking how much time remains, whether a meeting is approaching, and whether you have room to start a new task. It does not create blocks, but it reduces the tab-switching cost of staying aware of your schedule.</p>
+  </div>
+</div>
+</div>
+                    </section>
+                </article>
+                <aside class="article-sidebar">
+                    <h3>Key takeaways</h3>
+                    <ul><li>Name every block with a specific task, not a category.</li>
+<li>Block 60–70% of your time — leave room for the unexpected.</li>
+<li>Mark focus blocks as Busy to prevent meeting conflicts.</li>
+<li>Use color-coding to separate work blocks from meetings instantly.</li></ul>
+                    <h3>Try next</h3>
+                    <p>Schedule Calendar shows time-to-next-event in your toolbar — useful for a quick orientation mid-block without opening a full calendar tab.</p>
+                    <a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary" target="_blank" rel="noopener">Add to Chrome</a>
+                </aside>
+            </section>
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-kicker">Related reading</span>
+                    <h2 class="section-title">Go deeper on the time blocking system.</h2>
+                </div>
+                <div class="related-grid"><article class="related-card">
+  <h3>How to Schedule Deep Work Blocks That Actually Stick</h3>
+  <p>From the Time Blocking series.</p>
+  <a href="./deep-work-time-blocks.html" class="read-more">Read article →</a>
+</article>
+<article class="related-card">
+  <h3>Time Blocking vs. To-Do Lists: Which Works Better?</h3>
+  <p>From the Time Blocking series.</p>
+  <a href="./time-blocking-vs-todo-list.html" class="read-more">Read article →</a>
+</article></div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-card">
+                    <div class="nav-brand">
+                        <img src="../images/logo.png" alt="Schedule Calendar logo" class="footer-logo" width="42" height="42">
+                        <span class="footer-brand-name">Schedule Calendar</span>
+                    </div>
+                    <p class="footer-description">Workflow notes for people who want their calendar to support the day, not dominate it.</p>
+                </div>
+                <div class="footer-card">
+                    <h4>Read next</h4>
+                    <ul class="footer-links"><li><a href="./">Blog home</a></li>
+<li><a href="./deep-work-time-blocks.html">How to Schedule Deep Work Blocks That Actually Stick</a></li>
+<li><a href="./time-blocking-vs-todo-list.html">Time Blocking vs. To-Do Lists: Which Works Better?</a></li></ul>
+                </div>
+                <div class="footer-card">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../support.html">Support</a></li>
+                        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Schedule Calendar. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+    <script src="../js/script.js?v=20260326"></script>
+</body>
+</html>

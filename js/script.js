@@ -1,34 +1,290 @@
 // DOM Content Loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
+    const navOverlay = document.querySelector('.nav-overlay');
 
     if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
+        function toggleMenu(open) {
+            const isOpen = open !== undefined ? open : !hamburger.classList.contains('active');
+
+            if (isOpen) {
+                hamburger.classList.add('active');
+                navMenu.classList.add('active');
+                hamburger.setAttribute('aria-expanded', 'true');
+                document.body.classList.add('menu-open');
+                if (navOverlay) {
+                    navOverlay.classList.add('active');
+                }
+            } else {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('menu-open');
+                if (navOverlay) {
+                    navOverlay.classList.remove('active');
+                }
+            }
+        }
+
+        hamburger.addEventListener('click', function () {
+            toggleMenu();
+        });
+
+        // Close menu when clicking overlay
+        if (navOverlay) {
+            navOverlay.addEventListener('click', function () {
+                toggleMenu(false);
+            });
+        }
+
+        // Close menu when clicking a link
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                toggleMenu(false);
+            });
+        });
+    }
+
+    // Make non-linked brand blocks behave like a consistent home affordance.
+    const brandBlocks = document.querySelectorAll('.nav-brand');
+
+    function findBrandTarget() {
+        const homeLink = document.querySelector('.nav-menu a[href*="index.html"], .footer-links a[href*="index.html"]');
+
+        if (homeLink) {
+            return homeLink.getAttribute('href');
+        }
+
+        if (document.body.classList.contains('schedule-home')) {
+            return '#page-top';
+        }
+
+        return './index.html';
+    }
+
+    const brandTarget = findBrandTarget();
+
+    brandBlocks.forEach(block => {
+        if (block.querySelector('a.brand-name, a.footer-brand-name')) {
+            return;
+        }
+
+        const activateBrand = () => {
+            if (brandTarget === '#page-top') {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                window.location.href = brandTarget;
+            }
+        };
+
+        block.setAttribute('role', 'link');
+        block.setAttribute('tabindex', '0');
+        block.dataset.clickable = 'true';
+
+        block.addEventListener('click', function (e) {
+            if (e.target.closest('a')) {
+                return;
+            }
+
+            activateBrand();
+        });
+
+        block.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                activateBrand();
+            }
+        });
+    });
+
+    // Scroll progress bar
+    const progressBar = document.querySelector('.scroll-progress');
+    window.addEventListener('scroll', function () {
+        const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (window.scrollY / windowHeight) * 100;
+        if (progressBar) {
+            progressBar.style.width = scrolled + '%';
+        }
+    });
+
+    // Active navigation highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    function highlightNavigation() {
+        const scrollY = window.scrollY;
+
+        sections.forEach(section => {
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = section.offsetTop - 100;
+            const sectionId = section.getAttribute('id');
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    window.addEventListener('scroll', highlightNavigation);
+
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    if (backToTop) {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Animated counters
+    function animateCounter(element, target, duration = 2000, isDecimal = false) {
+        const start = 0;
+        const increment = target / (duration / 16);
+        let current = start;
+
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            if (isDecimal) {
+                element.textContent = current.toFixed(1);
+            } else {
+                element.textContent = Math.floor(current).toLocaleString();
+            }
+        }, 16);
+    }
+
+    // Initialize counters when hero is visible
+    const statSection = document.querySelector('.hero-stats[data-animate="true"]');
+    const statNumbers = statSection ? statSection.querySelectorAll('.stat-number') : [];
+    let countersAnimated = false;
+
+    const observerOptions = {
+        threshold: 0.5
+    };
+
+    const counterObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !countersAnimated) {
+                countersAnimated = true;
+                statNumbers.forEach(stat => {
+                    const target = parseFloat(stat.getAttribute('data-count'));
+                    const isDecimal = target < 10;
+                    animateCounter(stat, target, 2000, isDecimal);
+                });
+            }
+        });
+    }, observerOptions);
+
+    if (statNumbers.length > 0 && statSection) {
+        counterObserver.observe(statSection);
+    }
+
+    // FAQ Search
+    const faqSearch = document.querySelector('.faq-search');
+    const faqItems = document.querySelectorAll('.faq-item');
+    const faqNoResults = document.querySelector('.faq-no-results');
+
+    if (faqSearch) {
+        faqSearch.addEventListener('input', function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+            let visibleCount = 0;
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question h3').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer p').textContent.toLowerCase();
+
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            if (faqNoResults) {
+                if (visibleCount === 0 && searchTerm !== '') {
+                    faqNoResults.classList.add('visible');
+                } else {
+                    faqNoResults.classList.remove('visible');
+                }
+            }
         });
     }
 
     // FAQ Accordion
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
+    faqItems.forEach((item, index) => {
         const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
 
-        question.addEventListener('click', function() {
-            const isActive = item.classList.contains('active');
+        if (!question || !answer) {
+            return;
+        }
+
+        const questionId = question.id || `faq-question-${index + 1}`;
+        const answerId = answer.id || question.getAttribute('aria-controls') || `faq-answer-${index + 1}`;
+        const isActive = item.classList.contains('active');
+
+        question.id = questionId;
+        answer.id = answerId;
+        question.setAttribute('aria-controls', answerId);
+        question.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        answer.setAttribute('role', 'region');
+        answer.setAttribute('aria-labelledby', questionId);
+        answer.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+
+        if (question.tagName !== 'BUTTON') {
+            question.setAttribute('role', 'button');
+            if (!question.hasAttribute('tabindex')) {
+                question.setAttribute('tabindex', '0');
+            }
+        }
+
+        question.addEventListener('click', function () {
+            const itemIsActive = item.classList.contains('active');
 
             // Close all other FAQ items
             faqItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('active');
+                    const otherQuestion = otherItem.querySelector('.faq-question');
+                    const otherAnswer = otherItem.querySelector('.faq-answer');
+                    if (otherQuestion) {
+                        otherQuestion.setAttribute('aria-expanded', 'false');
+                    }
+                    if (otherAnswer) {
+                        otherAnswer.setAttribute('aria-hidden', 'true');
+                    }
                 }
             });
 
             // Toggle current item
-            item.classList.toggle('active', !isActive);
+            item.classList.toggle('active', !itemIsActive);
+            question.setAttribute('aria-expanded', String(!itemIsActive));
+            answer.setAttribute('aria-hidden', itemIsActive ? 'true' : 'false');
         });
     });
 
@@ -36,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
     anchorLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
 
             const targetId = this.getAttribute('href');
@@ -58,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let lastScrollTop = 0;
     const header = document.querySelector('.header');
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         if (scrollTop > 100) {
@@ -67,21 +323,17 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('scrolled');
         }
 
-        // Hide/show header on scroll
-        if (scrollTop > lastScrollTop && scrollTop > 200) {
-            header.style.transform = 'translateY(-100%)';
-        } else {
-            header.style.transform = 'translateY(0)';
-        }
-
+        // Keep header always visible (removed hide/show on scroll)
         lastScrollTop = scrollTop;
     });
 
+
+
     // Install button click tracking
-    const installButtons = document.querySelectorAll('a[href*="chrome.google.com/webstore"]');
+    const installButtons = document.querySelectorAll('a[href*="chromewebstore.google.com"]');
 
     installButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function (e) {
             // Track installation attempt
             if (typeof gtag !== 'undefined') {
                 gtag('event', 'click', {
@@ -91,8 +343,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
 
-            // Optional: Show installation guide popup
-            showInstallationGuide();
+
         });
     });
 
@@ -100,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('#contact-form');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
             // Get form data
@@ -131,7 +382,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const feedbackLink = document.querySelector('#feedback-link');
 
     if (feedbackLink) {
-        feedbackLink.addEventListener('click', function(e) {
+        feedbackLink.addEventListener('click', function (e) {
             e.preventDefault();
             openFeedbackForm();
         });
@@ -140,9 +391,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Copy to clipboard functionality
     function copyToClipboard(text) {
         if (navigator.clipboard) {
-            navigator.clipboard.writeText(text).then(function() {
+            navigator.clipboard.writeText(text).then(function () {
                 showNotification('Copied to clipboard!', 'success');
-            }).catch(function() {
+            }).catch(function () {
                 fallbackCopyTextToClipboard(text);
             });
         } else {
@@ -243,7 +494,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary" onclick="this.closest('.installation-modal').remove()">Got it!</button>
+                    <button class="btn btn-primary modal-close-btn">Got it!</button>
                 </div>
             </div>
         `;
@@ -317,21 +568,26 @@ document.addEventListener('DOMContentLoaded', function() {
             if (e.target === modal) modal.remove();
         });
 
+        const closeModalBtn = modal.querySelector('.modal-close-btn');
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', () => modal.remove());
+        }
+
         document.body.appendChild(modal);
     }
 
     // Feedback form
     function openFeedbackForm() {
-        const subject = encodeURIComponent('Quick Calendar Access - Feedback');
-        const body = encodeURIComponent('Hi! I have feedback about the Quick Calendar Access extension:\n\n');
+        const subject = encodeURIComponent('Schedule Calendar - Feedback');
+        const body = encodeURIComponent('Hi! I have feedback about the Schedule Calendar extension:\n\n');
         window.open(`mailto:tdallstr@gmail.com?subject=${subject}&body=${body}`);
     }
 
     // Performance monitoring
     function trackPerformance() {
         if ('performance' in window) {
-            window.addEventListener('load', function() {
-                setTimeout(function() {
+            window.addEventListener('load', function () {
+                setTimeout(function () {
                     const perfData = performance.getEntriesByType('navigation')[0];
 
                     if (typeof gtag !== 'undefined' && perfData) {
@@ -348,61 +604,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize performance tracking
     trackPerformance();
 
-    // Add CSS animations
-    const style = document.createElement('style');
-    style.textContent = `
-        .animate {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-        
-        .feature-card,
-        .screenshot-item,
-        .step {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-        
-        .header.scrolled {
-            background: rgba(255, 255, 255, 0.98);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-        }
-        
-        .header {
-            transition: all 0.3s ease;
-        }
-        
-        @media (max-width: 768px) {
-            .nav-menu.active {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: white;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                padding: 1rem 0;
-            }
-            
-            .hamburger.active span:nth-child(1) {
-                transform: rotate(-45deg) translate(-5px, 6px);
-            }
-            
-            .hamburger.active span:nth-child(2) {
-                opacity: 0;
-            }
-            
-            .hamburger.active span:nth-child(3) {
-                transform: rotate(45deg) translate(-5px, -6px);
-            }
-        }
-    `;
-    document.head.appendChild(style);
-
-    // --- ВОССТАНОВЛЕНИЕ Intersection Observer для анимаций всех секций ---
-    const animatedItems = document.querySelectorAll('.feature-card, .screenshot-item, .step, .faq-item');
+    // --- Intersection Observer для анимаций всех секций ---
+    const animatedItems = document.querySelectorAll('.feature-card, .screenshot-item, .step, .faq-item, .testimonial-card');
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
@@ -418,10 +621,233 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         animatedItems.forEach(item => item.classList.add('visible'));
     }
+
+    // Keyboard navigation improvements
+    document.addEventListener('keydown', function (e) {
+        // Escape to close mobile menu
+        if (e.key === 'Escape') {
+            if (hamburger && navMenu && hamburger.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+                if (navOverlay) {
+                    navOverlay.classList.remove('active');
+                }
+            }
+        }
+
+        // Enter/space to toggle FAQ when the trigger is not a native button.
+        if ((e.key === 'Enter' || e.key === ' ') && e.target.closest('.faq-question[role="button"]')) {
+            e.preventDefault();
+            e.target.closest('.faq-question').click();
+        }
+    });
+
+    // Make hamburger keyboard accessible
+    if (hamburger) {
+        hamburger.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    }
+
+    // Language switcher
+    const languageSwitcher = document.querySelector('.language-switcher');
+    const languageBtn = document.querySelector('.language-btn');
+
+    if (languageBtn && languageSwitcher) {
+        languageBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            languageSwitcher.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!languageSwitcher.contains(e.target)) {
+                languageSwitcher.classList.remove('active');
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && languageSwitcher.classList.contains('active')) {
+                languageSwitcher.classList.remove('active');
+            }
+        });
+    }
+
+    // Lazy loading for images
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.classList.add('loaded');
+                        imageObserver.unobserve(img);
+                    }
+                }
+            });
+        });
+
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+    }
+
+    // Comparison Slider
+    const sliderContainer = document.querySelector('.slider-container');
+    const afterImage = document.querySelector('.after-image');
+    const sliderHandle = document.querySelector('.slider-handle');
+
+    if (sliderContainer && afterImage && sliderHandle) {
+        sliderContainer.addEventListener('mousemove', function (e) {
+            const rect = sliderContainer.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const percent = (x / rect.width) * 100;
+
+            if (percent >= 0 && percent <= 100) {
+                afterImage.style.clipPath = `inset(0 0 0 ${percent}%)`;
+                sliderHandle.style.left = `${percent}%`;
+            }
+        });
+
+        sliderContainer.addEventListener('touchmove', function (e) {
+            const rect = sliderContainer.getBoundingClientRect();
+            const touch = e.touches[0];
+            const x = touch.clientX - rect.left;
+            const percent = (x / rect.width) * 100;
+
+            if (percent >= 0 && percent <= 100) {
+                afterImage.style.clipPath = `inset(0 0 0 ${percent}%)`;
+                sliderHandle.style.left = `${percent}%`;
+            }
+        });
+    }
+
+    // Scrolly-telling
+    const scrollySection = document.querySelector('.scrolly-section');
+    const scrollSteps = document.querySelectorAll('.scroll-step');
+
+    if (scrollySection && scrollSteps.length > 0) {
+        const scrollyObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const feature = entry.target.dataset.feature;
+                    scrollySection.setAttribute('data-active', feature);
+
+                    scrollSteps.forEach(step => step.classList.remove('active'));
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.8
+        });
+
+        scrollSteps.forEach(step => scrollyObserver.observe(step));
+    }
+
+    // Fade-in animations on scroll
+    const fadeSections = document.querySelectorAll('.fade-in-section');
+    if (fadeSections.length > 0) {
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        fadeSections.forEach(section => {
+            fadeObserver.observe(section);
+        });
+    }
+
+    // Workflow switcher for the refreshed homepage
+    const workflowShell = document.querySelector('.workflow-shell');
+    const workflowToggles = document.querySelectorAll('.workflow-toggle');
+    const workflowPanels = document.querySelectorAll('.workflow-panel');
+
+    if (workflowShell && workflowToggles.length > 0 && workflowPanels.length > 0) {
+        const workflowMeterLabel = workflowShell.querySelector('.workflow-meter-label');
+        const workflowMeterTitle = workflowShell.querySelector('.workflow-meter-title');
+        const workflowMeterCopy = workflowShell.querySelector('.workflow-meter-copy');
+        const workflowCalloutPill = workflowShell.querySelector('.workflow-callout-pill');
+        const workflowCalloutTitle = workflowShell.querySelector('.workflow-callout-title');
+        const workflowCalloutCopy = workflowShell.querySelector('.workflow-callout-copy');
+
+        workflowPanels.forEach(panel => {
+            panel.id = panel.id || `workflow-panel-${panel.dataset.mode}`;
+
+            const matchingToggle = Array.from(workflowToggles).find(toggle => toggle.dataset.mode === panel.dataset.mode);
+            if (matchingToggle) {
+                matchingToggle.setAttribute('aria-controls', panel.id);
+            }
+        });
+
+        function applyWorkflowState(activeToggle) {
+            const mode = activeToggle.dataset.mode;
+
+            workflowShell.dataset.mode = mode;
+
+            workflowToggles.forEach(button => {
+                const isActive = button === activeToggle;
+                button.classList.toggle('active', isActive);
+                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            });
+
+            workflowPanels.forEach(panel => {
+                const isActive = panel.dataset.mode === mode;
+                panel.classList.toggle('active', isActive);
+                panel.hidden = !isActive;
+            });
+
+            if (workflowMeterLabel && activeToggle.dataset.meterLabel) {
+                workflowMeterLabel.textContent = activeToggle.dataset.meterLabel;
+            }
+
+            if (workflowMeterTitle && activeToggle.dataset.meterTitle) {
+                workflowMeterTitle.textContent = activeToggle.dataset.meterTitle;
+            }
+
+            if (workflowMeterCopy && activeToggle.dataset.meterCopy) {
+                workflowMeterCopy.textContent = activeToggle.dataset.meterCopy;
+            }
+
+            if (workflowCalloutPill && activeToggle.dataset.calloutPill) {
+                workflowCalloutPill.textContent = activeToggle.dataset.calloutPill;
+            }
+
+            if (workflowCalloutTitle && activeToggle.dataset.calloutTitle) {
+                workflowCalloutTitle.textContent = activeToggle.dataset.calloutTitle;
+            }
+
+            if (workflowCalloutCopy && activeToggle.dataset.calloutCopy) {
+                workflowCalloutCopy.textContent = activeToggle.dataset.calloutCopy;
+            }
+        }
+
+        workflowToggles.forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                applyWorkflowState(this);
+            });
+        });
+
+        const defaultToggle = workflowShell.querySelector('.workflow-toggle.active') || workflowToggles[0];
+        if (defaultToggle) {
+            applyWorkflowState(defaultToggle);
+        }
+    }
 });
 
 // Error handling
-window.addEventListener('error', function(e) {
+window.addEventListener('error', function (e) {
     if (typeof gtag !== 'undefined') {
         gtag('event', 'exception', {
             description: e.error.toString(),
@@ -432,7 +858,7 @@ window.addEventListener('error', function(e) {
 
 // Service Worker registration (if available)
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         // Register service worker for offline capabilities
         // This would require a separate service-worker.js file
     });

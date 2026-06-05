@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How to build a color-coding system in Google Calendar that actually works. Simple rules for organizing events by category without creating visual noise.">
+    <title>Google Calendar Color Coding: A System That Actually Makes Sense | Schedule Calendar</title>
+    <link rel="canonical" href="https://calendar-extension.site/blog/google-calendar-color-coding.html">
+    <meta property="og:title" content="How to Build a Color-Coding System in Google Calendar">
+    <meta property="og:description" content="How to build a color-coding system in Google Calendar that actually works. Simple rules for organizing events by category without creating visual noise.">
+    <meta property="og:image" content="https://calendar-extension.site/images/screenshot1.png">
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-06-06">
+    <meta property="article:author" content="Schedule Calendar Team">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/site-refresh.css?v=20260326">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"How to Build a Color-Coding System in Google Calendar","description":"How to build a color-coding system in Google Calendar that actually works. Simple rules for organizing events by category without creating visual noise.","author":{"@type":"Organization","name":"Schedule Calendar Team"},"publisher":{"@type":"Organization","name":"Schedule Calendar","logo":{"@type":"ImageObject","url":"https://calendar-extension.site/images/logo.png"}},"datePublished":"2026-06-06","dateModified":"2026-06-06","mainEntityOfPage":"https://calendar-extension.site/blog/google-calendar-color-coding.html","image":"https://calendar-extension.site/images/screenshot1.png"}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I color-code events in Google Calendar?","acceptedAnswer":{"@type":"Answer","text":"Open any event and click the colored circle next to the event title to choose a color. For calendar-level colors, right-click the calendar name in the left sidebar and select a new color. Calendar-level colors apply to all events by default; individual event colors override the calendar color for specific events."}},
+        {"@type":"Question","name":"What is the best color-coding system for Google Calendar?","acceptedAnswer":{"@type":"Answer","text":"A simple four-color system works best for most people: one color for hard deadlines, one for external meetings, one for protected focus time, and one for low-priority events. The key is consistency — using the same colors for the same categories every time so the visual pattern becomes meaningful without reading event titles."}},
+        {"@type":"Question","name":"Can I color-code entire calendars in Google Calendar?","acceptedAnswer":{"@type":"Answer","text":"Yes. Right-click any calendar name in the left sidebar and select a color. Every event in that calendar will show that color by default. You can override individual events with different colors when they need a specific signal. This two-level approach — calendar default plus event override — keeps the system low-maintenance."}},
+        {"@type":"Question","name":"Does Google Calendar color-coding sync across devices?","acceptedAnswer":{"@type":"Answer","text":"Calendar-level colors sync across devices because they are stored in the calendar settings. Individual event colors also sync but can sometimes display differently on mobile versus desktop depending on the app version. If you notice inconsistencies, checking the Google Calendar mobile app settings usually resolves them."}},
+        {"@type":"Question","name":"How many colors should I use in Google Calendar?","acceptedAnswer":{"@type":"Answer","text":"Four or fewer. Beyond four categories, the cognitive overhead of choosing and remembering the correct color starts to exceed the time the system saves. Most people's schedules fall into a handful of meaningful categories — hard commitments, external meetings, focus time, and low-priority items — which maps cleanly to four colors."}},
+        {"@type":"Question","name":"Can other people see my Google Calendar colors?","acceptedAnswer":{"@type":"Answer","text":"Only if they have access to your calendar and are viewing it in Google Calendar. People who view your calendar through a different tool or via a shared link may see event titles and times but not necessarily your custom colors. Colors visible to your team on a shared calendar make your availability and priorities easier to read at a glance."}}]}
+    </script>
+</head>
+<body class="schedule-article">
+    <div class="scroll-progress"></div>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="../images/logo.png" alt="Schedule Calendar logo" class="logo" width="42" height="42">
+                    <span class="brand-name">Schedule Calendar</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#features">Features</a></li>
+                    <li><a href="./">Blog</a></li>
+                    <li><a href="../support.html">Support</a></li>
+                    <li><a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Add to Chrome</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
+                    <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="nav-overlay"></div>
+    <main class="blog-main">
+        <div class="container">
+            <section class="article-hero">
+                <div class="article-breadcrumbs">
+                    <a href="./" class="text-link">Blog</a><span>/</span><span>Google Calendar features</span>
+                </div>
+                <div class="eyebrow">Published June 6, 2026</div>
+                <h1 class="article-title">How to Build a Color-Coding System in Google Calendar</h1>
+                <p class="article-intro">A color-coding system in Google Calendar only works if it follows a simple logic you can maintain without thinking about it. Here is how to build one that does.</p>
+                <p class="article-meta">5 min read · Written by the Schedule Calendar Team</p>
+            </section>
+            <section class="article-layout">
+                <article class="article-body-card">
+                    <img src="../images/screenshot1.png" alt="Schedule Calendar Chrome extension showing upcoming events" class="article-cover" width="1365" height="768">
+                    <h2>Why Most Color-Coding Systems Fail</h2>
+
+<p>People set up Google Calendar colors with good intentions and then stop using them consistently. The common failure mode: too many categories. When you have eight different colors for eight different types of events, you spend more time choosing the right color than the system saves. A useful color system uses four colors or fewer.</p>
+
+<p>The second failure mode is aesthetic rather than functional colors — using colors because they look organized rather than because they convey specific meaning at a glance.</p>
+
+<h2>A Simple 4-Color System</h2>
+
+<ul>
+<li>Red — hard deadlines and high-stakes commitments. These cannot move.</li>
+<li>Blue — external meetings with clients, stakeholders, or collaborators outside the team.</li>
+<li>Green — focus blocks and deep work time. Protected time for actual output.</li>
+<li>Gray — low-priority or optional events, reminders, and personal tasks.</li>
+</ul>
+
+<h2>How to Apply Colors in Google Calendar</h2>
+
+<p>In Google Calendar, you can color individual events or entire calendars. Coloring calendars is faster — everything in your Work calendar shows one color by default, and you override only specific events that need a different signal. This two-level system (calendar default plus event override) keeps most events colored automatically without manual work.</p>
+
+<p>To change an event color, open the event and click the color circle next to the title. To change a calendar color, right-click the calendar name in the left panel and select a color.</p>
+
+<div class="article-note">
+<p>If you share your calendar with teammates, colors help them read your availability at a glance — red blocks signal unavailability more clearly than a gray event title.</p>
+</div>
+
+<h2>Making the System Stick</h2>
+
+<p>Consistency is the only thing that makes a color system valuable. The test: can you look at your weekly view and instantly understand the shape of the week — where the hard commitments are, where focus time exists, and where low-stakes events sit? If yes, the system is working. If you have to read event titles to understand the difference, the system needs simplification.</p>
+
+<p>For a broader look at how Google Calendar features support focused work, see our guide on Google Calendar integrations for focused work.</p>
+
+<h2>How Schedule Calendar helps</h2>
+
+<p>Schedule Calendar displays your upcoming events in the browser popup with their Google Calendar colors preserved. This means your color-coding system — the focus blocks in green, the hard deadlines in red — is visible at a glance from the toolbar without opening a full calendar tab. The visual signal from your color system travels with you as you work across browser tabs.</p>
+                    <section class="article-faq" aria-label="Frequently asked questions">
+                        <h2>Frequently asked questions</h2>
+                        <div class="faq-list">
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-1" aria-controls="faq-answer-1" aria-expanded="false">
+    <h3>How do I color-code events in Google Calendar?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+    <p>Open any event and click the colored circle next to the event title to choose a color. For calendar-level colors, right-click the calendar name in the left sidebar and select a new color. Calendar-level colors apply to all events by default; individual event colors override the calendar color for specific events.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-2" aria-controls="faq-answer-2" aria-expanded="false">
+    <h3>What is the best color-coding system for Google Calendar?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+    <p>A simple four-color system works best for most people: one color for hard deadlines, one for external meetings, one for protected focus time, and one for low-priority events. The key is consistency — using the same colors for the same categories every time so the visual pattern becomes meaningful without reading event titles.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-3" aria-controls="faq-answer-3" aria-expanded="false">
+    <h3>Can I color-code entire calendars in Google Calendar?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+    <p>Yes. Right-click any calendar name in the left sidebar and select a color. Every event in that calendar will show that color by default. You can override individual events with different colors when they need a specific signal. This two-level approach — calendar default plus event override — keeps the system low-maintenance.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-4" aria-controls="faq-answer-4" aria-expanded="false">
+    <h3>Does Google Calendar color-coding sync across devices?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+    <p>Calendar-level colors sync across devices because they are stored in the calendar settings. Individual event colors also sync but can sometimes display differently on mobile versus desktop depending on the app version. If you notice inconsistencies, checking the Google Calendar mobile app settings usually resolves them.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-5" aria-controls="faq-answer-5" aria-expanded="false">
+    <h3>How many colors should I use in Google Calendar?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+    <p>Four or fewer. Beyond four categories, the cognitive overhead of choosing and remembering the correct color starts to exceed the time the system saves. Most people's schedules fall into a handful of meaningful categories — hard commitments, external meetings, focus time, and low-priority items — which maps cleanly to four colors.</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question" role="button" id="faq-question-6" aria-controls="faq-answer-6" aria-expanded="false">
+    <h3>Can other people see my Google Calendar colors?</h3>
+    <span class="faq-toggle" aria-hidden="true">+</span>
+  </button>
+  <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+    <p>Only if they have access to your calendar and are viewing it in Google Calendar. People who view your calendar through a different tool or via a shared link may see event titles and times but not necessarily your custom colors. Colors visible to your team on a shared calendar make your availability and priorities easier to read at a glance.</p>
+  </div>
+</div>
+</div>
+                    </section>
+                </article>
+                <aside class="article-sidebar">
+                    <h3>Key takeaways</h3>
+                    <ul><li>Limit your color system to four categories maximum.</li>
+<li>Color calendars by default, override individual events as needed.</li>
+<li>Red for immovable commitments, green for protected focus time.</li>
+<li>Consistency matters more than the specific colors you choose.</li></ul>
+                    <h3>Try next</h3>
+                    <p>See your color-coded calendar from any tab with Schedule Calendar. Install free for Chrome.</p>
+                    <a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary" target="_blank" rel="noopener">Add to Chrome</a>
+                </aside>
+            </section>
+            <section class="section">
+                <div class="section-header">
+                    <span class="section-kicker">Related reading</span>
+                    <h2 class="section-title">See also: Google Calendar View Modes — When to Use Each</h2>
+                </div>
+                <div class="related-grid"><article class="related-card">
+  <h3>Google Calendar Keyboard Shortcuts That Save Real Time</h3>
+  <p>From the Google Calendar Features series.</p>
+  <a href="./google-calendar-keyboard-shortcuts.html" class="read-more">Read article →</a>
+</article>
+<article class="related-card">
+  <h3>Recurring Events in Google Calendar: Tips Most Users Miss</h3>
+  <p>From the Google Calendar Features series.</p>
+  <a href="./google-calendar-recurring-events.html" class="read-more">Read article →</a>
+</article></div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-card">
+                    <div class="nav-brand">
+                        <img src="../images/logo.png" alt="Schedule Calendar logo" class="footer-logo" width="42" height="42">
+                        <span class="footer-brand-name">Schedule Calendar</span>
+                    </div>
+                    <p class="footer-description">Workflow notes for people who want their calendar to support the day, not dominate it.</p>
+                </div>
+                <div class="footer-card">
+                    <h4>Read next</h4>
+                    <ul class="footer-links"><li><a href="./">Blog home</a></li>
+<li><a href="./google-calendar-keyboard-shortcuts.html">Google Calendar Keyboard Shortcuts That Save Real Time</a></li>
+<li><a href="./google-calendar-recurring-events.html">Recurring Events in Google Calendar: Tips Most Users Miss</a></li></ul>
+                </div>
+                <div class="footer-card">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../support.html">Support</a></li>
+                        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Schedule Calendar. All rights reserved.</p></div>
+        </div>
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+    <script src="../js/script.js?v=20260326"></script>
+</body>
+</html>

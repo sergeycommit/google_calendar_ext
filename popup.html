@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Calendar</title>
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+    <header class="popup-header">
+        <div class="header-top">
+            <img src="images/logo.png" alt="Logo" class="mini-logo">
+            <div class="user-profile">
+                <div class="avatar-skeleton"></div>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Quick add or search..." id="quick-add">
+                <div class="shortcut-hint">⌘K</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-card">
+            <div class="hero-header">
+                <span class="hero-label">Next Meeting</span>
+                <span class="time-badge">in 12 min</span>
+            </div>
+            <div class="hero-time">10:00 AM</div>
+            <div class="hero-title">Product Sync</div>
+            <button class="join-btn">Join Zoom</button>
+        </div>
+    </section>
+
+    <main class="event-list">
+        <div class="date-header">Today, Jan 9</div>
+
+        <!-- Skeleton Loaders (Shimmering) -->
+        <div class="event-item skeleton">
+            <div class="event-time-skeleton"></div>
+            <div class="event-details-skeleton">
+                <div class="event-title-skeleton"></div>
+                <div class="event-meta-skeleton"></div>
+            </div>
+        </div>
+
+        <div class="event-item skeleton">
+            <div class="event-time-skeleton"></div>
+            <div class="event-details-skeleton">
+                <div class="event-title-skeleton"></div>
+                <div class="event-meta-skeleton"></div>
+            </div>
+        </div>
+
+        <div class="event-item skeleton">
+            <div class="event-time-skeleton"></div>
+            <div class="event-details-skeleton">
+                <div class="event-title-skeleton"></div>
+                <div class="event-meta-skeleton"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="popup-footer">
+        <button class="footer-btn">Open Full Calendar</button>
+        <button class="footer-btn settings-btn">⚙️</button>
+    </footer>
+
+    <script src="js/popup.js"></script>
+</body>
+
+</html>

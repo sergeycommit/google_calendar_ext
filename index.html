@@ -1,356 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Extension for Google Calendar - The ultimate Chrome extension for managing your Google Calendar events efficiently. Get instant access to your schedule, notifications, and more.">
-    <meta name="keywords" content="Google Calendar, Chrome Extension, Calendar Management, Schedule, Events, Productivity">
-    <meta name="author" content="Extension for Google Calendar Team">
-    <meta name="google-site-verification" content="4pNOVOvbSgn8t9O8vXvpVzI_owevOi176XF__zDZJfo" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://ssl.google-analytics.com https://cloud.umami.is 'sha256-0yLnmh9VEnWZsbVPUeeuh/yl08d4W+3L5Mm2D+qnFRQ=' 'sha256-NExfqzgyhCC4P5sfNnjcrqAQ+GIhVjrztM2cPfTJb1A='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://ssl.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.google.com https://cloud.umami.is https://gateway.umami.is https://api-gateway.umami.dev https://api-gateway.umami.is; frame-src 'none'; object-src 'none';">
+    <meta name="description"
+        content="Schedule Calendar helps you see today's timeline, know what starts next, and jump into meetings without reopening Google Calendar in another tab.">
+    <meta name="keywords"
+        content="Schedule Calendar, Google Calendar Chrome extension, day timeline, meeting join extension, quick calendar popup, Google Calendar toolbar">
+    <meta name="author" content="Schedule Calendar Team">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://calendar-extension.site/">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Schedule Calendar">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Schedule Calendar">
 
-    <!-- Preload critical resources -->
     <link rel="preload" href="./css/style.css" as="style">
-    <link rel="preload" href="./js/script.js" as="script">
+    <link rel="preload" href="./css/site-refresh.css?v=20260326" as="style">
+    <link rel="preload" href="./js/script.js?v=20260326" as="script">
     <link rel="preload" href="./images/logo.png" as="image">
-    <link rel="preload" href="./images/screenshot1.png" as="image">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" as="style">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Extension for Google Calendar - Chrome Extension">
-    <meta property="og:description" content="Streamline your Google Calendar experience with our powerful Chrome extension">
-    <meta property="og:image" content="./images/logo.png">
-    <meta property="og:url" content="https://calendar-extension.site">
+    <meta property="og:title" content="Schedule Calendar | See what's next without leaving your tab">
+    <meta property="og:description"
+        content="A calmer Google Calendar companion for Chrome with day timeline, time-to-event chips, quick add, and one-click meeting joins.">
+    <meta property="og:image" content="https://calendar-extension.site/images/logo.png">
+    <meta property="og:url" content="https://calendar-extension.site/">
     <meta property="og:type" content="website">
 
-    <title>Google Calendar Extension - Chrome Extension for Google Calendar</title>
+    <title>Schedule Calendar | See today's timeline and what's next</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/site-refresh.css?v=20260326">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-    <!-- Google Analytics -->
-    <!-- Google tag (gtag.js) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo.png">
+    <link rel="apple-touch-icon" href="./images/logo.png">
+    <link rel="manifest" href="./manifest.json">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXGVPVCSRT"></script>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="eca3946f-ed95-4138-87ae-1e05ebd69769"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="eca3946f-ed95-4138-87ae-1e05ebd69769"></script>
+    <script defer src="./js/analytics.js"></script>
 
-        gtag('config', 'G-QXGVPVCSRT');
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Schedule Calendar",
+        "description": "Schedule Calendar is a Chrome companion for Google Calendar with a fast day timeline, time-to-event chips, quick add, and one-click meeting joins.",
+        "url": "https://calendar-extension.site/",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "ratingCount": "39"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Schedule Calendar Team"
+        },
+        "featureList": [
+            "Day, week, and month views from the toolbar",
+            "Time-to-event chips for quick context",
+            "One-click Google Meet, Zoom, and Teams joins",
+            "Quick add plus fast fallback to full Google Calendar"
+        ],
+        "downloadUrl": "https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe",
+        "softwareVersion": "2.81",
+        "dateModified": "2026-03-19"
+    }
     </script>
-    <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/6a880665c2b38.js" data-cmp-host="b.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What does Schedule Calendar help with?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Schedule Calendar helps you see today's timeline, understand what starts next, and jump into meetings quickly without opening the full Google Calendar interface."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use Schedule Calendar as a quick event checker?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. It is designed for fast checks: what is happening now, what starts soon, and whether you need to open the full calendar or just move to the next meeting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does it support Google Meet and Zoom links?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. When meeting links are present in calendar events, Schedule Calendar surfaces them so you can join faster."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Schedule Calendar free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Schedule Calendar is free to install and use."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
-<body>
-<!-- Header -->
-<header class="header">
-    <nav class="navbar">
+
+<body class="schedule-home" id="page-top">
+    <a href="#main-content" class="skip-to-content sr-only">Skip to main content</a>
+    <div class="scroll-progress"></div>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="./images/logo.png" alt="Schedule Calendar logo" class="logo" width="42" height="42">
+                    <span class="brand-name">Schedule Calendar</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#anatomy">How it works</a></li>
+                    <li><a href="#workflow">Workflow</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="./blog/">Blog</a></li>
+                    <li><a href="./support.html">Support</a></li>
+                    <li>
+                        <a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe"
+                            class="btn btn-primary btn-sm" target="_blank" rel="noopener">
+                            Add to Chrome
+                        </a>
+                    </li>
+                </ul>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-overlay"></div>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow">
+                        <span class="signal-dot"></span>
+                        Built for the 3-second calendar check
+                    </div>
+                    <h1 class="hero-title">See what’s next, then get back to work.</h1>
+                    <p class="hero-description">
+                        Schedule Calendar brings today’s timeline, time-to-event chips, quick add, and meeting joins
+                        into the toolbar, so the full Google Calendar tab stays reserved for heavier planning.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe"
+                            class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                            Add to Chrome
+                        </a>
+                        <a href="#workflow" class="hero-secondary-link">See how it fits a workday</a>
+                    </div>
+
+                    <p class="hero-proof-note">
+                        <strong>4.6 / 5 from 39 reviews on the Chrome Web Store.</strong>
+                        Free to install — best when you need a fast schedule check, a quick join, or a small
+                        planning move without falling into a full calendar tab.
+                    </p>
+                </div>
+
+                <div class="hero-stage">
+                    <div class="product-mockup">
+                        <div class="mockup-shell">
+                            <div class="mockup-topbar">
+                                <div class="mockup-brand">
+                                    <div class="mockup-brand-badge">SC</div>
+                                    <div class="mockup-brand-text">
+                                        <strong>Schedule Calendar</strong>
+                                        <span>Today at a glance</span>
+                                    </div>
+                                </div>
+                                <div class="mockup-toolbar">
+                                    <span class="mockup-icon">&#128269;</span>
+                                    <span class="mockup-avatar">C</span>
+                                </div>
+                            </div>
+
+                            <div class="mockup-days">
+                                <div class="mockup-day"><span>SUN</span><strong>1</strong></div>
+                                <div class="mockup-day"><span>MON</span><strong>2</strong></div>
+                                <div class="mockup-day"><span>TUE</span><strong>3</strong></div>
+                                <div class="mockup-day"><span>WED</span><strong>4</strong></div>
+                                <div class="mockup-day"><span>THU</span><strong>5</strong></div>
+                                <div class="mockup-day"><span>FRI</span><strong>6</strong></div>
+                                <div class="mockup-day is-active"><span>SAT</span><strong>7</strong></div>
+                                <div class="mockup-view-pill">Day</div>
+                            </div>
+
+                            <div class="mockup-timeline">
+                                <div class="mockup-range-label is-top">00:00 — 10:00</div>
+                                <div class="mockup-time mockup-time--10">10:00</div>
+                                <div class="mockup-time mockup-time--11">11:00</div>
+                                <div class="mockup-time mockup-time--12">12:00</div>
+                                <div class="mockup-time mockup-time--14">14:00</div>
+                                <div class="mockup-time mockup-time--15">15:00</div>
+
+                                <div class="mockup-gridline mockup-gridline--1 is-dashed"></div>
+                                <div class="mockup-gridline mockup-gridline--2"></div>
+                                <div class="mockup-gridline mockup-gridline--3"></div>
+                                <div class="mockup-gridline mockup-gridline--4"></div>
+                                <div class="mockup-gridline mockup-gridline--5"></div>
+                                <div class="mockup-gridline mockup-gridline--6"></div>
+                                <div class="mockup-gridline mockup-gridline--7 is-dashed"></div>
+
+                                <div class="mockup-nowline mockup-nowline--current"><span></span></div>
+
+                                <article class="mockup-event mockup-event--one">
+                                    <div class="mockup-event-row">
+                                        <div>
+                                            <div class="mockup-event-time">12:00 - 12:30</div>
+                                            <div class="mockup-event-title">Daily</div>
+                                        </div>
+                                        <span class="mockup-chip">in 24 min</span>
+                                    </div>
+                                </article>
+
+                                <article class="mockup-event mockup-event--two">
+                                    <div class="mockup-event-row">
+                                        <div>
+                                            <div class="mockup-event-time">14:00 - 14:30</div>
+                                            <div class="mockup-event-title">Client call</div>
+                                        </div>
+                                        <span class="mockup-chip is-muted">in 2 h 24 m</span>
+                                    </div>
+                                </article>
+
+                                <div class="mockup-range-label is-bottom">16:00 — 24:00</div>
+                            </div>
+
+                            <button class="mockup-fab" aria-label="Add event">+</button>
+                            <div class="mockup-footer">
+                                <span class="is-primary">Open Google Calendar</span>
+                                <span>Rate</span>
+                                <span>Share</span>
+                                <span>Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-note hero-note--timeline">
+                        <div class="ui-pill">Live timeline</div>
+                        <h3>Recover context in one glance</h3>
+                        <p>The hour grid and now line tell you whether the next decision is “keep working” or “switch
+                            gears.”</p>
+                    </div>
+
+                    <div class="hero-note hero-note--quick-add">
+                        <div class="ui-pill">Quick action</div>
+                        <h3>Stay in the toolbar for the small stuff</h3>
+                        <p>Add something quickly, open the next meeting, or escalate to full Calendar only when the job
+                            gets bigger.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anatomy" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">Inside the interface</span>
+                    <h2 class="section-title">Why the popup feels fast in actual use.</h2>
+                    <p class="section-subtitle">
+                        The strongest parts are the small ones: orienting yourself, judging urgency, and deciding
+                        whether the popup is enough or the full calendar is worth opening.
+                    </p>
+                </div>
+
+                <div class="anatomy-grid">
+                    <div class="anatomy-list">
+                        <article class="anatomy-card">
+                            <strong>1. Day strip for orientation</strong>
+                            <p>The top row tells you where you are in the week without forcing a full calendar context
+                                switch.</p>
+                        </article>
+                        <article class="anatomy-card">
+                            <strong>2. Timeline for actual time awareness</strong>
+                            <p>Users do not just want a list of events. They want to feel the spacing between them.</p>
+                        </article>
+                        <article class="anatomy-card">
+                            <strong>3. Time-to-event chips for instant decisions</strong>
+                            <p>This is one of the most useful micro-patterns in the UI because it tells you whether to
+                                prepare, keep working, or join now.</p>
+                        </article>
+                        <article class="anatomy-card">
+                            <strong>4. Quick add and full-calendar escape hatch</strong>
+                            <p>The popup should be enough for fast actions, while “Open Google Calendar” stays there for
+                                the heavier planning tasks.</p>
+                        </article>
+                    </div>
+
+                    <div class="product-mockup is-compact">
+                        <div class="mockup-shell is-short">
+                            <div class="mockup-nav">
+                                <div class="mockup-tab is-active">Day</div>
+                                <div class="mockup-tab">Week</div>
+                                <div class="mockup-tab">Month</div>
+                            </div>
+                            <div class="mockup-timeline">
+                                <div class="mockup-range-label is-top">What the user sees first</div>
+                                <div class="mockup-time mockup-time--compact-12">12:00</div>
+                                <div class="mockup-time mockup-time--compact-14">14:00</div>
+                                <div class="mockup-gridline mockup-gridline--compact-1"></div>
+                                <div class="mockup-gridline mockup-gridline--compact-2"></div>
+                                <article class="mockup-event mockup-event--compact-one">
+                                    <div class="mockup-event-row">
+                                        <div>
+                                            <div class="mockup-event-time">Daily</div>
+                                            <div class="mockup-event-title">The next thing that matters</div>
+                                        </div>
+                                        <span class="mockup-chip">24 min</span>
+                                    </div>
+                                </article>
+                                <article class="mockup-event mockup-event--compact-two">
+                                    <div class="mockup-event-row">
+                                        <div>
+                                            <div class="mockup-event-time">Client call</div>
+                                            <div class="mockup-event-title">A later commitment with room before it</div>
+                                        </div>
+                                        <span class="mockup-chip is-muted">2 h 24 m</span>
+                                    </div>
+                                </article>
+                                <div class="ui-annotation ui-annotation--top">
+                                    <div class="ui-pill">Recover context</div>
+                                    <p>Users can understand the next hours in seconds.</p>
+                                </div>
+                                <div class="ui-annotation ui-annotation--middle">
+                                    <div class="ui-pill">Decide quickly</div>
+                                    <p>Urgency is visible before any click into the event.</p>
+                                </div>
+                                <div class="ui-annotation ui-annotation--bottom">
+                                    <div class="ui-pill">Stay moving</div>
+                                    <p>The popup helps you act, then return to work.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">What users actually get</span>
+                    <h2 class="section-title">Three reasons people keep it pinned.</h2>
+                    <p class="section-subtitle">
+                        The value is simple: get oriented fast, act without friction, and leave before the interface
+                        turns into a heavier planning session.
+                    </p>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">01</div>
+                        <h3>Re-enter the day in seconds</h3>
+                        <p>Open the popup, read the timeline, and know whether you still have room to focus before the
+                            next meeting.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">02</div>
+                        <h3>Act from the schedule, not around it</h3>
+                        <p>Meeting joins, quick add, and the full-calendar escape hatch stay close to the event so the
+                            next action is obvious.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">03</div>
+                        <h3>Keep full Google Calendar for bigger edits</h3>
+                        <p>Use day, week, or month when the question is small, then jump out only when planning becomes
+                            more complex.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="workflow" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">Workflow snapshots</span>
+                    <h2 class="section-title">What people actually open it for.</h2>
+                    <p class="section-subtitle">The product is strongest in the small gaps between work, not during
+                        long setup sessions.</p>
+                </div>
+
+                <div class="workflow-shell" data-mode="catchup">
+                    <div class="workflow-controls">
+                        <div class="workflow-toggle-row">
+                            <button class="workflow-toggle active" type="button" data-mode="catchup"
+                                data-meter-label="Fastest win"
+                                data-meter-title="Recover context without reopening a full tab"
+                                data-meter-copy="The popup tells you whether you can keep focusing or should start preparing."
+                                data-callout-pill="Back from focus"
+                                data-callout-title="Re-enter the day without losing momentum"
+                                data-callout-copy="The first useful answer is not the whole calendar. It is the next thing that matters."
+                                aria-pressed="true">Back from focus</button>
+                            <button class="workflow-toggle" type="button" data-mode="meetings"
+                                data-meter-label="Fastest win"
+                                data-meter-title="Turn the popup into the handoff into the call"
+                                data-meter-copy="The meeting card becomes the transition point instead of another trip through tabs and email."
+                                data-callout-pill="Before a call"
+                                data-callout-title="Get the context you need right before you join"
+                                data-callout-copy="Confirm the title, timing, and meeting action in one stop, then move straight into the call."
+                                aria-pressed="false">Before a call</button>
+                            <button class="workflow-toggle" type="button" data-mode="plan"
+                                data-meter-label="Fastest win"
+                                data-meter-title="Handle the small planning move and move on"
+                                data-meter-copy="Use the popup when the question is lightweight, then promote the task to full Calendar only if it grows."
+                                data-callout-pill="Quick planning"
+                                data-callout-title="Make the small decision here, not in a full scheduling detour"
+                                data-callout-copy="It stays useful for tiny adjustments, availability checks, and quick adds that do not deserve a larger context switch."
+                                aria-pressed="false">Quick planning</button>
+                        </div>
+
+                        <div class="workflow-panels">
+                            <div class="workflow-panel active" data-mode="catchup">
+                                <p class="workflow-summary">
+                                    You finish a deep work block and need to re-enter the schedule without losing too
+                                    much attention. The popup gives you immediate situational awareness.
+                                </p>
+                                <ul class="workflow-list">
+                                    <li>Check the day strip and current timeline position.</li>
+                                    <li>See whether the next event is close or still far enough away.</li>
+                                    <li>Return to work or start preparing based on the chip and event placement.</li>
+                                </ul>
+                            </div>
+
+                            <div class="workflow-panel" data-mode="meetings" hidden>
+                                <p class="workflow-summary">
+                                    Right before a meeting, the fastest path is not “open Google Calendar and start
+                                    digging.” It is “open the popup and act from there.”
+                                </p>
+                                <ul class="workflow-list">
+                                    <li>Confirm the event title, time, and status in one glance.</li>
+                                    <li>Use the event area as the transition into the correct meeting.</li>
+                                    <li>Keep the context-switch smaller, especially on stacked call days.</li>
+                                </ul>
+                            </div>
+
+                            <div class="workflow-panel" data-mode="plan" hidden>
+                                <p class="workflow-summary">
+                                    When the scheduling task is small, users should not pay the cost of a full calendar
+                                    detour. The popup stays useful for fast planning decisions.
+                                </p>
+                                <ul class="workflow-list">
+                                    <li>Open day, week, or month depending on the question.</li>
+                                    <li>Use the add action for small scheduling moves.</li>
+                                    <li>Open Google Calendar only when the planning task becomes more complex.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="workflow-visual">
+                        <div class="workflow-meter">
+                            <span class="workflow-meter-label">Fastest win</span>
+                            <strong class="workflow-meter-title">Recover context without reopening a full tab</strong>
+                            <p class="workflow-meter-copy">The popup tells you whether you can keep focusing or should
+                                start preparing.</p>
+                            <div class="workflow-track"><span></span></div>
+                        </div>
+
+                        <div class="workflow-float">
+                            <div class="ui-pill workflow-callout-pill">Back from focus</div>
+                            <h3 class="workflow-callout-title">Re-enter the day without losing momentum</h3>
+                            <p class="workflow-callout-copy">The first useful answer is not the whole calendar. It is
+                                the next thing that matters.</p>
+                        </div>
+
+                        <img src="./images/screenshot1.png"
+                            alt="Schedule Calendar popup with timeline, upcoming events, and join actions"
+                            class="workflow-image"
+                            width="576" height="766">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="insights" class="section">
+            <div class="container">
+                <div class="article-highlight">
+                    <div class="article-text">
+                        <span class="section-kicker">From the blog</span>
+                        <h2 class="section-title">Want a little more detail?</h2>
+                        <p class="section-subtitle">
+                            Two quick reads cover the habit behind a calmer week and why toolbar-first access feels
+                            lighter than living in a full calendar tab.
+                        </p>
+                        <div class="hero-actions hero-actions--insights">
+                            <a href="./blog/" class="btn btn-secondary">Browse the blog</a>
+                        </div>
+                    </div>
+
+                    <div class="article-preview">
+                        <h3>Start here</h3>
+                        <a href="./blog/weekly-calendar-reset.html" class="article-link-card">
+                            <strong>How to run a 15-minute weekly reset</strong>
+                            <span>Clear stale events, protect focus blocks, and stop the week from running ahead of
+                                you.</span>
+                        </a>
+                        <a href="./blog/why-use-chrome-extension-for-calendar.html" class="article-link-card">
+                            <strong>Why a toolbar calendar workflow feels faster</strong>
+                            <span>Keep tiny decisions inside the popup and save the full tab for bigger edits.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">What users notice</span>
+                    <h2 class="section-title">What users keep pointing out.</h2>
+                </div>
+
+                <div class="testimonial-grid">
+                    <article class="testimonial-card step">
+                        <div class="testimonial-meta">
+                            <div class="avatar">BW</div>
+                            <div>
+                                <h3>Quick meeting handoff</h3>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"I like the short meeting summaries as well as direct forwarding to meeting tool."</p>
+                    </article>
+
+                    <article class="testimonial-card step">
+                        <div class="testimonial-meta">
+                            <div class="avatar">AV</div>
+                            <div>
+                                <h3>Clean daily orientation</h3>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"Perfect UI and functionality."</p>
+                    </article>
+
+                    <article class="testimonial-card step">
+                        <div class="testimonial-meta">
+                            <div class="avatar">AI</div>
+                            <div>
+                                <h3>Lightweight enough to use constantly</h3>
+                                <div class="rating">★★★★★</div>
+                            </div>
+                        </div>
+                        <p>"Great and very user-friendly."</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">FAQ</span>
+                    <h2 class="section-title">Questions before you install.</h2>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false"
+                            aria-controls="home-faq-answer-1">
+                            <h3>Why use Schedule Calendar instead of keeping Google Calendar open all day?</h3>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer" id="home-faq-answer-1">
+                            <p>Because the popup is better at fast orientation. It helps you answer “what’s next?” and
+                                “how soon?” without reopening the full calendar workspace every time.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false"
+                            aria-controls="home-faq-answer-2">
+                            <h3>Can it work as a quick event checker?</h3>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer" id="home-faq-answer-2">
+                            <p>Yes. The day timeline, time-to-event chips, and fast event cards make it useful as a
+                                lightweight event checker throughout the day.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false"
+                            aria-controls="home-faq-answer-3">
+                            <h3>What if I still need the full Google Calendar interface?</h3>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer" id="home-faq-answer-3">
+                            <p>That is built into the UX. The popup handles the fast checks and small actions, while
+                                “Open Google Calendar” remains the clear path for heavier planning.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false"
+                            aria-controls="home-faq-answer-4">
+                            <h3>Where can I learn more or get help?</h3>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer" id="home-faq-answer-4">
+                            <p>Visit the <a href="./support.html">support page</a> for practical help, or the <a
+                                    href="./blog/">blog</a> for workflow tips and planning guides.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <div class="nav-brand">
-                <img src="./images/logo.png" alt="Extension for Google Calendar Logo" class="logo">
-                <span class="brand-name">Extension for Google Calendar</span>
+            <div class="footer-grid">
+                <div class="footer-card">
+                    <div class="nav-brand">
+                        <img src="./images/logo.png" alt="Schedule Calendar logo" class="footer-logo" width="42"
+                            height="42">
+                        <span class="footer-brand-name">Schedule Calendar</span>
+                    </div>
+                    <p class="footer-description">A toolbar-first companion for Google Calendar that helps users check
+                        the day, act quickly, and get back to work.</p>
+                </div>
+
+                <div class="footer-card">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#anatomy">How it works</a></li>
+                        <li><a href="#workflow">Workflow</a></li>
+                        <li><a href="./blog/">Blog</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-card">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="./support.html">Support</a></li>
+                        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="./compare-google-calendar-extensions.html">Comparison</a></li>
+                        <li><a href="./google-calendar-event-checker.html">Event Checker</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#screenshots">Screenshots</a></li>
-                <li><a href="#installation">Install</a></li>
-                <li><a href="./support.html">Support</a></li>
-            </ul>
-            <div class="hamburger" aria-label="Открыть меню" tabindex="0">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Schedule Calendar. All rights reserved.</p>
             </div>
         </div>
-    </nav>
-</header>
+    </footer>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-bg-svg" aria-hidden="true">
-        <svg width="100%" height="100%" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;">
-            <defs>
-                <linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="#667eea"/>
-                    <stop offset="100%" stop-color="#764ba2"/>
-                </linearGradient>
-            </defs>
-            <path d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,133.3C840,107,960,85,1080,101.3C1200,117,1320,171,1380,197.3L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" fill="url(#heroGradient)" fill-opacity="0.4"/>
+    <button class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
         </svg>
-    </div>
-    <div class="container hero-grid">
-        <div class="hero-content">
-            <h1 class="hero-title">Streamline Your Google Calendar Experience</h1>
-            <p class="hero-description">
-                Extension for Google Calendar brings your Google Calendar right to your browser toolbar.
-                Get instant access to your events, receive smart notifications, and manage your schedule
-                without leaving your current tab.
-            </p>
-            <div class="hero-buttons">
-                <a href="#installation" class="btn btn-primary btn-large" aria-label="Add to Chrome">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    Add to Chrome — Free
-                </a>
-                <a href="#features" class="btn btn-secondary btn-large" aria-label="Learn More">Learn More</a>
-            </div>
-        </div>
-        <div class="hero-image-container">
-            <div class="hero-mockup">
-                <img src="./images/screenshot1.png" alt="Extension for Google Calendar Interface" class="hero-image">
-            </div>
-        </div>
-    </div>
-</section>
+    </button>
 
-<!-- Features Section -->
-<section id="features" class="features">
-    <div class="container">
-        <h2 class="section-title">Powerful Features for Better Productivity</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
-                    </svg>
-                </div>
-                <h3>Instant Calendar Access</h3>
-                <p>View your Google Calendar events instantly from any tab without opening a new window. Quick access to today's schedule, upcoming events, and meeting details.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
-                    </svg>
-                </div>
-                <h3>Smart Notifications</h3>
-                <p>Never miss important meetings with customizable notifications. Get alerts 5, 10, 15, or 30 minutes before your events start.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
-                    </svg>
-                </div>
-                <h3>One-Click Meeting Join</h3>
-                <p>Join Google Meet conferences directly from the extension with a single click. No more searching for meeting links in emails.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                </div>
-                <h3>Multiple Account Support</h3>
-                <p>Seamlessly switch between multiple Google accounts. Perfect for managing both personal and work calendars.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                </div>
-                <h3>Dark Mode Support</h3>
-                <p>Beautiful interface that adapts to your system preferences. Enjoy a comfortable viewing experience in both light and dark themes.</p>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM18.92 8h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/>
-                    </svg>
-                </div>
-                <h3>Multi-Language Support</h3>
-                <p>Available in 9 languages including English, Spanish, French, German, Italian, Portuguese, Russian, Japanese, and Chinese.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Screenshots Section -->
-<section id="screenshots" class="screenshots">
-    <div class="container">
-        <h2 class="section-title">See It In Action</h2>
-        <div class="screenshots-grid">
-            <div class="screenshot-item">
-                <img src="./images/screenshot1.png" alt="Main Calendar View" loading="lazy">
-                <h3>Clean Calendar Interface</h3>
-                <p>View your events in a beautifully designed, easy-to-read interface</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="./images/screenshot2.png" alt="Meeting Notifications" loading="lazy">
-                <h3>Smart Notifications</h3>
-                <p>Get timely reminders with customizable notification settings</p>
-            </div>
-            <div class="screenshot-item">
-                <img src="./images/screenshot3.png" alt="Settings Panel" loading="lazy">
-                <h3>Customizable Settings</h3>
-                <p>Personalize your experience with extensive customization options</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Installation Section -->
-<section id="installation" class="installation">
-    <div class="container">
-        <div class="installation-content">
-            <h2 class="section-title">Easy Installation</h2>
-            <p class="installation-description">Get started with Extension for Google Calendar in just a few clicks</p>
-
-            <div class="installation-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Add to Chrome</h3>
-                        <p>Click the "Add to Chrome" button to install the extension</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Sign In</h3>
-                        <p>Connect your Google account to access your calendar</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Start Using</h3>
-                        <p>Click the extension icon to view your events and notifications</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="installation-cta">
-                <a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary btn-large" target="_blank" rel="noopener">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    Add to Chrome - It's Free!
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq">
-    <div class="container">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Is Extension for Google Calendar free to use?</h3>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes! Extension for Google Calendar is completely free to use with no hidden fees or premium subscriptions required.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>How do I install the extension?</h3>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Simply click the "Add to Chrome" button, and the extension will be automatically installed. You'll then need to sign in with your Google account to access your calendar.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Does the extension access my personal data?</h3>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>We only access your Google Calendar data to display your events. We do not store, share, or sell your personal information. Please read our <a href="./privacy-policy.html">Privacy Policy</a> for more details.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>Can I use multiple Google accounts?</h3>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes! The extension supports multiple Google accounts, allowing you to easily switch between personal and work calendars.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <h3>How do I get support?</h3>
-                    <span class="faq-toggle">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>If you need help or have questions, please visit our <a href="./support.html">Support Page</a> or contact us directly through the extension's feedback form.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-section">
-                <div class="footer-brand">
-                    <img src="./images/logo.png" alt="Extension for Google Calendar Logo" class="footer-logo">
-                    <span class="footer-brand-name">Extension for Google Calendar</span>
-                </div>
-                <p class="footer-description">Streamline your Google Calendar experience with our powerful Chrome extension.</p>
-            </div>
-
-            <div class="footer-section">
-                <h4>Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#installation">Installation</a></li>
-                    <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="./terms-of-service.html">Terms of Service</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Support</h4>
-                <ul class="footer-links">
-                    <li><a href="./support.html">Help Center</a></li>
-                    <li><a href="mailto:tdallstr@gmail.com">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" aria-label="Twitter">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="GitHub">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2025 Extension for Google Calendar. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
-
-<script src="./js/script.js"></script>
+    <script src="./js/script.js?v=20260326"></script>
 </body>
+
 </html>
