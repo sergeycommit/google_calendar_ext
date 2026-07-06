@@ -48,8 +48,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar is a lightweight Chrome extension that shows your Google Calendar events in a toolbar popup. Click the icon, see your next few events with times and countdowns, and return to work. No account required beyond Google authorization, no subscription, no complex setup. It is designed to cover exactly the use case the full calendar tab handles poorly: the quick, repeated schedule check.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ is a lightweight Chrome extension that shows your Google Calendar events in a toolbar popup. Click the icon, see your next few events with times and countdowns, and return to work. No account required beyond Google authorization, no subscription, no complex setup. It is designed to cover exactly the use case the full calendar tab handles poorly: the quick, repeated schedule check.",
         "bullets": null,
         "subheadings": null
       }
@@ -60,7 +60,7 @@
       "Context breaks cost more than their time implies.",
       "Both tools can coexist — they serve different use cases."
     ],
-    "sidebar_cta_text": "Stop switching tabs to check your schedule. Schedule Calendar for Chrome — free to install.",
+    "sidebar_cta_text": "Stop switching tabs to check your schedule. Calendar Extension for Google Calendar™ for Chrome — free to install.",
     "related_title": "Related: How a Popup Calendar Changes Your Daily Workflow",
     "faq": [
       {
@@ -81,7 +81,7 @@
       },
       {
         "question": "Can I join meetings from a Chrome extension calendar?",
-        "answer": "Yes, if the extension displays conference links with the event. Schedule Calendar shows Google Meet and other conference links directly in the event popup, so you can click to join without opening the full calendar tab. This is especially useful for joining meetings from any browser tab without navigating away from your current work."
+        "answer": "Yes, if the extension displays conference links with the event. Calendar Extension for Google Calendar™ shows Google Meet and other conference links directly in the event popup, so you can click to join without opening the full calendar tab. This is especially useful for joining meetings from any browser tab without navigating away from your current work."
       },
       {
         "question": "What features should I look for in a calendar Chrome extension?",
@@ -139,8 +139,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar is built around the popup model. The extension shows your upcoming Google Calendar events in a toolbar icon popup — time, title, conference link — available from any Chrome tab with one click. The countdown to your next event is visible at a glance, no configuration needed. For the workflows described above — focus session planning, meeting joining, availability checking — it is the direct implementation of the popup calendar approach.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ is built around the popup model. The extension shows your upcoming Google Calendar events in a toolbar icon popup — time, title, conference link — available from any Chrome tab with one click. The countdown to your next event is visible at a glance, no configuration needed. For the workflows described above — focus session planning, meeting joining, availability checking — it is the direct implementation of the popup calendar approach.",
         "bullets": null,
         "subheadings": null
       }
@@ -151,7 +151,7 @@
       "Join conference calls from the popup without switching tabs.",
       "The popup is for quick checks; full calendar is for planning."
     ],
-    "sidebar_cta_text": "Experience the popup calendar workflow. Schedule Calendar for Chrome — free to install.",
+    "sidebar_cta_text": "Experience the popup calendar workflow. Calendar Extension for Google Calendar™ for Chrome — free to install.",
     "related_title": "See also: Why a Chrome Extension Beats Switching to a Full Calendar Tab",
     "faq": [
       {
@@ -164,11 +164,11 @@
       },
       {
         "question": "Can I join Google Meet from a popup calendar?",
-        "answer": "Yes, if the extension displays conference links. Schedule Calendar shows the conference link for each event in the popup, allowing you to join a Google Meet or Zoom call directly from the toolbar without opening the full calendar. This is useful for joining meetings from any browser tab without interrupting your navigation flow."
+        "answer": "Yes, if the extension displays conference links. Calendar Extension for Google Calendar™ shows the conference link for each event in the popup, allowing you to join a Google Meet or Zoom call directly from the toolbar without opening the full calendar. This is useful for joining meetings from any browser tab without interrupting your navigation flow."
       },
       {
         "question": "What information does a popup calendar show?",
-        "answer": "Schedule Calendar shows your upcoming events with their title, start time, calendar color, and conference link if available. It also displays a countdown showing how long until the next event. This covers the information most people need for the quick schedule check use case without the overhead of a full calendar view."
+        "answer": "Calendar Extension for Google Calendar™ shows your upcoming events with their title, start time, calendar color, and conference link if available. It also displays a countdown showing how long until the next event. This covers the information most people need for the quick schedule check use case without the overhead of a full calendar view."
       },
       {
         "question": "Does using a popup calendar mean I have to give up my Google Calendar tab?",
@@ -230,8 +230,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar is a browser-first calendar tool built specifically for Chrome. It adds Google Calendar visibility to the toolbar with a single click, no external app, and no configuration overhead. The design goal is the same as the browser-first philosophy: show you what you need, where you already are, with the minimum necessary friction.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ is a browser-first calendar tool built specifically for Chrome. It adds Google Calendar visibility to the toolbar with a single click, no external app, and no configuration overhead. The design goal is the same as the browser-first philosophy: show you what you need, where you already are, with the minimum necessary friction.",
         "bullets": null,
         "subheadings": null
       }
@@ -242,7 +242,7 @@
       "Lightweight tools outperform complex ones for routine checks.",
       "AI scheduling tools solve problems most users do not have."
     ],
-    "sidebar_cta_text": "The simplest browser-first calendar tool: Schedule Calendar for Chrome. Free to install.",
+    "sidebar_cta_text": "The simplest browser-first calendar tool: Calendar Extension for Google Calendar™ for Chrome. Free to install.",
     "related_title": "Related: The Features That Make a Google Calendar Extension Worth Installing",
     "faq": [
       {
@@ -321,8 +321,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar includes the core features described above: real-time event display with Google Calendar colors, conference join links, countdown to next event, and multi-calendar support. It requests only the Google Calendar access needed to display your events and does not request broader account permissions. The result is a focused, reliable tool for the daily schedule-check use case.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ includes the core features described above: real-time event display with Google Calendar colors, conference join links, countdown to next event, and multi-calendar support. It requests only the Google Calendar access needed to display your events and does not request broader account permissions. The result is a focused, reliable tool for the daily schedule-check use case.",
         "bullets": null,
         "subheadings": null
       }
@@ -333,7 +333,7 @@
       "Check permission requests before installing any extension.",
       "Test an extension for a week before committing to it."
     ],
-    "sidebar_cta_text": "Schedule Calendar: the core features, nothing extra. Install free for Chrome.",
+    "sidebar_cta_text": "Calendar Extension for Google Calendar™: the core features, nothing extra. Install free for Chrome.",
     "related_title": "Related: Chrome Extension vs. Standalone Calendar App — What Works",
     "faq": [
       {
@@ -405,8 +405,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar displays a countdown to your next event directly in the browser toolbar popup. Click the icon, see '18 minutes until Product sync' and a conference join link alongside it. This is the direct implementation of time-to-next-event visibility — available from any tab, with one click. The countdown updates in real time so a second check during a session reflects actual elapsed time.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ displays a countdown to your next event directly in the browser toolbar popup. Click the icon, see '18 minutes until Product sync' and a conference join link alongside it. This is the direct implementation of time-to-next-event visibility — available from any tab, with one click. The countdown updates in real time so a second check during a session reflects actual elapsed time.",
         "bullets": null,
         "subheadings": null
       }
@@ -417,7 +417,7 @@
       "Bounded time windows improve task initiation and focus.",
       "A visible countdown reduces meeting-start surprises."
     ],
-    "sidebar_cta_text": "See time to your next event from any browser tab. Schedule Calendar for Chrome — free.",
+    "sidebar_cta_text": "See time to your next event from any browser tab. Calendar Extension for Google Calendar™ for Chrome — free.",
     "related_title": "Related: The Quick Calendar Check — A Workflow for Staying on Track",
     "faq": [
       {
@@ -442,7 +442,7 @@
       },
       {
         "question": "How accurate are calendar extension countdowns?",
-        "answer": "Quality calendar extensions like Schedule Calendar update their countdown in real time based on current Google Calendar data. The accuracy depends on how frequently the extension syncs with Google Calendar — most check for updates every few minutes. For events more than an hour away, minor sync delays are irrelevant. For imminent events, the display is current."
+        "answer": "Quality calendar extensions like Calendar Extension for Google Calendar™ update their countdown in real time based on current Google Calendar data. The accuracy depends on how frequently the extension syncs with Google Calendar — most check for updates every few minutes. For events more than an hour away, minor sync delays are irrelevant. For imminent events, the display is current."
       }
     ],
     "medium_body": "There is a specific difference between knowing what time a meeting starts and knowing how many minutes until it starts. The first is information. The second is a decision prompt.\n\nWith 23 minutes until a meeting, you can start a task you know you can meaningfully advance in 23 minutes. You can spend five of those minutes writing a quick recap from the previous meeting. You can make a focused decision about how to use the remaining window. Without the countdown — with only '3:30 PM meeting' visible on a static schedule — those 23 minutes are more likely to be consumed by ambient activity, because nothing signals that the window is bounded and therefore valuable.\n\nThis is not a theory. People are systematically bad at estimating elapsed time during engaging work. Thirty minutes of interesting work feels like ten. The mind that is fully in a task is not monitoring the clock. This is usually a feature of focus, not a problem — except when a meeting starts at the moment you are deepest into a problem.\n\nA visible countdown externalizes time awareness. It holds the clock while you hold the work. The result is that people who can see time-to-next-event tend to start tasks more quickly, prepare for meetings more reliably, and experience fewer of the disorienting 'oh, that meeting already started' moments that come from losing track of time.\n\nThe useful model for the countdown is periodic reference, not constant monitoring. A glance before starting a task tells you what kind of focus is possible — deep versus surface-level. A glance a few minutes before a meeting tells you whether you have time to finish a note. Between back-to-back meetings, a check tells you if the gap is enough to write a brief recap.\n\nFor related reading on using this type of visibility within a broader daily workflow, see our guide on the quick calendar check workflow for staying on track."
@@ -496,8 +496,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar exists specifically to solve the calendar tab-switching problem. Install it, authorize Google Calendar access, and your upcoming events are available from the toolbar icon on every browser tab. The tab switch to Google Calendar becomes an occasional, intentional action — for planning and management — rather than the repeated, reflexive action it currently is.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ exists specifically to solve the calendar tab-switching problem. Install it, authorize Google Calendar access, and your upcoming events are available from the toolbar icon on every browser tab. The tab switch to Google Calendar becomes an occasional, intentional action — for planning and management — rather than the repeated, reflexive action it currently is.",
         "bullets": null,
         "subheadings": null
       }
@@ -508,7 +508,7 @@
       "A toolbar calendar extension eliminates most daily tab switches.",
       "Notifications handle safety-net reminders; the extension handles checks."
     ],
-    "sidebar_cta_text": "Stop switching tabs for calendar checks. Schedule Calendar for Chrome — free to install.",
+    "sidebar_cta_text": "Stop switching tabs for calendar checks. Calendar Extension for Google Calendar™ for Chrome — free to install.",
     "related_title": "See also: The Quick Calendar Check — A Workflow for Staying on Track",
     "faq": [
       {
@@ -521,7 +521,7 @@
       },
       {
         "question": "What is the fastest way to check Google Calendar without switching tabs?",
-        "answer": "A calendar Chrome extension like Schedule Calendar is the fastest method. It displays your upcoming events in a toolbar popup accessible with one click from any browser tab, with no navigation or page load required. The check takes one to two seconds and requires no change to your current browser context."
+        "answer": "A calendar Chrome extension like Calendar Extension for Google Calendar™ is the fastest method. It displays your upcoming events in a toolbar popup accessible with one click from any browser tab, with no navigation or page load required. The check takes one to two seconds and requires no change to your current browser context."
       },
       {
         "question": "Can scheduled calendar check times replace constant checking?",
@@ -587,8 +587,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar is built around the quick check use case. Click the toolbar icon, see your next events with countdowns and conference links, answer your scheduling question, close the popup. The design does not encourage browsing — it shows the information most relevant to the immediate moment. For the quick check workflow specifically, the extension is the lowest-friction implementation available.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ is built around the quick check use case. Click the toolbar icon, see your next events with countdowns and conference links, answer your scheduling question, close the popup. The design does not encourage browsing — it shows the information most relevant to the immediate moment. For the quick check workflow specifically, the extension is the lowest-friction implementation available.",
         "bullets": null,
         "subheadings": null
       }
@@ -599,7 +599,7 @@
       "Three to five checks per day is usually enough.",
       "An extension makes the check fast enough to maintain the habit."
     ],
-    "sidebar_cta_text": "Quick calendar checks in one click. Schedule Calendar for Chrome — free to install.",
+    "sidebar_cta_text": "Quick calendar checks in one click. Calendar Extension for Google Calendar™ for Chrome — free to install.",
     "related_title": "See also: Why Knowing Time-to-Next-Event Changes How You Work",
     "faq": [
       {
@@ -684,8 +684,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar is built for the Chrome extension use case: Google Calendar visibility in the browser toolbar for quick schedule checks, meeting joins, and countdown awareness. It does not try to replicate the full feature set of native calendar apps. For users whose primary need is 'see my schedule and join meetings without leaving Chrome,' it covers the workflow completely.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ is built for the Chrome extension use case: Google Calendar visibility in the browser toolbar for quick schedule checks, meeting joins, and countdown awareness. It does not try to replicate the full feature set of native calendar apps. For users whose primary need is 'see my schedule and join meetings without leaving Chrome,' it covers the workflow completely.",
         "bullets": null,
         "subheadings": null
       }
@@ -696,7 +696,7 @@
       "Most Google Calendar users' daily needs fit the extension use case.",
       "Choose based on actual workflow, not feature lists."
     ],
-    "sidebar_cta_text": "If you live in Chrome, Schedule Calendar gives you your calendar in the toolbar — free.",
+    "sidebar_cta_text": "If you live in Chrome, Calendar Extension for Google Calendar™ gives you your calendar in the toolbar — free.",
     "related_title": "Related: Why Lighter Calendar Tools Work Better for Most People",
     "faq": [
       {
@@ -775,8 +775,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar displays each upcoming event with its conference link in the toolbar popup. When a meeting is about to start, click the icon, see the link, click to join. The full sequence is two clicks from any browser tab. The countdown shows how many minutes remain so you know when to click without needing to watch the clock. This is the most direct implementation of one-click meeting joining available as a Chrome extension.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ displays each upcoming event with its conference link in the toolbar popup. When a meeting is about to start, click the icon, see the link, click to join. The full sequence is two clicks from any browser tab. The countdown shows how many minutes remain so you know when to click without needing to watch the clock. This is the most direct implementation of one-click meeting joining available as a Chrome extension.",
         "bullets": null,
         "subheadings": null
       }
@@ -787,12 +787,12 @@
       "The countdown tells you when to click without watching the clock.",
       "Two clicks from any tab beats six clicks and a navigation flow."
     ],
-    "sidebar_cta_text": "Join every meeting in two clicks. Schedule Calendar for Chrome — free to install.",
+    "sidebar_cta_text": "Join every meeting in two clicks. Calendar Extension for Google Calendar™ for Chrome — free to install.",
     "related_title": "See also: Why a Chrome Extension Beats Switching to a Full Calendar Tab",
     "faq": [
       {
         "question": "How do I join meetings faster from Chrome?",
-        "answer": "The most direct approach is a calendar Chrome extension like Schedule Calendar that displays conference join links in the toolbar popup. When a meeting approaches, click the toolbar icon to see the event and its join link, then click the link to enter the meeting from any tab. This reduces the join sequence from four to six steps to two clicks."
+        "answer": "The most direct approach is a calendar Chrome extension like Calendar Extension for Google Calendar™ that displays conference join links in the toolbar popup. When a meeting approaches, click the toolbar icon to see the event and its join link, then click the link to enter the meeting from any tab. This reduces the join sequence from four to six steps to two clicks."
       },
       {
         "question": "Why do I keep joining meetings late?",
@@ -800,7 +800,7 @@
       },
       {
         "question": "Can I join a Google Meet from a Chrome extension?",
-        "answer": "Yes, if the extension displays conference links. Schedule Calendar shows the Google Meet link for each calendar event in the popup, so you can click to join directly from the toolbar without opening the full Google Calendar interface. This works from any browser tab and is the fastest browser-based method for joining a scheduled Google Meet."
+        "answer": "Yes, if the extension displays conference links. Calendar Extension for Google Calendar™ shows the Google Meet link for each calendar event in the popup, so you can click to join directly from the toolbar without opening the full Google Calendar interface. This works from any browser tab and is the fastest browser-based method for joining a scheduled Google Meet."
       },
       {
         "question": "How do I find my meeting link quickly when a meeting starts?",
@@ -866,8 +866,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar is built on the lightweight philosophy: one function, done well, with minimal configuration. Install it, authorize Google Calendar, see your events in the toolbar popup. No settings to configure, no integrations to maintain, no subscription tiers to navigate. For users whose daily calendar need is quick, accurate schedule visibility, it is the direct implementation of the lightweight approach.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ is built on the lightweight philosophy: one function, done well, with minimal configuration. Install it, authorize Google Calendar, see your events in the toolbar popup. No settings to configure, no integrations to maintain, no subscription tiers to navigate. For users whose daily calendar need is quick, accurate schedule visibility, it is the direct implementation of the lightweight approach.",
         "bullets": null,
         "subheadings": null
       }
@@ -878,7 +878,7 @@
       "Lightweight tools require less configuration and maintenance.",
       "Use complex tools only when the complexity serves real needs."
     ],
-    "sidebar_cta_text": "One function, done well: Schedule Calendar for Chrome. Free to install.",
+    "sidebar_cta_text": "One function, done well: Calendar Extension for Google Calendar™ for Chrome. Free to install.",
     "related_title": "Related: Browser-First Calendar Tools — What to Look for in 2026",
     "faq": [
       {

@@ -143,21 +143,21 @@ def render_html(article, data, related, pub):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{meta_desc}">
-    <title>{seo_title} | Schedule Calendar</title>
+    <title>{seo_title} | Calendar Extension for Google Calendar™</title>
     <link rel="canonical" href="{SITE_URL}/blog/{slug}.html">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{meta_desc}">
     <meta property="og:image" content="{SITE_URL}/images/screenshot1.png">
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="{pub_str}">
-    <meta property="article:author" content="Schedule Calendar Team">
+    <meta property="article:author" content="Calendar Extension for Google Calendar™ Team">
     <link rel="stylesheet" href="../css/style.css?v=20260606">
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <script type="application/ld+json">
-    {{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{meta_desc}","author":{{"@type":"Organization","name":"Schedule Calendar Team"}},"publisher":{{"@type":"Organization","name":"Schedule Calendar","logo":{{"@type":"ImageObject","url":"{SITE_URL}/images/logo.png"}}}},"datePublished":"{pub_str}","dateModified":"{pub_str}","mainEntityOfPage":"{SITE_URL}/blog/{slug}.html","image":"{SITE_URL}/images/screenshot1.png"}}
+    {{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{meta_desc}","author":{{"@type":"Organization","name":"Calendar Extension for Google Calendar™ Team"}},"publisher":{{"@type":"Organization","name":"Calendar Extension for Google Calendar™","logo":{{"@type":"ImageObject","url":"{SITE_URL}/images/logo.png"}}}},"datePublished":"{pub_str}","dateModified":"{pub_str}","mainEntityOfPage":"{SITE_URL}/blog/{slug}.html","image":"{SITE_URL}/images/screenshot1.png"}}
     </script>
     <script type="application/ld+json">
     {{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{faq_sch}]}}
@@ -169,8 +169,8 @@ def render_html(article, data, related, pub):
         <nav class="navbar">
             <div class="container">
                 <div class="nav-brand">
-                    <img src="../images/logo.png" alt="Schedule Calendar logo" class="logo" width="42" height="42">
-                    <span class="brand-name">Schedule Calendar</span>
+                    <img src="../images/logo.png" alt="Calendar Extension for Google Calendar™ logo" class="logo" width="42" height="42">
+                    <span class="brand-name">Calendar Extension for Google Calendar™</span>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="../index.html">Home</a></li>
@@ -195,11 +195,11 @@ def render_html(article, data, related, pub):
                 <div class="eyebrow">Published {pub_human}</div>
                 <h1 class="article-title">{title}</h1>
                 <p class="article-intro">{intro}</p>
-                <p class="article-meta">{read_time} min read · Written by the Schedule Calendar Team</p>
+                <p class="article-meta">{read_time} min read · Written by the Calendar Extension for Google Calendar™ Team</p>
             </section>
             <section class="article-layout">
                 <article class="article-body-card">
-                    <img src="../images/screenshot1.png" alt="Schedule Calendar Chrome extension showing upcoming events" class="article-cover" width="1365" height="768">
+                    <img src="../images/screenshot1.png" alt="Calendar Extension for Google Calendar™ Chrome extension showing upcoming events" class="article-cover" width="1365" height="768">
                     {body_html}
                     <section class="article-faq" aria-label="Frequently asked questions">
                         <h2>Frequently asked questions</h2>
@@ -228,8 +228,8 @@ def render_html(article, data, related, pub):
             <div class="footer-grid">
                 <div class="footer-card">
                     <div class="nav-brand">
-                        <img src="../images/logo.png" alt="Schedule Calendar logo" class="footer-logo" width="42" height="42">
-                        <span class="footer-brand-name">Schedule Calendar</span>
+                        <img src="../images/logo.png" alt="Calendar Extension for Google Calendar™ logo" class="footer-logo" width="42" height="42">
+                        <span class="footer-brand-name">Calendar Extension for Google Calendar™</span>
                     </div>
                     <p class="footer-description">Workflow notes for people who want their calendar to support the day, not dominate it.</p>
                 </div>
@@ -246,7 +246,7 @@ def render_html(article, data, related, pub):
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom"><p>&copy; 2026 Schedule Calendar. All rights reserved.</p></div>
+            <div class="footer-bottom"><p>&copy; 2026 Calendar Extension for Google Calendar™. All rights reserved.</p></div>
         </div>
     </footer>
     <button class="back-to-top" aria-label="Back to top">
@@ -261,7 +261,7 @@ def render_medium(article, data):
     medium_body = data.get("medium_body") or data.get("medium","")
     return f"""# {article['title']}
 
-*Originally published on [Schedule Calendar Blog]({SITE_URL}/blog/{article['slug']}.html)*
+*Originally published on [Calendar Extension for Google Calendar™ Blog]({SITE_URL}/blog/{article['slug']}.html)*
 
 ---
 
@@ -269,9 +269,9 @@ def render_medium(article, data):
 
 ---
 
-**Want the full guide?** Read the complete article on the [Schedule Calendar blog]({SITE_URL}/blog/{article['slug']}.html) — including step-by-step tips, a FAQ section, and how a lightweight Chrome extension helps you put these habits into practice without adding friction to your day.
+**Want the full guide?** Read the complete article on the [Calendar Extension for Google Calendar™ blog]({SITE_URL}/blog/{article['slug']}.html) — including step-by-step tips, a FAQ section, and how a lightweight Chrome extension helps you put these habits into practice without adding friction to your day.
 
-[Add Schedule Calendar to Chrome]({STORE_URL}) — free, no account required.
+[Add Calendar Extension for Google Calendar™ to Chrome]({STORE_URL}) — free, no account required.
 """
 
 
@@ -292,7 +292,7 @@ canonical_url: {SITE_URL}/blog/{slug}.html
 
 ---
 
-*[Schedule Calendar]({STORE_URL}) — free Chrome extension. Your Google Calendar in one click from the toolbar.*
+*[Calendar Extension for Google Calendar™]({STORE_URL}) — free Chrome extension. Your Google Calendar in one click from the toolbar.*
 """
 
 

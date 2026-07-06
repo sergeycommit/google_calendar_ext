@@ -42,7 +42,7 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
         "content": "For remote workers, having instant calendar visibility from the browser toolbar means you can check your own schedule while in any communication tool — a Slack thread, a document, an email — without switching context. When a colleague asks 'are you free at 3?' you can check and respond in seconds without losing your place. This small efficiency compounds across the dozens of scheduling micro-decisions that happen in a distributed team every day.",
         "bullets": null,
         "subheadings": null
@@ -61,7 +61,7 @@
       "Add conference links to every meeting, every time.",
       "Rotate inconvenient time zones fairly across the team."
     ],
-    "sidebar_cta_text": "Check your availability in seconds without leaving any tab. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Check your availability in seconds without leaving any tab. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Managing Time Zones in Google Calendar for Distributed Teams",
     "faq": [
       {
@@ -140,8 +140,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar displays events in your local time, consistent with Google Calendar's automatic time zone conversion. For distributed team members who receive meeting invites from organizers in different time zones, the popup view shows the event at the correct local time without requiring any manual conversion. A quick toolbar check confirms the actual local start time for any meeting.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ displays events in your local time, consistent with Google Calendar's automatic time zone conversion. For distributed team members who receive meeting invites from organizers in different time zones, the popup view shows the event at the correct local time without requiring any manual conversion. A quick toolbar check confirms the actual local start time for any meeting.",
         "bullets": null,
         "subheadings": null
       }
@@ -152,7 +152,7 @@
       "Add world clock for all zones your team spans.",
       "Rotate inconvenient slots — do not always use the organizer's timezone."
     ],
-    "sidebar_cta_text": "See meetings in your local time from any browser tab. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See meetings in your local time from any browser tab. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: How to Schedule Across Time Zones Without the Chaos",
     "faq": [
       {
@@ -231,8 +231,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "In an async-first team with fewer but more meaningful meetings, Schedule Calendar's toolbar popup makes it easy to see which of those meetings is approaching and exactly how much time remains. On days that are mostly async work, a quick glance at the extension shows the one synchronous meeting on the calendar without requiring a full calendar view. This low-overhead visibility supports async workflows without adding scheduling complexity.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "In an async-first team with fewer but more meaningful meetings, the extension's toolbar popup makes it easy to see which of those meetings is approaching and exactly how much time remains. On days that are mostly async work, a quick glance at the extension shows the one synchronous meeting on the calendar without requiring a full calendar view. This low-overhead visibility supports async workflows without adding scheduling complexity.",
         "bullets": null,
         "subheadings": null
       }
@@ -243,7 +243,7 @@
       "Define an overlap window for all synchronous team communication.",
       "Cancel recurring status updates and replace with written docs."
     ],
-    "sidebar_cta_text": "See your sync meetings at a glance on an async team. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See your sync meetings at a glance on an async team. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: Calendar Etiquette for Remote Teams",
     "faq": [
       {
@@ -323,8 +323,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar's toolbar popup shows your upcoming events — including all-day events like office day markers — from any browser tab. On a hybrid schedule, a quick check of the popup shows whether tomorrow is an office day and what meetings are on it, without opening the full calendar view. This makes it easier to plan spontaneous in-office conversations around your actual scheduled commitments.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The extension's toolbar popup shows your upcoming events — including all-day events like office day markers — from any browser tab. On a hybrid schedule, a quick check of the popup shows whether tomorrow is an office day and what meetings are on it, without opening the full calendar view. This makes it easier to plan spontaneous in-office conversations around your actual scheduled commitments.",
         "bullets": null,
         "subheadings": null
       }
@@ -335,7 +335,7 @@
       "Protect at least one morning of deep work on each office day.",
       "Share your hybrid schedule proactively, not just through the calendar."
     ],
-    "sidebar_cta_text": "See your hybrid week at a glance from the toolbar. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See your hybrid week at a glance from the toolbar. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Using Your Calendar to Set Work-From-Home Boundaries",
     "faq": [
       {
@@ -414,8 +414,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar's toolbar popup shows all your upcoming events — including your end-of-day blocks and personal commitments — from any browser tab. As the workday progresses, a quick glance at the popup shows how much time remains before the day's end. This passive awareness helps the workday end at its intended time rather than sliding into the evening by inertia.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The extension's toolbar popup shows all your upcoming events — including your end-of-day blocks and personal commitments — from any browser tab. As the workday progresses, a quick glance at the popup shows how much time remains before the day's end. This passive awareness helps the workday end at its intended time rather than sliding into the evening by inertia.",
         "bullets": null,
         "subheadings": null
       }
@@ -426,7 +426,7 @@
       "Block lunch consistently — it signals a real break.",
       "Personal commitments affecting availability go on the work calendar."
     ],
-    "sidebar_cta_text": "See how close you are to end of day from any tab. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See how close you are to end of day from any tab. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: How to Set Up Your Calendar for a Hybrid Work Schedule",
     "faq": [
       {
@@ -505,8 +505,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar displays events in your local time based on your Google Calendar timezone setting. For distributed team members receiving invites from organizers in different zones, the popup shows the correct local time for each event without manual conversion. Before scheduling a cross-zone meeting, a quick popup check tells you your own availability clearly, which is the starting point for any timezone scheduling conversation.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ displays events in your local time based on your Google Calendar timezone setting. For distributed team members receiving invites from organizers in different zones, the popup shows the correct local time for each event without manual conversion. Before scheduling a cross-zone meeting, a quick popup check tells you your own availability clearly, which is the starting point for any timezone scheduling conversation.",
         "bullets": null,
         "subheadings": null
       }
@@ -517,7 +517,7 @@
       "Acknowledge inconvenient times explicitly in the invite.",
       "Explore async before defaulting to someone's off-hours."
     ],
-    "sidebar_cta_text": "See your own availability instantly before cross-zone scheduling. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See your own availability instantly before cross-zone scheduling. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Managing Time Zones in Google Calendar for Distributed Teams",
     "faq": [
       {
@@ -596,8 +596,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "The daily standup appears in Schedule Calendar's popup with its recurring Google Meet link directly accessible. For remote team members, clicking the join link from the toolbar — without navigating to the calendar — reduces the friction of joining the standup on time. The countdown before the standup also signals when it is starting without requiring a separate reminder to check.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The daily standup appears in the extension's popup with its recurring Google Meet link directly accessible. For remote team members, clicking the join link from the toolbar — without navigating to the calendar — reduces the friction of joining the standup on time. The countdown before the standup also signals when it is starting without requiring a separate reminder to check.",
         "bullets": null,
         "subheadings": null
       }
@@ -608,7 +608,7 @@
       "Include the standup format in the event description as a template.",
       "Evaluate monthly whether the standup format is still working."
     ],
-    "sidebar_cta_text": "Join your daily standup in one click. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Join your daily standup in one click. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: When to Kill a Recurring Meeting (and How)",
     "faq": [
       {
@@ -686,8 +686,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar shows your own calendar from the toolbar — not your teammates'. For the scheduling coordination use case, the extension helps you see your own schedule quickly when responding to availability requests or accepting meeting invitations from colleagues. Knowing your own schedule clearly is the prerequisite for all of the calendar transparency practices described above.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ shows your own calendar from the toolbar — not your teammates'. For the scheduling coordination use case, the extension helps you see your own schedule quickly when responding to availability requests or accepting meeting invitations from colleagues. Knowing your own schedule clearly is the prerequisite for all of the calendar transparency practices described above.",
         "bullets": null,
         "subheadings": null
       }
@@ -698,7 +698,7 @@
       "Use a separate personal calendar with restricted sharing.",
       "Availability transparency matters most; content is secondary."
     ],
-    "sidebar_cta_text": "Know your own schedule clearly before sharing it with others. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Know your own schedule clearly before sharing it with others. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: Calendar Etiquette for Remote Teams",
     "faq": [
       {
@@ -777,8 +777,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "On a flexible schedule, quick calendar visibility is especially useful for checking your own structure during the day. Schedule Calendar's toolbar popup shows what is next and when, allowing you to confirm your remaining schedule without opening a new tab. As you approach the end of your working window — especially if it ends earlier than the standard workday — the countdown to your last commitment of the day helps you manage the handoff to personal time.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "On a flexible schedule, quick calendar visibility is especially useful for checking your own structure during the day. The extension's toolbar popup shows what is next and when, allowing you to confirm your remaining schedule without opening a new tab. As you approach the end of your working window — especially if it ends earlier than the standard workday — the countdown to your last commitment of the day helps you manage the handoff to personal time.",
         "bullets": null,
         "subheadings": null
       }
@@ -789,7 +789,7 @@
       "Identify and communicate your overlap window with colleagues.",
       "Protect the schedule explicitly — flexibility erodes by default."
     ],
-    "sidebar_cta_text": "See your flexible schedule at a glance from the toolbar. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See your flexible schedule at a glance from the toolbar. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Using Your Calendar to Set Work-From-Home Boundaries",
     "faq": [
       {
@@ -868,8 +868,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar's toolbar popup gives distributed team members an immediate view of their focus blocks alongside meetings, without requiring a tab switch. During a focus session, a quick check of the extension shows how long the block has left without breaking the focus the block is designed to protect. The low-friction visibility supports the habit of checking the schedule intentionally at transition points rather than reactively throughout the focus period.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The extension's toolbar popup gives distributed team members an immediate view of their focus blocks alongside meetings, without requiring a tab switch. During a focus session, a quick check of the extension shows how long the block has left without breaking the focus the block is designed to protect. The low-friction visibility supports the habit of checking the schedule intentionally at transition points rather than reactively throughout the focus period.",
         "bullets": null,
         "subheadings": null
       }
@@ -880,7 +880,7 @@
       "Design the overlap window around focus hours, not against them.",
       "Async communication during focus periods reduces interruption."
     ],
-    "sidebar_cta_text": "See your focus blocks and meetings together from the toolbar. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See your focus blocks and meetings together from the toolbar. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Scheduling for Async Teams — Less Calendar, Better Output",
     "faq": [
       {

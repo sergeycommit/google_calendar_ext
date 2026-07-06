@@ -37,7 +37,7 @@ from pathlib import Path
 SITE_URL       = "https://calendar-extension.site"
 STORE_URL      = ("https://chromewebstore.google.com/detail/"
                   "google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe")
-AUTHOR         = "Schedule Calendar Team"
+AUTHOR         = "Calendar Extension for Google Calendar™ Team"
 BLOG_DIR       = Path(__file__).parent / "blog"
 MEDIUM_DIR     = BLOG_DIR / "medium"
 DEVTO_DIR      = BLOG_DIR / "devto"
@@ -1053,7 +1053,7 @@ HTML_TEMPLATE = """\
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{meta_description}">
-    <title>{seo_title} | Schedule Calendar</title>
+    <title>{seo_title} | Calendar Extension for Google Calendar™</title>
     <link rel="canonical" href="{site_url}/blog/{slug}.html">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{meta_description}">
@@ -1061,7 +1061,7 @@ HTML_TEMPLATE = """\
     <meta property="og:url" content="{site_url}/blog/{slug}.html">
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="{pub_date}">
-    <meta property="article:author" content="Schedule Calendar Team">
+    <meta property="article:author" content="Calendar Extension for Google Calendar™ Team">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{title}">
     <meta name="twitter:description" content="{meta_description}">
@@ -1077,10 +1077,10 @@ HTML_TEMPLATE = """\
         "@type": "Article",
         "headline": "{title}",
         "description": "{meta_description}",
-        "author": {{"@type": "Organization", "name": "Schedule Calendar Team"}},
+        "author": {{"@type": "Organization", "name": "Calendar Extension for Google Calendar™ Team"}},
         "publisher": {{
             "@type": "Organization",
-            "name": "Schedule Calendar",
+            "name": "Calendar Extension for Google Calendar™",
             "logo": {{"@type": "ImageObject", "url": "{site_url}/images/logo.png"}}
         }},
         "datePublished": "{pub_date}",
@@ -1105,8 +1105,8 @@ HTML_TEMPLATE = """\
         <nav class="navbar">
             <div class="container">
                 <div class="nav-brand">
-                    <img src="../images/logo.png" alt="Schedule Calendar logo" class="logo" width="42" height="42">
-                    <span class="brand-name">Schedule Calendar</span>
+                    <img src="../images/logo.png" alt="Calendar Extension for Google Calendar™ logo" class="logo" width="42" height="42">
+                    <span class="brand-name">Calendar Extension for Google Calendar™</span>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="../index.html">Home</a></li>
@@ -1141,13 +1141,13 @@ HTML_TEMPLATE = """\
                 <div class="eyebrow">Published {pub_date_human}</div>
                 <h1 class="article-title">{title}</h1>
                 <p class="article-intro">{intro}</p>
-                <p class="article-meta">{read_time} min read · Written by the Schedule Calendar Team</p>
+                <p class="article-meta">{read_time} min read · Written by the Calendar Extension for Google Calendar™ Team</p>
             </section>
 
             <section class="article-layout">
                 <article class="article-body-card">
                     <img src="../images/screenshot1.png"
-                        alt="Schedule Calendar Chrome extension showing upcoming events"
+                        alt="Calendar Extension for Google Calendar™ Chrome extension showing upcoming events"
                         class="article-cover" width="1365" height="768">
 
                     {body_html}
@@ -1188,8 +1188,8 @@ HTML_TEMPLATE = """\
             <div class="footer-grid">
                 <div class="footer-card">
                     <div class="nav-brand">
-                        <img src="../images/logo.png" alt="Schedule Calendar logo" class="footer-logo" width="42" height="42">
-                        <span class="footer-brand-name">Schedule Calendar</span>
+                        <img src="../images/logo.png" alt="Calendar Extension for Google Calendar™ logo" class="footer-logo" width="42" height="42">
+                        <span class="footer-brand-name">Calendar Extension for Google Calendar™</span>
                     </div>
                     <p class="footer-description">Workflow notes for people who want their calendar to support the day, not dominate it.</p>
                 </div>
@@ -1212,7 +1212,7 @@ HTML_TEMPLATE = """\
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Schedule Calendar. All rights reserved.</p>
+                <p>&copy; 2026 Calendar Extension for Google Calendar™. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1232,7 +1232,7 @@ HTML_TEMPLATE = """\
 MEDIUM_TEMPLATE = """\
 # {title}
 
-*Originally published on [Schedule Calendar Blog]({site_url}/blog/{slug}.html)*
+*Originally published on [Calendar Extension for Google Calendar™ Blog]({site_url}/blog/{slug}.html)*
 
 ---
 
@@ -1240,9 +1240,9 @@ MEDIUM_TEMPLATE = """\
 
 ---
 
-**Want the full guide?** Read the complete article on the [Schedule Calendar blog]({site_url}/blog/{slug}.html) — including step-by-step tips, a FAQ section, and how a lightweight Chrome extension can help you put these habits into practice without adding more friction to your day.
+**Want the full guide?** Read the complete article on the [Calendar Extension for Google Calendar™ blog]({site_url}/blog/{slug}.html) — including step-by-step tips, a FAQ section, and how a lightweight Chrome extension can help you put these habits into practice without adding more friction to your day.
 
-[Add Schedule Calendar to Chrome]({store_url}) — free, no account required.
+[Add Calendar Extension for Google Calendar™ to Chrome]({store_url}) — free, no account required.
 """
 
 DEVTO_TEMPLATE = """\
@@ -1258,7 +1258,7 @@ canonical_url: {site_url}/blog/{slug}.html
 
 ---
 
-*[Schedule Calendar]({store_url}) — free Chrome extension. Your Google Calendar in one click from the toolbar.*
+*[Calendar Extension for Google Calendar™]({store_url}) — free Chrome extension. Your Google Calendar in one click from the toolbar.*
 """
 
 # ─── Claude prompt ────────────────────────────────────────────────────────────
@@ -1279,8 +1279,8 @@ Use the above only to understand what angles and subtopics the competitor covers
 Your article must take a DIFFERENT angle, use different examples, and add value the competitor doesn't provide.
 Specifically: center the narrative on lightweight, browser-first calendar habits — not on AI tools or enterprise software.
 """
-    return f"""You are a senior content strategist writing for Schedule Calendar (calendar-extension.site).
-Schedule Calendar is a lightweight Google Calendar Chrome extension that shows events in a browser popup — no extra tab needed.
+    return f"""You are a senior content strategist writing for Calendar Extension for Google Calendar™ (calendar-extension.site).
+Calendar Extension for Google Calendar™ is a lightweight Google Calendar Chrome extension that shows events in a browser popup — no extra tab needed.
 The brand voice is: calm, practical, direct. No hype. No buzzwords. Like a thoughtful colleague explaining something useful.
 
 Write a complete semantic SEO article. This is NOT a translation or copy of any competitor article.
@@ -1310,7 +1310,7 @@ Return ONLY valid JSON (no markdown, no code fences) with this exact structure:
     }}
   ],
   "sidebar_takeaways": ["string (max 12 words each)", ...],
-  "sidebar_cta_text": "string, 1-2 sentences, why try Schedule Calendar",
+  "sidebar_cta_text": "string, 1-2 sentences, why try Calendar Extension for Google Calendar™",
   "related_title": "string, 6-10 words, thematic bridge sentence",
   "faq": [
     {{"question": "string", "answer": "string, 2-4 sentences, direct answer for GEO"}}
@@ -1321,7 +1321,7 @@ Return ONLY valid JSON (no markdown, no code fences) with this exact structure:
 }}
 
 REQUIREMENTS:
-- body_sections: 5-7 sections total. Use type "note" for callout boxes, "cta" for action-oriented callouts, "product" for the 'How Schedule Calendar helps' section.
+- body_sections: 5-7 sections total. Use type "note" for callout boxes, "cta" for action-oriented callouts, "product" for the 'How Calendar Extension for Google Calendar™ helps' section.
 - At least one internal link to a related article must appear naturally in body content as: <a href="./SLUG.html" class="text-link">anchor text</a>
 - faq: exactly 6 items. Questions must be natural language questions a user would type or speak. Answers must be direct, complete, and GEO-optimized (could stand alone as a featured snippet).
 - No keyword stuffing. Semantic coverage over exact-match repetition.
@@ -1623,7 +1623,7 @@ def main() -> None:
     elif args.cluster:
         targets = [a for a in ARTICLES if a["cluster"] == args.cluster]
 
-    print(f"\nSchedule Calendar — Article Generator")
+    print(f"\nCalendar Extension for Google Calendar™ — Article Generator")
     print(f"Target: {len(targets)} article(s)  |  dry-run: {args.dry_run}\n")
 
     ok = 0

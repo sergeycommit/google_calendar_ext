@@ -47,8 +47,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar displays your upcoming events in the browser popup with their Google Calendar colors preserved. This means your color-coding system — the focus blocks in green, the hard deadlines in red — is visible at a glance from the toolbar without opening a full calendar tab. The visual signal from your color system travels with you as you work across browser tabs.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ displays your upcoming events in the browser popup with their Google Calendar colors preserved. This means your color-coding system — the focus blocks in green, the hard deadlines in red — is visible at a glance from the toolbar without opening a full calendar tab. The visual signal from your color system travels with you as you work across browser tabs.",
         "bullets": null,
         "subheadings": null
       }
@@ -59,7 +59,7 @@
       "Red for immovable commitments, green for protected focus time.",
       "Consistency matters more than the specific colors you choose."
     ],
-    "sidebar_cta_text": "See your color-coded calendar from any tab with Schedule Calendar. Install free for Chrome.",
+    "sidebar_cta_text": "See your color-coded calendar from any tab with Calendar Extension for Google Calendar™. Install free for Chrome.",
     "related_title": "See also: Google Calendar View Modes — When to Use Each",
     "faq": [
       {
@@ -147,8 +147,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "For the most common calendar check — what is my next event? — Schedule Calendar eliminates even the need to open Google Calendar. A click on the toolbar icon shows your upcoming events instantly. This is faster than switching tabs, pressing T to go to today, and scanning the day view. Keyboard shortcuts in Google Calendar and Schedule Calendar in the toolbar work together to cover different use cases without overlap.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "For the most common calendar check — what is my next event? — Calendar Extension for Google Calendar™ eliminates even the need to open Google Calendar. A click on the toolbar icon shows your upcoming events instantly. This is faster than switching tabs, pressing T to go to today, and scanning the day view. Keyboard shortcuts in Google Calendar and Calendar Extension for Google Calendar™ in the toolbar work together to cover different use cases without overlap.",
         "bullets": null,
         "subheadings": null
       }
@@ -159,7 +159,7 @@
       "Start with T (today), C (create), and W (week view).",
       "Q (quick-add) creates events from natural language text."
     ],
-    "sidebar_cta_text": "For even faster calendar checks, Schedule Calendar shows your next event from the toolbar — no shortcuts needed.",
+    "sidebar_cta_text": "For even faster calendar checks, Calendar Extension for Google Calendar™ shows your next event from the toolbar — no shortcuts needed.",
     "related_title": "Related: Google Calendar Tips Most Power Users Never Discover",
     "faq": [
       {
@@ -238,8 +238,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Recurring events appear in Schedule Calendar's popup view just like any other event — with their title, time, and calendar color. This makes it easy to spot when a recurring event is approaching without opening Google Calendar. For recurring meetings you want to prepare for, the countdown timer in the toolbar gives you a natural cue to pull up the agenda and any relevant materials.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Recurring events appear in the extension's popup view just like any other event — with their title, time, and calendar color. This makes it easy to spot when a recurring event is approaching without opening Google Calendar. For recurring meetings you want to prepare for, the countdown timer in the toolbar gives you a natural cue to pull up the agenda and any relevant materials.",
         "bullets": null,
         "subheadings": null
       }
@@ -250,7 +250,7 @@
       "Edit the full series when changing permanent details.",
       "Include an agenda template in the event description."
     ],
-    "sidebar_cta_text": "See your recurring events approaching with Schedule Calendar. Install free for Chrome.",
+    "sidebar_cta_text": "See your recurring events approaching with Calendar Extension for Google Calendar™. Install free for Chrome.",
     "related_title": "Related: When to Kill a Recurring Meeting (and How)",
     "faq": [
       {
@@ -322,8 +322,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar provides an always-visible view of your upcoming events from the toolbar — a passive awareness system that reduces the need for aggressive pop-up notifications. Instead of relying on an alert to remind you that a meeting is in ten minutes, a glance at the toolbar popup shows your next event and its countdown. This lets you reduce pop-up notifications without losing awareness of your schedule.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ provides an always-visible view of your upcoming events from the toolbar — a passive awareness system that reduces the need for aggressive pop-up notifications. Instead of relying on an alert to remind you that a meeting is in ten minutes, a glance at the toolbar popup shows your next event and its countdown. This lets you reduce pop-up notifications without losing awareness of your schedule.",
         "bullets": null,
         "subheadings": null
       }
@@ -332,9 +332,9 @@
       "Change the global default notification from 10 to 15 minutes.",
       "Disable notifications for recurring events you never miss.",
       "Add day-before email reminders for important external meetings.",
-      "Use Schedule Calendar's toolbar view to reduce alert dependence."
+      "Use the extension's toolbar view to reduce alert dependence."
     ],
-    "sidebar_cta_text": "Stay aware of your schedule without pop-up alerts. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Stay aware of your schedule without pop-up alerts. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Google Calendar Mobile Tips for Checking Without Getting Stuck",
     "faq": [
       {
@@ -413,8 +413,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar reads your Google Calendar data — including calendars shared with you — and displays all events in the browser popup. If you manage or view a team calendar alongside your personal calendar, both show up in the extension's event list. This makes it easy to see your own schedule and team events together from the toolbar without switching between calendar views.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ reads your Google Calendar data — including calendars shared with you — and displays all events in the browser popup. If you manage or view a team calendar alongside your personal calendar, both show up in the extension's event list. This makes it easy to see your own schedule and team events together from the toolbar without switching between calendar views.",
         "bullets": null,
         "subheadings": null
       }
@@ -425,7 +425,7 @@
       "Keep personal events on a separate, restricted calendar.",
       "Review calendar access permissions quarterly."
     ],
-    "sidebar_cta_text": "Schedule Calendar shows all your shared calendars in one toolbar view. Install free for Chrome.",
+    "sidebar_cta_text": "Calendar Extension for Google Calendar™ shows all your shared calendars in one toolbar view. Install free for Chrome.",
     "related_title": "See also: Google Calendar for Google Workspace Teams — Key Settings",
     "faq": [
       {
@@ -504,8 +504,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Google Calendar Goal blocks appear as regular events in your calendar and show up in Schedule Calendar's popup view just like any other event. This means your scheduled practice sessions, exercise blocks, or reading time are visible from the toolbar alongside your meetings. Seeing goal blocks alongside real commitments helps you decide whether to honor or reschedule them when the day gets busy.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Google Calendar Goal blocks appear as regular events in your calendar and show up in the extension's popup view just like any other event. This means your scheduled practice sessions, exercise blocks, or reading time are visible from the toolbar alongside your meetings. Seeing goal blocks alongside real commitments helps you decide whether to honor or reschedule them when the day gets busy.",
         "bullets": null,
         "subheadings": null
       }
@@ -516,7 +516,7 @@
       "Mark completed Goal sessions as done to train the system.",
       "Use manual blocks for work-related time protection."
     ],
-    "sidebar_cta_text": "See your goal blocks alongside meetings in one view. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See your goal blocks alongside meetings in one view. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: How to Protect Focus Time Before Meetings Claim It",
     "faq": [
       {
@@ -595,8 +595,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar's popup shows upcoming events from the toolbar — for quickly checking what is next, this is faster than opening Google Calendar and using search. For finding past events or searching across the full calendar history, Google Calendar's built-in search is the right tool. Together, they cover different parts of the calendar workflow: the extension for present-forward awareness, search for retrospective lookups.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The extension's popup shows upcoming events from the toolbar — for quickly checking what is next, this is faster than opening Google Calendar and using search. For finding past events or searching across the full calendar history, Google Calendar's built-in search is the right tool. Together, they cover different parts of the calendar workflow: the extension for present-forward awareness, search for retrospective lookups.",
         "bullets": null,
         "subheadings": null
       }
@@ -607,7 +607,7 @@
       "Add notes to event descriptions to make search useful.",
       "Search by date range to focus results on a specific period."
     ],
-    "sidebar_cta_text": "Check what is next without opening a tab. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Check what is next without opening a tab. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: Recurring Events in Google Calendar — Tips Most Users Miss",
     "faq": [
       {
@@ -686,8 +686,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar works within the Google Workspace ecosystem — it reads events from all calendars your Google account has access to, including shared team calendars and resource calendars. In a Workspace environment where your calendar is the source of truth for team coordination, having instant access to your upcoming events from the toolbar makes it easier to stay on top of organizational commitments without being pulled back to the calendar tab repeatedly.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ works within the Google Workspace ecosystem — it reads events from all calendars your Google account has access to, including shared team calendars and resource calendars. In a Workspace environment where your calendar is the source of truth for team coordination, having instant access to your upcoming events from the toolbar makes it easier to stay on top of organizational commitments without being pulled back to the calendar tab repeatedly.",
         "bullets": null,
         "subheadings": null
       }
@@ -698,7 +698,7 @@
       "Enable Google Meet as the default meeting conference.",
       "Add world clock for distributed team scheduling."
     ],
-    "sidebar_cta_text": "Keep your Workspace calendar visible from the toolbar. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Keep your Workspace calendar visible from the toolbar. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Google Calendar Sharing and Permissions Explained",
     "faq": [
       {
@@ -777,8 +777,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar is a lightweight Google Calendar integration for Chrome that makes your calendar data visible from the toolbar without any ongoing configuration or maintenance. It reads your Google Calendar events and displays the next few events in a popup — no cloud sync, no subscription, no data flowing to a third-party service. For the simple integration goal of 'show me my next event without opening a tab,' it is the most direct solution available.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ is a lightweight Google Calendar integration for Chrome that makes your calendar data visible from the toolbar without any ongoing configuration or maintenance. It reads your Google Calendar events and displays the next few events in a popup — no cloud sync, no subscription, no data flowing to a third-party service. For the simple integration goal of 'show me my next event without opening a tab,' it is the most direct solution available.",
         "bullets": null,
         "subheadings": null
       }
@@ -789,7 +789,7 @@
       "Scheduling tools like Calendly eliminate email back-and-forth.",
       "Keep the integration list short — every tool has maintenance cost."
     ],
-    "sidebar_cta_text": "The simplest Google Calendar integration: Schedule Calendar shows your next event from the toolbar.",
+    "sidebar_cta_text": "The simplest Google Calendar integration: Calendar Extension for Google Calendar™ shows your next event from the toolbar.",
     "related_title": "See also: Best Google Calendar Extensions in 2026",
     "faq": [
       {
@@ -866,8 +866,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar's popup shows an event-forward view of your upcoming schedule — similar to Google Calendar's schedule view but accessible from the toolbar without switching tabs. For the most common daily use case — checking what is next and how long you have — the extension covers the need that day view in Google Calendar handles, but faster and without interrupting your current task.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The extension's popup shows an event-forward view of your upcoming schedule — similar to Google Calendar's schedule view but accessible from the toolbar without switching tabs. For the most common daily use case — checking what is next and how long you have — the extension covers the need that day view in Google Calendar handles, but faster and without interrupting your current task.",
         "bullets": null,
         "subheadings": null
       }
@@ -878,7 +878,7 @@
       "Use schedule view for a clean chronological event list.",
       "Switch views with D, W, M keyboard shortcuts."
     ],
-    "sidebar_cta_text": "The fastest calendar view is a toolbar popup. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "The fastest calendar view is a toolbar popup. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Google Calendar Keyboard Shortcuts That Save Real Time",
     "faq": [
       {
@@ -957,8 +957,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Out of Office and Focus Time events appear in Schedule Calendar's popup view just like regular events. Before stepping away for a vacation or a deep work session, a quick glance at the toolbar popup shows what events are scheduled around the absence — making it easier to prepare and brief any dependencies before you go offline.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Out of Office and Focus Time events appear in the extension's popup view just like regular events. Before stepping away for a vacation or a deep work session, a quick glance at the toolbar popup shows what events are scheduled around the absence — making it easier to prepare and brief any dependencies before you go offline.",
         "bullets": null,
         "subheadings": null
       }
@@ -969,7 +969,7 @@
       "Use Focus Time for recurring deep work blocks, not just vacations.",
       "Configure Focus Time to activate Do Not Disturb in Chat."
     ],
-    "sidebar_cta_text": "See what is around your Focus Time blocks at a glance. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See what is around your Focus Time blocks at a glance. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: How to Protect Focus Time Before Meetings Claim It",
     "faq": [
       {
@@ -1048,8 +1048,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar is a desktop browser tool — for Chrome on Mac or PC. On the desktop side of the equation, it fills the role that a mobile widget fills on your phone: instant calendar visibility without opening the full app. If your workflow alternates between desktop and mobile, Schedule Calendar covers the desktop side and the Google Calendar widget covers mobile, together eliminating the need to open the full calendar app for routine schedule checks.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ is a desktop browser tool — for Chrome on Mac or PC. On the desktop side of the equation, it fills the role that a mobile widget fills on your phone: instant calendar visibility without opening the full app. If your workflow alternates between desktop and mobile, Calendar Extension for Google Calendar™ covers the desktop side and the Google Calendar widget covers mobile, together eliminating the need to open the full calendar app for routine schedule checks.",
         "bullets": null,
         "subheadings": null
       }
@@ -1060,7 +1060,7 @@
       "Mobile is for quick checks; desktop is for planning sessions.",
       "Enable notifications to reduce proactive checking."
     ],
-    "sidebar_cta_text": "On desktop, get the same instant calendar view. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "On desktop, get the same instant calendar view. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: Google Calendar Keyboard Shortcuts That Save Real Time",
     "faq": [
       {

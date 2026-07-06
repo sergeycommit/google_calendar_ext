@@ -4,7 +4,7 @@
 
 ---
 
-## Substack — "Schedule Calendar Weekly"
+## Substack — "Calendar Extension for Google Calendar™ Weekly"
 **Cadence:** Weekly, Fridays · **Total:** 100 articles · **Period:** Apr 2026 → Feb 2028
 
 | Date | File | Title |

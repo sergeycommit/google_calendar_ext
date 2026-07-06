@@ -41,8 +41,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "During your weekly planning ritual, checking the upcoming week's calendar is the central action. Schedule Calendar's toolbar popup shows your next events quickly, but for a full-week review, the extension's view of today and the next several days gives a fast visual scan without opening Google Calendar in a separate tab. This keeps the planning session contained and fast.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "During your weekly planning ritual, checking the upcoming week's calendar is the central action. The extension's toolbar popup shows your next events quickly, but for a full-week review, the extension's view of today and the next several days gives a fast visual scan without opening Google Calendar in a separate tab. This keeps the planning session contained and fast.",
         "bullets": null,
         "subheadings": null
       },
@@ -60,7 +60,7 @@
       "Review last week before planning the next one.",
       "Consistency matters more than the length of the ritual."
     ],
-    "sidebar_cta_text": "See the week ahead from your toolbar during planning. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See the week ahead from your toolbar during planning. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: A Sunday Calendar Planning Routine for a Calmer Monday",
     "faq": [
       {
@@ -120,14 +120,14 @@
       {
         "type": "h2",
         "heading": "Making the Checks Fast",
-        "content": "Each check should take two to five minutes, not fifteen. The morning check is not a planning session — it is a confirmation. If you did a weekly planning ritual earlier (see our guide on building a weekly planning ritual), the morning check is mostly verifying that the plan still holds.\n\nSchedule Calendar's toolbar popup makes the midday and end-of-day checks extremely fast — a click on the extension icon shows what is next without switching tabs or navigating to a different application.",
+        "content": "Each check should take two to five minutes, not fifteen. The morning check is not a planning session — it is a confirmation. If you did a weekly planning ritual earlier (see our guide on building a weekly planning ritual), the morning check is mostly verifying that the plan still holds.\n\nthe extension's toolbar popup makes the midday and end-of-day checks extremely fast — a click on the extension icon shows what is next without switching tabs or navigating to a different application.",
         "bullets": null,
         "subheadings": null
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar turns the midday and end-of-day checks into a two-second glance. Click the toolbar icon, see what is left in the day and what is first tomorrow, and return to whatever you were working on. This makes the scheduled check habit nearly effortless to maintain — there is no switching cost significant enough to justify skipping it.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ turns the midday and end-of-day checks into a two-second glance. Click the toolbar icon, see what is left in the day and what is first tomorrow, and return to whatever you were working on. This makes the scheduled check habit nearly effortless to maintain — there is no switching cost significant enough to justify skipping it.",
         "bullets": null,
         "subheadings": null
       }
@@ -138,7 +138,7 @@
       "Morning check sets the day; end-of-day check prepares tomorrow.",
       "Scheduled checks beat constant anxious monitoring."
     ],
-    "sidebar_cta_text": "Your midday calendar check takes two seconds with Schedule Calendar. Install free for Chrome.",
+    "sidebar_cta_text": "Your midday calendar check takes two seconds with Calendar Extension for Google Calendar™. Install free for Chrome.",
     "related_title": "Related: The 5-Minute End-of-Day Calendar Review",
     "faq": [
       {
@@ -217,8 +217,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "After a calendar audit, the schedule you rebuild should be visible at a glance from your toolbar. Schedule Calendar shows your upcoming events from the extension popup — with a cleaned-up, intentional calendar, the view reflects the work you did to reclaim your time. The toolbar display also makes it easier to notice quickly when the calendar starts filling up again, as a signal that another audit may be due.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "After a calendar audit, the schedule you rebuild should be visible at a glance from your toolbar. Calendar Extension for Google Calendar™ shows your upcoming events from the extension popup — with a cleaned-up, intentional calendar, the view reflects the work you did to reclaim your time. The toolbar display also makes it easier to notice quickly when the calendar starts filling up again, as a signal that another audit may be due.",
         "bullets": null,
         "subheadings": null
       }
@@ -229,7 +229,7 @@
       "Act on the audit results the same day while motivation is high.",
       "The goal is better time quality, not more time."
     ],
-    "sidebar_cta_text": "See what your rebuilt calendar looks like from the toolbar. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See what your rebuilt calendar looks like from the toolbar. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Signs Your Calendar System Is Too Complicated",
     "faq": [
       {
@@ -308,8 +308,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "When you are in a Pomodoro focus session, Schedule Calendar's toolbar popup lets you check how long until your next meeting without opening a new tab — a quick glance that does not break focus the way navigating to Google Calendar does. Knowing you have 40 minutes before the next meeting helps you start a pomodoro with confidence rather than hesitating because you are unsure how much time you have.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "When you are in a Pomodoro focus session, the extension's toolbar popup lets you check how long until your next meeting without opening a new tab — a quick glance that does not break focus the way navigating to Google Calendar does. Knowing you have 40 minutes before the next meeting helps you start a pomodoro with confidence rather than hesitating because you are unsure how much time you have.",
         "bullets": null,
         "subheadings": null
       }
@@ -320,7 +320,7 @@
       "Name blocks by the specific work type for better accountability.",
       "Leave 10 minutes between focus blocks and meetings."
     ],
-    "sidebar_cta_text": "Know exactly how long until your next meeting without breaking focus. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Know exactly how long until your next meeting without breaking focus. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: How to Protect Focus Time Before Meetings Claim It",
     "faq": [
       {
@@ -399,8 +399,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "When you are working a project with milestone events and focus blocks on your calendar, Schedule Calendar's toolbar popup shows project-related events alongside meetings. Seeing a 'Draft due: client report' all-day event approaching in the popup — alongside how many meetings are between now and that deadline — helps you assess whether you have enough unblocked work time to meet it.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "When you are working a project with milestone events and focus blocks on your calendar, the extension's toolbar popup shows project-related events alongside meetings. Seeing a 'Draft due: client report' all-day event approaching in the popup — alongside how many meetings are between now and that deadline — helps you assess whether you have enough unblocked work time to meet it.",
         "bullets": null,
         "subheadings": null
       }
@@ -411,7 +411,7 @@
       "Color-code project events to distinguish them from meetings.",
       "A deadline without a work block before it is just decoration."
     ],
-    "sidebar_cta_text": "See milestones and meetings side by side from the toolbar. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See milestones and meetings side by side from the toolbar. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: Building a Weekly Planning Ritual That Takes Under 20 Minutes",
     "faq": [
       {
@@ -489,8 +489,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar displays events from all your Google Calendar calendars in the toolbar popup — work and personal events together in one chronological list. This means a glance at the extension shows your complete picture: the afternoon meeting and the kids' pickup in the same view. You do not need to toggle between calendars to know how your full day is structured.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "Calendar Extension for Google Calendar™ displays events from all your Google Calendar calendars in the toolbar popup — work and personal events together in one chronological list. This means a glance at the extension shows your complete picture: the afternoon meeting and the kids' pickup in the same view. You do not need to toggle between calendars to know how your full day is structured.",
         "bullets": null,
         "subheadings": null
       }
@@ -501,7 +501,7 @@
       "Events that affect work availability go on the work calendar.",
       "Seeing both calendars together prevents scheduling conflicts."
     ],
-    "sidebar_cta_text": "See work and personal events together in one toolbar view. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See work and personal events together in one toolbar view. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: How to Run a Calendar Audit and Reclaim Your Week",
     "faq": [
       {
@@ -580,8 +580,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "When your weekly goals are on the calendar as work sessions, Schedule Calendar's toolbar popup shows them alongside meetings and other commitments. A goal session labeled 'Write: blog post draft' appearing in the popup view carries the same visual weight as a meeting — which is the point. Goal work should feel as scheduled and real as any other calendar commitment.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "When your weekly goals are on the calendar as work sessions, the extension's toolbar popup shows them alongside meetings and other commitments. A goal session labeled 'Write: blog post draft' appearing in the popup view carries the same visual weight as a meeting — which is the point. Goal work should feel as scheduled and real as any other calendar commitment.",
         "bullets": null,
         "subheadings": null
       }
@@ -592,7 +592,7 @@
       "Add deadlines as all-day events for persistent visibility.",
       "Review weekly: how many goal sessions ran versus got moved?"
     ],
-    "sidebar_cta_text": "See your goal work sessions alongside meetings from the toolbar. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See your goal work sessions alongside meetings from the toolbar. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: Building a Weekly Planning Ritual That Takes Under 20 Minutes",
     "faq": [
       {
@@ -671,8 +671,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar's toolbar popup makes your focus blocks visible at a glance, just like meetings. When a focus block is approaching, the countdown in the popup gives you natural preparation time — wrap up the current task, silence notifications, and start the session. The visibility also helps you make real-time decisions: if a quick question comes up during a focus block, the popup tells you how long the block has left and whether the interruption is worth it.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The extension's toolbar popup makes your focus blocks visible at a glance, just like meetings. When a focus block is approaching, the countdown in the popup gives you natural preparation time — wrap up the current task, silence notifications, and start the session. The visibility also helps you make real-time decisions: if a quick question comes up during a focus block, the popup tells you how long the block has left and whether the interruption is worth it.",
         "bullets": null,
         "subheadings": null
       }
@@ -683,7 +683,7 @@
       "Recurring focus blocks at consistent times establish the pattern.",
       "Aim for 30-40% unscheduled time in your workday."
     ],
-    "sidebar_cta_text": "See your focus blocks approaching with the same clarity as meetings. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "See your focus blocks approaching with the same clarity as meetings. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: How to Set Up a Meeting-Free Day (and Keep It)",
     "faq": [
       {
@@ -755,8 +755,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "The first step of the end-of-day review — scanning tomorrow's calendar — takes about ten seconds with Schedule Calendar. Click the toolbar icon, see the upcoming events for the rest of today and the start of tomorrow, and note what needs preparation. This single-click calendar check is often the trigger that makes the rest of the five-minute review happen consistently.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The first step of the end-of-day review — scanning tomorrow's calendar — takes about ten seconds with Calendar Extension for Google Calendar™. Click the toolbar icon, see the upcoming events for the rest of today and the start of tomorrow, and note what needs preparation. This single-click calendar check is often the trigger that makes the rest of the five-minute review happen consistently.",
         "bullets": null,
         "subheadings": null
       }
@@ -767,7 +767,7 @@
       "Identify the first priority for tomorrow morning.",
       "A 5-minute review prevents a 30-minute scramble tomorrow."
     ],
-    "sidebar_cta_text": "Start your end-of-day review with a toolbar calendar check. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Start your end-of-day review with a toolbar calendar check. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "Related: 3 Daily Calendar Check Habits That Keep the Day on Track",
     "faq": [
       {
@@ -846,8 +846,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "Schedule Calendar's philosophy aligns with calendar simplicity. The extension does one thing: shows your next events from the toolbar without requiring configuration, categories, or ongoing management. It adds calendar visibility without adding system complexity. For people simplifying their calendar setup, it is a reminder that useful tools do not need to be elaborate ones.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The extension's philosophy aligns with calendar simplicity. The extension does one thing: shows your next events from the toolbar without requiring configuration, categories, or ongoing management. It adds calendar visibility without adding system complexity. For people simplifying their calendar setup, it is a reminder that useful tools do not need to be elaborate ones.",
         "bullets": null,
         "subheadings": null
       }
@@ -858,7 +858,7 @@
       "Simple systems applied consistently beat complex ones applied loosely.",
       "A good calendar answers three questions at a glance."
     ],
-    "sidebar_cta_text": "Simple calendar visibility from the toolbar. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Simple calendar visibility from the toolbar. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: How to Run a Calendar Audit and Reclaim Your Week",
     "faq": [
       {
@@ -937,8 +937,8 @@
       },
       {
         "type": "product",
-        "heading": "How Schedule Calendar helps",
-        "content": "The calendar scan at the start of the Sunday planning routine is faster with Schedule Calendar — a quick popup check shows the first events of the week ahead without navigating to a full calendar tab. On Sunday evening, this lightweight view gives you a quick orientation before you go into the full Google Calendar week view to do the deeper scan and blocking work.",
+        "heading": "How Calendar Extension for Google Calendar™ helps",
+        "content": "The calendar scan at the start of the Sunday planning routine is faster with Calendar Extension for Google Calendar™ — a quick popup check shows the first events of the week ahead without navigating to a full calendar tab. On Sunday evening, this lightweight view gives you a quick orientation before you go into the full Google Calendar week view to do the deeper scan and blocking work.",
         "bullets": null,
         "subheadings": null
       }
@@ -949,7 +949,7 @@
       "Triage weekend messages without fully processing them.",
       "Know your three weekly outcomes before Monday starts."
     ],
-    "sidebar_cta_text": "Start Sunday planning with a quick toolbar calendar scan. Schedule Calendar for Chrome.",
+    "sidebar_cta_text": "Start Sunday planning with a quick toolbar calendar scan. Calendar Extension for Google Calendar™ for Chrome.",
     "related_title": "See also: Building a Weekly Planning Ritual That Takes Under 20 Minutes",
     "faq": [
       {

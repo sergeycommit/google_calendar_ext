@@ -592,8 +592,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Feedback form
     function openFeedbackForm() {
-        const subject = encodeURIComponent('Schedule Calendar - Feedback');
-        const body = encodeURIComponent('Hi! I have feedback about the Schedule Calendar extension:\n\n');
+        const subject = encodeURIComponent('Calendar Extension for Google Calendar™ - Feedback');
+        const body = encodeURIComponent('Hi! I have feedback about the Calendar Extension for Google Calendar™ extension:\n\n');
         window.open(`mailto:tdallstr@gmail.com?subject=${subject}&body=${body}`);
     }
 

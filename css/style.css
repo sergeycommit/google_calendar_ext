@@ -1884,43 +1884,7 @@ p {
     }
 }
 
-.feature-card,
-.screenshot-item,
-.step {
-    opacity: 0;
-    transform: translateY(24px);
-    will-change: opacity, transform;
-}
-
-
-
-.feature-card.visible,
-.screenshot-item.visible,
-.step.visible,
-.faq-item.visible {
-    opacity: 1;
-    transform: none;
-    animation: fadeInUp 0.6s cubic-bezier(.4, 0, .6, 1) forwards;
-}
-
-.testimonial-card.visible {
-    opacity: 1;
-    transform: scale(1);
-    animation: fadeInScale 0.5s cubic-bezier(.4, 0, .6, 1) forwards;
-}
-
-@media (max-width: 900px),
-(prefers-reduced-motion: reduce) {
-
-    .feature-card,
-    .screenshot-item,
-    .step,
-    .faq-item {
-        opacity: 1 !important;
-        animation: none !important;
-        transform: none !important;
-    }
-}
+/* ponytail: scroll-reveal removed — content must be visible without JS */
 
 /* Smooth scrolling for older browsers - уже определено выше в html {} */
 
@@ -2396,9 +2360,6 @@ body.schedule-article::after {
 .schedule-home .feature-card {
     padding: 24px;
     border-radius: 8px;
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .schedule-home .feature-card.visible,
@@ -2838,21 +2799,6 @@ body.schedule-article::after {
 .schedule-home .testimonial-card {
     padding: 24px;
     border-radius: 8px;
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    animation: none;
-}
-
-.schedule-home .testimonial-card.step {
-    will-change: opacity, transform;
-}
-
-.schedule-home .testimonial-card.visible,
-.schedule-home .testimonial-card.step.visible {
-    opacity: 1;
-    transform: none;
-    animation: none;
 }
 
 .schedule-home .testimonial-meta {

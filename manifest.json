@@ -1,6 +1,6 @@
 {
-  "name": "Schedule Calendar",
-  "short_name": "Schedule Calendar",
+  "name": "Calendar Extension for Google Calendar™",
+  "short_name": "Calendar Extension for Google Calendar™",
   "description": "A fast Chrome companion for Google Calendar with quick agenda access, meeting joins, and lightweight planning.",
   "start_url": "/",
   "scope": "/",
