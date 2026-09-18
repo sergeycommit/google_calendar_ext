@@ -66,7 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const brandBlocks = document.querySelectorAll('.nav-brand');
 
     function findBrandTarget() {
-        const homeLink = document.querySelector('.nav-menu a[href*="index.html"], .footer-links a[href*="index.html"]');
+        const homeLink = Array.from(document.querySelectorAll('.nav-menu a, .footer-links a'))
+            .find(a => /^(\.\.\/)+$|^\.\/$|^\/$/.test(a.getAttribute('href')));
 
         if (homeLink) {
             return homeLink.getAttribute('href');
@@ -76,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return '#page-top';
         }
 
-        return './index.html';
+        return './';
     }
 
     const brandTarget = findBrandTarget();
@@ -268,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function () {
         question.setAttribute('aria-expanded', isActive ? 'true' : 'false');
         answer.setAttribute('role', 'region');
         answer.setAttribute('aria-labelledby', questionId);
-        answer.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+        answer.inert = !isActive;
 
         if (question.tagName !== 'BUTTON') {
             question.setAttribute('role', 'button');
@@ -290,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         otherQuestion.setAttribute('aria-expanded', 'false');
                     }
                     if (otherAnswer) {
-                        otherAnswer.setAttribute('aria-hidden', 'true');
+                        otherAnswer.inert = true;
                     }
                 }
             });
@@ -298,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Toggle current item
             item.classList.toggle('active', !itemIsActive);
             question.setAttribute('aria-expanded', String(!itemIsActive));
-            answer.setAttribute('aria-hidden', itemIsActive ? 'true' : 'false');
+            answer.inert = itemIsActive;
         });
     });
 
@@ -783,81 +784,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Workflow switcher for the refreshed homepage
-    const workflowShell = document.querySelector('.workflow-shell');
-    const workflowToggles = document.querySelectorAll('.workflow-toggle');
-    const workflowPanels = document.querySelectorAll('.workflow-panel');
-
-    if (workflowShell && workflowToggles.length > 0 && workflowPanels.length > 0) {
-        const workflowMeterLabel = workflowShell.querySelector('.workflow-meter-label');
-        const workflowMeterTitle = workflowShell.querySelector('.workflow-meter-title');
-        const workflowMeterCopy = workflowShell.querySelector('.workflow-meter-copy');
-        const workflowCalloutPill = workflowShell.querySelector('.workflow-callout-pill');
-        const workflowCalloutTitle = workflowShell.querySelector('.workflow-callout-title');
-        const workflowCalloutCopy = workflowShell.querySelector('.workflow-callout-copy');
-
-        workflowPanels.forEach(panel => {
-            panel.id = panel.id || `workflow-panel-${panel.dataset.mode}`;
-
-            const matchingToggle = Array.from(workflowToggles).find(toggle => toggle.dataset.mode === panel.dataset.mode);
-            if (matchingToggle) {
-                matchingToggle.setAttribute('aria-controls', panel.id);
-            }
-        });
-
-        function applyWorkflowState(activeToggle) {
-            const mode = activeToggle.dataset.mode;
-
-            workflowShell.dataset.mode = mode;
-
-            workflowToggles.forEach(button => {
-                const isActive = button === activeToggle;
-                button.classList.toggle('active', isActive);
-                button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-            });
-
-            workflowPanels.forEach(panel => {
-                const isActive = panel.dataset.mode === mode;
-                panel.classList.toggle('active', isActive);
-                panel.hidden = !isActive;
-            });
-
-            if (workflowMeterLabel && activeToggle.dataset.meterLabel) {
-                workflowMeterLabel.textContent = activeToggle.dataset.meterLabel;
-            }
-
-            if (workflowMeterTitle && activeToggle.dataset.meterTitle) {
-                workflowMeterTitle.textContent = activeToggle.dataset.meterTitle;
-            }
-
-            if (workflowMeterCopy && activeToggle.dataset.meterCopy) {
-                workflowMeterCopy.textContent = activeToggle.dataset.meterCopy;
-            }
-
-            if (workflowCalloutPill && activeToggle.dataset.calloutPill) {
-                workflowCalloutPill.textContent = activeToggle.dataset.calloutPill;
-            }
-
-            if (workflowCalloutTitle && activeToggle.dataset.calloutTitle) {
-                workflowCalloutTitle.textContent = activeToggle.dataset.calloutTitle;
-            }
-
-            if (workflowCalloutCopy && activeToggle.dataset.calloutCopy) {
-                workflowCalloutCopy.textContent = activeToggle.dataset.calloutCopy;
-            }
-        }
-
-        workflowToggles.forEach(toggle => {
-            toggle.addEventListener('click', function () {
-                applyWorkflowState(this);
-            });
-        });
-
-        const defaultToggle = workflowShell.querySelector('.workflow-toggle.active') || workflowToggles[0];
-        if (defaultToggle) {
-            applyWorkflowState(defaultToggle);
-        }
-    }
 });
 
 // Error handling

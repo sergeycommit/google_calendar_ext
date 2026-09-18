@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Scheduling for async teams: how to reduce meeting overhead, use calendar for async coordination, and keep distributed teams aligned without constant sync calls.">
-    <title>Async Team Scheduling: How to Reduce Meetings Without Losing Coordination | Calendar Extension for Google Calendar™</title>
+    <title>Async Team Scheduling: Fewer Meetings, Same Coordination</title>
     <link rel="canonical" href="https://calendar-extension.site/blog/async-team-scheduling.html">
     <meta property="og:title" content="Scheduling for Async Teams: Less Calendar, Better Output">
     <meta property="og:description" content="Scheduling for async teams: how to reduce meeting overhead, use calendar for async coordination, and keep distributed teams aligned without constant sync calls.">
@@ -13,23 +13,19 @@
     <meta property="og:url" content="https://calendar-extension.site/blog/async-team-scheduling.html">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://calendar-extension.site/images/screenshot1.png">
-    <meta property="article:published_time" content="2026-09-19">
-    <meta property="article:author" content="Calendar Extension for Google Calendar™ Team">
-    <link rel="stylesheet" href="../css/style.css?v=20260706">
+    <meta property="article:published_time" content="2026-06-05">
+    <meta property="article:modified_time" content="2026-07-06">
+    <meta property="article:author" content="https://www.linkedin.com/in/sergei-ilin-67b63422b/">
+    <link rel="stylesheet" href="../css/style.css?v=20260918">
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Article","headline":"Scheduling for Async Teams: Less Calendar, Better Output","description":"Scheduling for async teams: how to reduce meeting overhead, use calendar for async coordination, and keep distributed teams aligned without constant sync calls.","author":{"@type":"Organization","name":"Calendar Extension for Google Calendar™ Team"},"publisher":{"@type":"Organization","name":"Calendar Extension for Google Calendar™","logo":{"@type":"ImageObject","url":"https://calendar-extension.site/images/logo.png"}},"datePublished":"2026-09-19","dateModified":"2026-09-19","mainEntityOfPage":"https://calendar-extension.site/blog/async-team-scheduling.html","image":"https://calendar-extension.site/images/screenshot1.png"}
+    {"@context":"https://schema.org","@type":"Article","headline":"Scheduling for Async Teams: Less Calendar, Better Output","description":"Scheduling for async teams: how to reduce meeting overhead, use calendar for async coordination, and keep distributed teams aligned without constant sync calls.","author":{"@type":"Person","name":"Sergey Ilyin","alternateName":"Sergei Ilin","jobTitle":"Creator of Calendar Extension for Google Calendar™","url":"https://www.linkedin.com/in/sergei-ilin-67b63422b/","sameAs":["https://www.linkedin.com/in/sergei-ilin-67b63422b/","https://github.com/sergeycommit","https://x.com/just_commit_go"]},"publisher":{"@type":"Organization","name":"Calendar Extension for Google Calendar™","logo":{"@type":"ImageObject","url":"https://calendar-extension.site/images/logo.png"}},"datePublished":"2026-06-05","dateModified":"2026-07-06","mainEntityOfPage":"https://calendar-extension.site/blog/async-team-scheduling.html","image":"https://calendar-extension.site/images/screenshot1.png"}
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does async-first scheduling mean?","acceptedAnswer":{"@type":"Answer","text":"Async-first scheduling means treating asynchronous communication as the default for most team interaction and reserving synchronous meetings for situations that genuinely require real-time conversation. Status updates, information sharing, and simple decisions flow through written channels. Meetings are scheduled for complex decisions, sensitive conversations, and creative brainstorming where back-and-forth matters."}},
-        {"@type":"Question","name":"How does an async team use the calendar differently?","acceptedAnswer":{"@type":"Answer","text":"Async teams have fewer calendar events overall but use the calendar to anchor async processes — marking decision deadlines as all-day events, blocking focus time as a visible commitment, and scheduling async review windows. The calendar becomes a coordination tool for when things need to happen rather than primarily a meeting scheduler."}},
-        {"@type":"Question","name":"How do I convince my team to adopt async-first scheduling?","acceptedAnswer":{"@type":"Answer","text":"Start with one type of meeting — status updates are the easiest case — and propose replacing it with a shared written document that people update asynchronously. Run it for four weeks and evaluate: is the team as informed? Are decisions made as quickly? If yes, expand the async approach to other meeting types. Evidence from the team's own experience is more persuasive than abstract arguments about async work."}},
-        {"@type":"Question","name":"What tools do async teams use alongside the calendar?","acceptedAnswer":{"@type":"Answer","text":"Written communication tools like Notion, Confluence, or a shared Google Doc serve as the primary async coordination layer. Tools like Loom or Vimeo enable async video communication when tone or visual demonstration matters. Project management tools like Linear or Asana track work status without requiring status meetings. The calendar overlays all of these to mark when decisions need to happen and when sync interactions occur."}},
-        {"@type":"Question","name":"How do async teams handle urgent issues that need quick decisions?","acceptedAnswer":{"@type":"Answer","text":"Most async teams define a communication contract for urgency levels: what warrants a direct phone or video call, what can be handled in a priority Slack message, and what falls in the normal async queue. A shared agreement on these thresholds prevents both the underuse of synchronous channels for genuine urgencies and the overuse of them for things that could wait for an async response."}},
-        {"@type":"Question","name":"What recurring meetings should an async team eliminate?","acceptedAnswer":{"@type":"Answer","text":"Weekly status update meetings are the most obvious candidate — replace them with a shared written update. Daily standups that primarily share information can often become a written async check-in. Any recurring meeting where the last three sessions could have been an email should be evaluated. Keep recurring meetings that require discussion, decision-making, or relationship maintenance."}}]}
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do we schedule the rare synchronous meeting fairly across zones?", "acceptedAnswer": {"@type": "Answer", "text": "The async substrate changes the calculus: with only 2–4 sync slots a week, rotating their burden quarterly is cheap, and the split-double pattern (two editions, one doc spine) covers the rest. Teams fight over sync slots in proportion to how many they hold; async-first makes fairness affordable."}}, {"@type": "Question", "name": "What response-time SLA actually works for async teams?", "acceptedAnswer": {"@type": "Answer", "text": "\"Within one working day, in your timezone\" is the robust default — fast enough for progress, slow enough to protect focus. The critical pair: an explicitly faster channel for genuine urgency (paging, a phone call) so the one-day SLA never gets eroded by exceptions claiming to be emergencies."}}, {"@type": "Question", "name": "Do 1:1s survive async-first?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — they are trust vehicles, squarely in the survivor list. What changes is their content: status migrates to the shared doc updated beforehand, and the live time spends itself on growth, friction, and disagreement. Fortnightly 25s with a strong doc beat weekly 50s with readouts."}}, {"@type": "Question", "name": "How do we stop the async processing blocks from swallowing the whole day?", "acceptedAnswer": {"@type": "Answer", "text": "Bound them like meetings — fixed start, fixed end, notification at the exit — and route the overflow honestly: a thread backlog that never fits two blocks is a load signal (too many decisions in flight), not a scheduling failure. Async teams audit thread volume the way meeting teams audit meeting hours."}}]}
     </script>
 </head>
 <body class="schedule-article">
@@ -39,11 +35,11 @@
             <div class="container">
                 <div class="nav-brand">
                     <img src="../images/logo.png" alt="Calendar Extension for Google Calendar™ logo" class="logo" width="42" height="42">
-                    <span class="brand-name">Calendar Extension for Google Calendar™</span>
+                    <span class="brand-name">Calendar Extension</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#features">Features</a></li>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../#features">Features</a></li>
                     <li><a href="./">Blog</a></li>
                     <li><a href="../support.html">Support</a></li>
                     <li><a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Add to Chrome</a></li>
@@ -61,102 +57,81 @@
                 <div class="article-breadcrumbs">
                     <a href="./" class="text-link">Blog</a><span>/</span><span>Remote work</span>
                 </div>
-                <div class="eyebrow">Published September 19, 2026</div>
+                <div class="eyebrow">Published <time datetime="2026-06-05">June 5, 2026</time></div>
                 <h1 class="article-title">Scheduling for Async Teams: Less Calendar, Better Output</h1>
-                <p class="article-intro">Async-first teams use their calendars differently. Less time coordinating live meetings, more time communicating through structured written channels — and a calendar that reflects that shift.</p>
-                <p class="article-meta">5 min read · Written by the Calendar Extension for Google Calendar™ Team</p>
+                <p class="article-intro">Async-first teams don’t abolish the calendar — they change what it holds: fewer meetings, more deadlines-with-windows, and a new first-class object, the commitment that needs no attendance. Here is scheduling redesigned for async: what still deserves synchronous time, what the calendar tracks instead, and the failure modes nobody warns about.</p>
+                <p class="article-meta">6 min read · Updated <time datetime="2026-07-06">Jul 6, 2026</time> · Written by <a href="https://www.linkedin.com/in/sergei-ilin-67b63422b/" rel="author noopener">Sergey Ilyin</a></p>
             </section>
             <section class="article-layout">
                 <article class="article-body-card">
                     <img src="../images/screenshot1.png" alt="Calendar Extension for Google Calendar™ Chrome extension showing upcoming events" class="article-cover" width="1365" height="768">
-                    <h2>What Async-First Scheduling Looks Like</h2>
+<h2>What the calendar becomes when meetings aren’t the unit</h2>
 
-<p>An async-first team does not eliminate synchronous meetings — it raises the bar for when they are necessary. Status updates, information sharing, and simple decisions flow through written channels. Meetings are reserved for negotiation, complex problem-solving, and conversations where nuance and real-time response genuinely matter.</p>
+<p>A meeting-centric calendar tracks <em>attendance</em>; an async calendar tracks <em>commitments</em>: the decision thread closing Thursday noon, the review window before the release, your own focus blocks, and the few synchronous slots that survive scrutiny. The grid gets emptier and each entry gets heavier — which changes the hygiene requirements: on a sparse calendar, a stale entry is conspicuous, and honesty becomes cheaper to maintain than it ever was on a dense one.</p>
 
-<p>The calendar in an async-first team looks different: fewer events, more blocked focus time, and a higher signal-to-noise ratio from the meetings that do exist.</p>
+<h2>The survivors: what stays synchronous</h2>
 
-<h2>Calendar Practices for Async Teams</h2>
+<p>Async-first is a default, not a religion. Four meeting types survive on the calendar because their payload genuinely doesn’t compress: <strong>conflict resolution</strong> (latency poisons disagreement — a 25-minute call beats a 50-message thread every time), <strong>trust formation</strong> (first meetings, onboarding pairings, the periodic team social), <strong>high-ambiguity kickoffs</strong> (ten minutes of live Q&A saves a week of thread archaeology), and <strong>the cadence heartbeat</strong> — one short all-hands or team call at a fair rotating hour, because pure-async teams drift into being strangers with a shared repository.</p>
 
-<ul>
-<li>Block focus time on the calendar so it is visible to the team — make protected work time explicit.</li>
-<li>Use calendar events to anchor async processes: 'Decision deadline: API design' as an all-day event.</li>
-<li>Schedule async review windows — time blocked for reading and responding to shared documents.</li>
-<li>For urgent cross-team coordination, use calendar holds with short notice periods rather than recurring slots.</li>
-<li>Cancel recurring meetings that have become status updates — replace with a shared written document.</li>
-</ul>
+<h2>Scheduling the async objects themselves</h2>
 
-<h2>Making Async Decisions Calendar-Visible</h2>
+<p>The core trick: <strong>async commitments get calendar presence without attendance.</strong> A decision thread gets a 15-minute "closes: pricing decision" event at its deadline — visible to all participants, blocking nobody. Review windows get all-day events on the team calendar. Your response-time obligations get batched into two daily "async processing" blocks (the async equivalent of meeting load — unscheduled, it metastasizes into all-day ambient checking). The calendar thus keeps its old superpower — making time-shaped commitments visible and collision-checked — with attendance subtracted.</p>
 
-<p>One underused technique for async teams: using calendar events to mark decision deadlines rather than decision meetings. Instead of scheduling a meeting to decide X by Tuesday, you add an all-day event 'Decision deadline: X' to Tuesday. The event marks the date by which the async thread needs to reach a conclusion.</p>
+<h2>The three async-specific failure modes</h2>
 
-<p>This creates shared urgency without requiring synchronous coordination and keeps the calendar as a source of truth for what needs to happen and when.</p>
+<ol>
+<li><strong>Deadline invisibility:</strong> threads without calendar presence die quietly — "objections by Thursday" scrolls away in chat. The closes-event fixes it; no calendar object, no commitment.</li>
+<li><strong>Ambient always-on:</strong> without meeting edges, work diffuses into every hour — async teams show <em>worse</em> after-hours creep than meeting-heavy ones unless edges are scheduled deliberately (hard start/stop anchors, the two processing blocks, fringe-hours focus).</li>
+<li><strong>The consensus mirage:</strong> silence in a thread reads as agreement and isn’t. The scheduling fix is procedural: decision events name the quorum ("closes Thu; needs explicit 👍 from Dana, Alex, Sam") — the calendar entry carries the decision’s requirements, not just its deadline.</li>
+</ol>
+
+<h2>Running your personal calendar inside an async team</h2>
+
+<p>Individual practice shifts three ways. <strong>Focus placement inverts:</strong> with few meetings, your deepest block goes wherever your energy peaks — the async dividend is claiming it without negotiation. <strong>The processing blocks are sacred:</strong> two bounded windows (morning, mid-afternoon) where threads, reviews, and mentions get answered — outside them, notifications off; the SLA is "within a working day", not "within the hour". <strong>Weekly planning gets heavier:</strong> without standups pacing the week, the Friday reset and daily close carry the whole rhythm — async autonomy is planned autonomy or it is drift.</p>
 
 <div class="article-note">
-<p>Async-first does not mean no meetings. It means every meeting earns its place by providing something that async communication genuinely cannot. The meetings that remain should be noticeably more purposeful as a result.</p>
+<p>Sparse calendars make glances <em>more</em> useful, not less: the question shifts from "when’s my next meeting" to "what closes today and is my block intact" — exactly what a one-click day strip shows. Calendar Extension for Google Calendar™ renders the closes-events, windows, and blocks in one look, which is the async day’s entire dashboard.</p>
 </div>
-
-<h2>The Overlap Window Strategy</h2>
-
-<p>For distributed teams that span many time zones, defining a small overlap window — two or three hours when all team members are expected to be available for sync communication — and reserving that window for any synchronous meetings reduces scheduling complexity significantly. Outside the overlap window, async is the default. For related guidance, see our guide on managing time zones in Google Calendar.</p>
-
-<h2>How Calendar Extension for Google Calendar™ helps</h2>
-
-<p>In an async-first team with fewer but more meaningful meetings, the extension's toolbar popup makes it easy to see which of those meetings is approaching and exactly how much time remains. On days that are mostly async work, a quick glance at the extension shows the one synchronous meeting on the calendar without requiring a full calendar view. This low-overhead visibility supports async workflows without adding scheduling complexity.</p>
+<aside class="author-box" aria-label="About the author">
+<p><strong>About the author.</strong> <a href="https://www.linkedin.com/in/sergei-ilin-67b63422b/" rel="author noopener">Sergey Ilyin</a> builds Calendar Extension for Google Calendar™. He is a Python QA automation engineer with more than five years of experience who studies and applies AI and ML/data science and builds AI-based services. The extension’s code is on <a href="https://github.com/sergeycommit/google_calendar_ext" rel="noopener">GitHub</a>; you can also find him on <a href="https://x.com/just_commit_go" rel="noopener">X</a>.</p>
+</aside>
                     <section class="article-faq" aria-label="Frequently asked questions">
                         <h2>Frequently asked questions</h2>
                         <div class="faq-list">
 <div class="faq-item">
   <button class="faq-question" role="button" id="faq-question-1" aria-controls="faq-answer-1" aria-expanded="false">
-    <h3>What does async-first scheduling mean?</h3>
+    <h3>How do we schedule the rare synchronous meeting fairly across zones?</h3>
     <span class="faq-toggle" aria-hidden="true">+</span>
   </button>
   <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
-    <p>Async-first scheduling means treating asynchronous communication as the default for most team interaction and reserving synchronous meetings for situations that genuinely require real-time conversation. Status updates, information sharing, and simple decisions flow through written channels. Meetings are scheduled for complex decisions, sensitive conversations, and creative brainstorming where back-and-forth matters.</p>
+    <p>The async substrate changes the calculus: with only 2–4 sync slots a week, rotating their burden quarterly is cheap, and the split-double pattern (two editions, one doc spine) covers the rest. Teams fight over sync slots in proportion to how many they hold; async-first makes fairness affordable.</p>
   </div>
 </div>
 <div class="faq-item">
   <button class="faq-question" role="button" id="faq-question-2" aria-controls="faq-answer-2" aria-expanded="false">
-    <h3>How does an async team use the calendar differently?</h3>
+    <h3>What response-time SLA actually works for async teams?</h3>
     <span class="faq-toggle" aria-hidden="true">+</span>
   </button>
   <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
-    <p>Async teams have fewer calendar events overall but use the calendar to anchor async processes — marking decision deadlines as all-day events, blocking focus time as a visible commitment, and scheduling async review windows. The calendar becomes a coordination tool for when things need to happen rather than primarily a meeting scheduler.</p>
+    <p>"Within one working day, in your timezone" is the robust default — fast enough for progress, slow enough to protect focus. The critical pair: an explicitly <em>faster</em> channel for genuine urgency (paging, a phone call) so the one-day SLA never gets eroded by exceptions claiming to be emergencies.</p>
   </div>
 </div>
 <div class="faq-item">
   <button class="faq-question" role="button" id="faq-question-3" aria-controls="faq-answer-3" aria-expanded="false">
-    <h3>How do I convince my team to adopt async-first scheduling?</h3>
+    <h3>Do 1:1s survive async-first?</h3>
     <span class="faq-toggle" aria-hidden="true">+</span>
   </button>
   <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
-    <p>Start with one type of meeting — status updates are the easiest case — and propose replacing it with a shared written document that people update asynchronously. Run it for four weeks and evaluate: is the team as informed? Are decisions made as quickly? If yes, expand the async approach to other meeting types. Evidence from the team's own experience is more persuasive than abstract arguments about async work.</p>
+    <p>Yes — they are trust vehicles, squarely in the survivor list. What changes is their content: status migrates to the shared doc updated beforehand, and the live time spends itself on growth, friction, and disagreement. Fortnightly 25s with a strong doc beat weekly 50s with readouts.</p>
   </div>
 </div>
 <div class="faq-item">
   <button class="faq-question" role="button" id="faq-question-4" aria-controls="faq-answer-4" aria-expanded="false">
-    <h3>What tools do async teams use alongside the calendar?</h3>
+    <h3>How do we stop the async processing blocks from swallowing the whole day?</h3>
     <span class="faq-toggle" aria-hidden="true">+</span>
   </button>
   <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
-    <p>Written communication tools like Notion, Confluence, or a shared Google Doc serve as the primary async coordination layer. Tools like Loom or Vimeo enable async video communication when tone or visual demonstration matters. Project management tools like Linear or Asana track work status without requiring status meetings. The calendar overlays all of these to mark when decisions need to happen and when sync interactions occur.</p>
-  </div>
-</div>
-<div class="faq-item">
-  <button class="faq-question" role="button" id="faq-question-5" aria-controls="faq-answer-5" aria-expanded="false">
-    <h3>How do async teams handle urgent issues that need quick decisions?</h3>
-    <span class="faq-toggle" aria-hidden="true">+</span>
-  </button>
-  <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
-    <p>Most async teams define a communication contract for urgency levels: what warrants a direct phone or video call, what can be handled in a priority Slack message, and what falls in the normal async queue. A shared agreement on these thresholds prevents both the underuse of synchronous channels for genuine urgencies and the overuse of them for things that could wait for an async response.</p>
-  </div>
-</div>
-<div class="faq-item">
-  <button class="faq-question" role="button" id="faq-question-6" aria-controls="faq-answer-6" aria-expanded="false">
-    <h3>What recurring meetings should an async team eliminate?</h3>
-    <span class="faq-toggle" aria-hidden="true">+</span>
-  </button>
-  <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
-    <p>Weekly status update meetings are the most obvious candidate — replace them with a shared written update. Daily standups that primarily share information can often become a written async check-in. Any recurring meeting where the last three sessions could have been an email should be evaluated. Keep recurring meetings that require discussion, decision-making, or relationship maintenance.</p>
+    <p>Bound them like meetings — fixed start, fixed end, notification at the exit — and route the overflow honestly: a thread backlog that never fits two blocks is a load signal (too many decisions in flight), not a scheduling failure. Async teams audit thread volume the way meeting teams audit meeting hours.</p>
   </div>
 </div>
 </div>
@@ -164,12 +139,12 @@
                 </article>
                 <aside class="article-sidebar">
                     <h3>Key takeaways</h3>
-                    <ul><li>Async-first teams use meetings for what async cannot handle.</li>
-<li>Mark decision deadlines as calendar events, not just meetings.</li>
-<li>Define an overlap window for all synchronous team communication.</li>
-<li>Cancel recurring status updates and replace with written docs.</li></ul>
+                    <ul><li>The async calendar tracks commitments, not attendance — sparser and heavier.</li>
+<li>Four meeting types survive: conflict, trust, ambiguous kickoffs, the heartbeat.</li>
+<li>Every decision thread gets a "closes" event with its quorum named.</li>
+<li>Two bounded processing blocks replace ambient checking — the async meeting-load.</li></ul>
                     <h3>Try next</h3>
-                    <p>See your sync meetings at a glance on an async team. Calendar Extension for Google Calendar™ for Chrome.</p>
+                    <p>The async dashboard is one glance: what closes today, which windows are open, is the block intact.</p>
                     <a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary" target="_blank" rel="noopener">Add to Chrome</a>
                 </aside>
             </section>
@@ -202,15 +177,15 @@
                     <p class="footer-description">Workflow notes for people who want their calendar to support the day, not dominate it.</p>
                 </div>
                 <div class="footer-card">
-                    <h4>Read next</h4>
+                    <h3>Read next</h3>
                     <ul class="footer-links"><li><a href="./">Blog home</a></li>
 <li><a href="./remote-team-calendar-etiquette.html">Calendar Etiquette for Remote Teams</a></li>
 <li><a href="./timezone-management-google-calendar.html">Managing Time Zones in Google Calendar for Distributed Teams</a></li></ul>
                 </div>
                 <div class="footer-card">
-                    <h4>Explore</h4>
+                    <h3>Explore</h3>
                     <ul class="footer-links">
-                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../">Home</a></li>
                         <li><a href="../support.html">Support</a></li>
                         <li><a href="../privacy-policy.html">Privacy Policy</a></li>
                     </ul>
@@ -222,6 +197,6 @@
     <button class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
     </button>
-    <script src="../js/script.js?v=20260606"></script>
+    <script src="../js/script.js?v=20260918"></script>
 </body>
 </html>

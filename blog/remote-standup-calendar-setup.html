@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Setting up a lightweight remote standup on the calendar. How to configure recurring standups that stay short, useful, and easy to skip when they are not needed.">
-    <title>Remote Standup Setup: A Calendar-First Approach to Daily Syncs | Calendar Extension for Google Calendar™</title>
+    <title>Remote Standup Setup: A Calendar-First Approach to Daily Syncs</title>
     <link rel="canonical" href="https://calendar-extension.site/blog/remote-standup-calendar-setup.html">
     <meta property="og:title" content="Setting Up a Lightweight Remote Standup on the Calendar">
     <meta property="og:description" content="Setting up a lightweight remote standup on the calendar. How to configure recurring standups that stay short, useful, and easy to skip when they are not needed.">
@@ -13,23 +13,19 @@
     <meta property="og:url" content="https://calendar-extension.site/blog/remote-standup-calendar-setup.html">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://calendar-extension.site/images/screenshot1.png">
-    <meta property="article:published_time" content="2026-10-01">
-    <meta property="article:author" content="Calendar Extension for Google Calendar™ Team">
-    <link rel="stylesheet" href="../css/style.css?v=20260706">
+    <meta property="article:published_time" content="2026-06-05">
+    <meta property="article:modified_time" content="2026-07-06">
+    <meta property="article:author" content="https://www.linkedin.com/in/sergei-ilin-67b63422b/">
+    <link rel="stylesheet" href="../css/style.css?v=20260918">
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Article","headline":"Setting Up a Lightweight Remote Standup on the Calendar","description":"Setting up a lightweight remote standup on the calendar. How to configure recurring standups that stay short, useful, and easy to skip when they are not needed.","author":{"@type":"Organization","name":"Calendar Extension for Google Calendar™ Team"},"publisher":{"@type":"Organization","name":"Calendar Extension for Google Calendar™","logo":{"@type":"ImageObject","url":"https://calendar-extension.site/images/logo.png"}},"datePublished":"2026-10-01","dateModified":"2026-10-01","mainEntityOfPage":"https://calendar-extension.site/blog/remote-standup-calendar-setup.html","image":"https://calendar-extension.site/images/screenshot1.png"}
+    {"@context":"https://schema.org","@type":"Article","headline":"Setting Up a Lightweight Remote Standup on the Calendar","description":"Setting up a lightweight remote standup on the calendar. How to configure recurring standups that stay short, useful, and easy to skip when they are not needed.","author":{"@type":"Person","name":"Sergey Ilyin","alternateName":"Sergei Ilin","jobTitle":"Creator of Calendar Extension for Google Calendar™","url":"https://www.linkedin.com/in/sergei-ilin-67b63422b/","sameAs":["https://www.linkedin.com/in/sergei-ilin-67b63422b/","https://github.com/sergeycommit","https://x.com/just_commit_go"]},"publisher":{"@type":"Organization","name":"Calendar Extension for Google Calendar™","logo":{"@type":"ImageObject","url":"https://calendar-extension.site/images/logo.png"}},"datePublished":"2026-06-05","dateModified":"2026-07-06","mainEntityOfPage":"https://calendar-extension.site/blog/remote-standup-calendar-setup.html","image":"https://calendar-extension.site/images/screenshot1.png"}
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long should a remote standup meeting be?","acceptedAnswer":{"@type":"Answer","text":"Fifteen minutes is the target for teams of three to seven people. Each person takes roughly two to three minutes to share their three updates. Blockers that require discussion should be taken offline to a separate call or async thread rather than resolved in the standup. If fifteen minutes consistently runs over, the scope has expanded beyond the standup format."}},
-        {"@type":"Question","name":"What should be included in a standup meeting calendar invite?","acceptedAnswer":{"@type":"Answer","text":"Include: a persistent conference link (not generated fresh each time), the standup format in the event description (what did you do, what are you doing today, any blockers), the intended duration (15 minutes), and any relevant team documentation links. A persistent conference link is especially important — hunting for the daily meeting link wastes time and causes late starts."}},
-        {"@type":"Question","name":"When should a remote team switch from daily standups to async standups?","acceptedAnswer":{"@type":"Answer","text":"Consider switching when: the team spans time zones with no natural overlap window, the synchronous standup consistently feels like overhead for a team with good tooling, or the meeting is primarily used for status updates rather than blocker identification. An async standup — written updates in a shared document or Slack — covers the informational purpose without the scheduling coordination."}},
-        {"@type":"Question","name":"How do I make a remote standup more useful?","acceptedAnswer":{"@type":"Answer","text":"Enforce the format strictly: each person answers the three questions and stops. Take blockers and extended discussions to a separate call immediately after or to a dedicated async thread. Cancel the standup on days with no real blockers and good shared visibility in the project tool. Run a monthly five-minute check on whether the standup is serving its purpose."}},
-        {"@type":"Question","name":"Should daily standups be recorded?","acceptedAnswer":{"@type":"Answer","text":"For most remote standups, recording adds overhead without commensurate value — the content is transient and its value is in the moment of sharing. For teams with significant timezone gaps where some members cannot attend live, a written async update is usually more accessible and useful than a recording. Record only if the specific content is valuable to review later, which is rarely the case for daily standups."}},
-        {"@type":"Question","name":"How do I set up a persistent Google Meet link for a recurring standup?","acceptedAnswer":{"@type":"Answer","text":"When creating or editing the recurring standup in Google Calendar, enable the Google Meet integration to add a conference link. This link is persistent across all instances of the recurring event — the same link works for every standup. Alternatively, create a standalone Google Meet meeting and copy the link into the recurring event description manually. Verify that the link persists across instances before the first use."}}]}
+    {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Should standups be video-on, or is audio enough?", "acceptedAnswer": {"@type": "Answer", "text": "Decide once and put it in the invite description — ambiguity taxes everyone daily. Practical default: cameras optional for the standup (it is a sync ritual, not a trust exercise), cameras on for anything where reading the room matters. The stable rule beats the \"right\" rule."}}, {"@type": "Question", "name": "How do we run one standup across a 9-hour timezone spread?", "acceptedAnswer": {"@type": "Answer", "text": "Past ~6 hours of spread, one live slot punishes someone structurally — go async-first: the written thread is the standup, and an optional 2×/week overlap call handles what threads do badly (blockers needing conversation). The calendar entry then belongs only to the overlap call."}}, {"@type": "Question", "name": "Is Monday the right day to skip, since the week is just starting?", "acceptedAnswer": {"@type": "Answer", "text": "Teams more often skip Friday (nothing ships between Friday 9:00 and the weekend that Monday’s standup can’t cover). Monday’s standup is usually the week’s most valuable — it converts the weekly plan into today-sized commitments. Skip days by information value, not vibes."}}, {"@type": "Question", "name": "What belongs in standup notes if the meeting is only 15 minutes?", "acceptedAnswer": {"@type": "Answer", "text": "Only the deltas: blockers raised (with owners) and commitments changed. The Shipped/Shipping lines already live in the async thread; duplicating them into prose notes is how a 15-minute ritual grows a 20-minute documentation tail."}}]}
     </script>
 </head>
 <body class="schedule-article">
@@ -39,11 +35,11 @@
             <div class="container">
                 <div class="nav-brand">
                     <img src="../images/logo.png" alt="Calendar Extension for Google Calendar™ logo" class="logo" width="42" height="42">
-                    <span class="brand-name">Calendar Extension for Google Calendar™</span>
+                    <span class="brand-name">Calendar Extension</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#features">Features</a></li>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../#features">Features</a></li>
                     <li><a href="./">Blog</a></li>
                     <li><a href="../support.html">Support</a></li>
                     <li><a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Add to Chrome</a></li>
@@ -61,102 +57,80 @@
                 <div class="article-breadcrumbs">
                     <a href="./" class="text-link">Blog</a><span>/</span><span>Remote work</span>
                 </div>
-                <div class="eyebrow">Published October 1, 2026</div>
+                <div class="eyebrow">Published <time datetime="2026-06-05">June 5, 2026</time></div>
                 <h1 class="article-title">Setting Up a Lightweight Remote Standup on the Calendar</h1>
-                <p class="article-intro">A daily standup should take fifteen minutes or less. Setting it up on the calendar with the right defaults is the difference between a useful daily ritual and a meeting everyone dreads.</p>
-                <p class="article-meta">4 min read · Written by the Calendar Extension for Google Calendar™ Team</p>
+                <p class="article-intro">A remote standup is fifteen minutes that can anchor a team’s day — or a recurring tax that outlived its product. The difference is mostly in the calendar mechanics: the slot, the length, the invite’s contents, and the async escape valve. Here is the setup that keeps standups worth standing for.</p>
+                <p class="article-meta">5 min read · Updated <time datetime="2026-07-06">Jul 6, 2026</time> · Written by <a href="https://www.linkedin.com/in/sergei-ilin-67b63422b/" rel="author noopener">Sergey Ilyin</a></p>
             </section>
             <section class="article-layout">
                 <article class="article-body-card">
                     <img src="../images/screenshot1.png" alt="Calendar Extension for Google Calendar™ Chrome extension showing upcoming events" class="article-cover" width="1365" height="768">
-                    <h2>What Makes a Remote Standup Work</h2>
+<h2>Pick the slot by overlap math, not tradition</h2>
 
-<p>The standup format — what did you do yesterday, what are you doing today, any blockers — works when three conditions hold: it is short (fifteen minutes or less), it surfaces real blockers rather than status theater, and it does not duplicate information that is already in a shared tool.</p>
+<p>The 9:00 standup is a habit imported from co-located offices. Remote, the right slot is computed: <strong>the earliest time inside everyone’s working hours</strong> — which Google Calendar renders directly if the team keeps Working hours &amp; location set (Settings). For a team spanning Berlin–London–New York, that is usually 15:00–16:00 CET, not anyone’s 9:00. One placement rule beats fairness debates: the slot rotates its inconvenience annually, not weekly — predictability is worth more than symmetric suffering.</p>
 
-<p>On a remote team, the standup also serves a relationship function that in-office standups often provide through physical presence — a daily touchpoint that maintains team cohesion across distance.</p>
+<p>Second placement rule: <strong>edge of a block, never the middle.</strong> A 10:30 standup detonates two focus mornings (before and after); a 9:00-sharp or a 12:45 pre-lunch slot leaves the deep-work geography intact.</p>
 
-<h2>Calendar Setup for a Lightweight Remote Standup</h2>
+<h2>Calendar mechanics that carry the format</h2>
 
 <ul>
-<li>Schedule for 15 minutes, not 30 — the time box enforces the format.</li>
-<li>Add a persistent Google Meet link to the recurring event so no one hunts for it daily.</li>
-<li>Include the standup format (what/doing/blockers) in the event description as a template.</li>
-<li>Set a no-agenda-no-meeting rule: if there are no blockers and everyone's work is visible in the project tool, consider cancelling.</li>
-<li>Choose a time that works for all timezones — or move to async if the team is too distributed for a shared standup time.</li>
+<li><strong>15 minutes, not 30.</strong> Create the series at 15; Parkinson fills whatever exists. If the team routinely needs 25, the standup has become a working meeting wearing a standup costume — split it.</li>
+<li><strong>The invite holds the format,</strong> so the meeting doesn’t have to: three prompts in the description (Shipped / Shipping / Stuck), the Meet link, and the notes doc link. New joiners learn the ritual from the event itself.</li>
+<li><strong>End date: eight weeks out.</strong> Standups are the most zombie-prone series in existence. Renewal takes one retro question — "still earning its fifteen minutes?" — and the end date guarantees the question gets asked.</li>
+<li><strong>1-minute notification, no more.</strong> Nobody preps for a standup; the alert’s only job is teleportation.</li>
 </ul>
 
-<h2>The Async Standup Alternative</h2>
+<h2>The async valve (this is what keeps the sync honest)</h2>
 
-<p>For teams that are too distributed for a shared standup time, or for days when the synchronous format feels like overhead, an async standup — a shared document or Slack thread where each person posts their three sentences by a specified time — covers the same informational ground without scheduling coordination.</p>
+<p>Every healthy remote standup has a written twin: a thread or doc where the same three prompts get answered by people who can’t attend — different timezone that day, deep in a spike, on the school run. Two rules make the valve work: <strong>posting async counts fully</strong> (no second-class citizenship, or people attend resentfully), and <strong>the sync meeting reads the async answers first</strong> rather than re-asking them. Teams that run the valve well often discover Tuesday/Thursday can go fully async — the calendar entry shrinks to twice a week, and nobody mourns.</p>
 
-<p>Some teams use the async format by default and escalate to a synchronous standup only when there are blockers that require live discussion. This hybrid approach reduces meeting time while preserving the option for real-time problem-solving when needed.</p>
+<h2>Signals the setup needs surgery</h2>
+
+<p>Watch for three patterns on the calendar itself. <strong>The creep:</strong> 15 became 30 became "let’s just book the half hour" — split status (async) from discussion (separate slot). <strong>The audience:</strong> attendance above ~8 means it is a broadcast, not a standup — split by workstream. <strong>The silence:</strong> if the same two people speak while six listen, the six are donating fifteen minutes daily to a conversation that wanted to be a DM — shrink the invite list to the people sharing a deliverable.</p>
 
 <div class="article-note">
-<p>A standup that consistently runs over fifteen minutes is not a standup — it is a status meeting with a different name. Address the scope issue rather than extending the time box.</p>
+<p>Standups punish lateness disproportionately — at fifteen minutes total, three late minutes is a fifth of the meeting. The time-to-event chip in a toolbar view like Calendar Extension for Google Calendar™ keeps the countdown ambient through the morning’s first block, and the join button turns "it started" into one click instead of a tab hunt.</p>
 </div>
-
-<h2>Maintaining Standup Quality Over Time</h2>
-
-<p>Standups decay. After a few months, the format gets ignored, the meeting runs over, and it becomes a check-in call without clear purpose. A monthly five-minute retrospective on whether the standup is serving its purpose — and what would make it more useful — prevents the accumulation of this decay. For related reading on managing recurring meeting quality, see our guide on when to kill a recurring meeting.</p>
-
-<h2>How Calendar Extension for Google Calendar™ helps</h2>
-
-<p>The daily standup appears in the extension's popup with its recurring Google Meet link directly accessible. For remote team members, clicking the join link from the toolbar — without navigating to the calendar — reduces the friction of joining the standup on time. The countdown before the standup also signals when it is starting without requiring a separate reminder to check.</p>
+<aside class="author-box" aria-label="About the author">
+<p><strong>About the author.</strong> <a href="https://www.linkedin.com/in/sergei-ilin-67b63422b/" rel="author noopener">Sergey Ilyin</a> builds Calendar Extension for Google Calendar™. He is a Python QA automation engineer with more than five years of experience who studies and applies AI and ML/data science and builds AI-based services. The extension’s code is on <a href="https://github.com/sergeycommit/google_calendar_ext" rel="noopener">GitHub</a>; you can also find him on <a href="https://x.com/just_commit_go" rel="noopener">X</a>.</p>
+</aside>
                     <section class="article-faq" aria-label="Frequently asked questions">
                         <h2>Frequently asked questions</h2>
                         <div class="faq-list">
 <div class="faq-item">
   <button class="faq-question" role="button" id="faq-question-1" aria-controls="faq-answer-1" aria-expanded="false">
-    <h3>How long should a remote standup meeting be?</h3>
+    <h3>Should standups be video-on, or is audio enough?</h3>
     <span class="faq-toggle" aria-hidden="true">+</span>
   </button>
   <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
-    <p>Fifteen minutes is the target for teams of three to seven people. Each person takes roughly two to three minutes to share their three updates. Blockers that require discussion should be taken offline to a separate call or async thread rather than resolved in the standup. If fifteen minutes consistently runs over, the scope has expanded beyond the standup format.</p>
+    <p>Decide once and put it in the invite description — ambiguity taxes everyone daily. Practical default: cameras optional for the standup (it is a sync ritual, not a trust exercise), cameras on for anything where reading the room matters. The stable rule beats the "right" rule.</p>
   </div>
 </div>
 <div class="faq-item">
   <button class="faq-question" role="button" id="faq-question-2" aria-controls="faq-answer-2" aria-expanded="false">
-    <h3>What should be included in a standup meeting calendar invite?</h3>
+    <h3>How do we run one standup across a 9-hour timezone spread?</h3>
     <span class="faq-toggle" aria-hidden="true">+</span>
   </button>
   <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
-    <p>Include: a persistent conference link (not generated fresh each time), the standup format in the event description (what did you do, what are you doing today, any blockers), the intended duration (15 minutes), and any relevant team documentation links. A persistent conference link is especially important — hunting for the daily meeting link wastes time and causes late starts.</p>
+    <p>Past ~6 hours of spread, one live slot punishes someone structurally — go async-first: the written thread is the standup, and an optional 2×/week overlap call handles what threads do badly (blockers needing conversation). The calendar entry then belongs only to the overlap call.</p>
   </div>
 </div>
 <div class="faq-item">
   <button class="faq-question" role="button" id="faq-question-3" aria-controls="faq-answer-3" aria-expanded="false">
-    <h3>When should a remote team switch from daily standups to async standups?</h3>
+    <h3>Is Monday the right day to skip, since the week is just starting?</h3>
     <span class="faq-toggle" aria-hidden="true">+</span>
   </button>
   <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
-    <p>Consider switching when: the team spans time zones with no natural overlap window, the synchronous standup consistently feels like overhead for a team with good tooling, or the meeting is primarily used for status updates rather than blocker identification. An async standup — written updates in a shared document or Slack — covers the informational purpose without the scheduling coordination.</p>
+    <p>Teams more often skip Friday (nothing ships between Friday 9:00 and the weekend that Monday’s standup can’t cover). Monday’s standup is usually the week’s most valuable — it converts the weekly plan into today-sized commitments. Skip days by information value, not vibes.</p>
   </div>
 </div>
 <div class="faq-item">
   <button class="faq-question" role="button" id="faq-question-4" aria-controls="faq-answer-4" aria-expanded="false">
-    <h3>How do I make a remote standup more useful?</h3>
+    <h3>What belongs in standup notes if the meeting is only 15 minutes?</h3>
     <span class="faq-toggle" aria-hidden="true">+</span>
   </button>
   <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
-    <p>Enforce the format strictly: each person answers the three questions and stops. Take blockers and extended discussions to a separate call immediately after or to a dedicated async thread. Cancel the standup on days with no real blockers and good shared visibility in the project tool. Run a monthly five-minute check on whether the standup is serving its purpose.</p>
-  </div>
-</div>
-<div class="faq-item">
-  <button class="faq-question" role="button" id="faq-question-5" aria-controls="faq-answer-5" aria-expanded="false">
-    <h3>Should daily standups be recorded?</h3>
-    <span class="faq-toggle" aria-hidden="true">+</span>
-  </button>
-  <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
-    <p>For most remote standups, recording adds overhead without commensurate value — the content is transient and its value is in the moment of sharing. For teams with significant timezone gaps where some members cannot attend live, a written async update is usually more accessible and useful than a recording. Record only if the specific content is valuable to review later, which is rarely the case for daily standups.</p>
-  </div>
-</div>
-<div class="faq-item">
-  <button class="faq-question" role="button" id="faq-question-6" aria-controls="faq-answer-6" aria-expanded="false">
-    <h3>How do I set up a persistent Google Meet link for a recurring standup?</h3>
-    <span class="faq-toggle" aria-hidden="true">+</span>
-  </button>
-  <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
-    <p>When creating or editing the recurring standup in Google Calendar, enable the Google Meet integration to add a conference link. This link is persistent across all instances of the recurring event — the same link works for every standup. Alternatively, create a standalone Google Meet meeting and copy the link into the recurring event description manually. Verify that the link persists across instances before the first use.</p>
+    <p>Only the deltas: blockers raised (with owners) and commitments changed. The Shipped/Shipping lines already live in the async thread; duplicating them into prose notes is how a 15-minute ritual grows a 20-minute documentation tail.</p>
   </div>
 </div>
 </div>
@@ -164,12 +138,12 @@
                 </article>
                 <aside class="article-sidebar">
                     <h3>Key takeaways</h3>
-                    <ul><li>15 minutes, not 30 — the time box enforces the format.</li>
-<li>Add a standing conference link so attendees never hunt for it.</li>
-<li>Include the standup format in the event description as a template.</li>
-<li>Evaluate monthly whether the standup format is still working.</li></ul>
+                    <ul><li>Compute the slot from working-hours overlap; place it at block edges.</li>
+<li>15 minutes, three prompts in the invite, 8-week end date, 1-minute alert.</li>
+<li>The async valve counts fully — and often retires two sync days a week.</li>
+<li>Creep, audience, and silence are the three calendar-visible failure signals.</li></ul>
                     <h3>Try next</h3>
-                    <p>Join your daily standup in one click. Calendar Extension for Google Calendar™ for Chrome.</p>
+                    <p>Three late minutes is 20% of a standup — keep the countdown and the join button one glance away.</p>
                     <a href="https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe" class="btn btn-primary" target="_blank" rel="noopener">Add to Chrome</a>
                 </aside>
             </section>
@@ -202,15 +176,15 @@
                     <p class="footer-description">Workflow notes for people who want their calendar to support the day, not dominate it.</p>
                 </div>
                 <div class="footer-card">
-                    <h4>Read next</h4>
+                    <h3>Read next</h3>
                     <ul class="footer-links"><li><a href="./">Blog home</a></li>
 <li><a href="./remote-team-calendar-etiquette.html">Calendar Etiquette for Remote Teams</a></li>
 <li><a href="./timezone-management-google-calendar.html">Managing Time Zones in Google Calendar for Distributed Teams</a></li></ul>
                 </div>
                 <div class="footer-card">
-                    <h4>Explore</h4>
+                    <h3>Explore</h3>
                     <ul class="footer-links">
-                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../">Home</a></li>
                         <li><a href="../support.html">Support</a></li>
                         <li><a href="../privacy-policy.html">Privacy Policy</a></li>
                     </ul>
@@ -222,6 +196,6 @@
     <button class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
     </button>
-    <script src="../js/script.js?v=20260606"></script>
+    <script src="../js/script.js?v=20260918"></script>
 </body>
 </html>

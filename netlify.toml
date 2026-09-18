@@ -3,6 +3,12 @@
 # duplicate content is never served — even though the files exist in the upload.
 # `force = true` is required so the redirect wins over the real static file.
 
+# Pretty URLs would serve an extensionless 200 duplicate of every page
+# (GSC: "Alternate page with proper canonical tag"). Disable it so the
+# 301 rules below own the extensionless URLs instead.
+[build.processing.html]
+  pretty_urls = false
+
 # --- Block syndication drafts (duplicate content) and the scheduler ---
 [[redirects]]
   from = "/blog/medium/*"
@@ -42,6 +48,130 @@
   to = "/"
   status = 301
   force = true
+
+# Merged near-duplicate article (kept the homepage-linked, translated one).
+[[redirects]]
+  from = "/blog/why-chrome-extension-for-calendar.html"
+  to = "/blog/why-use-chrome-extension-for-calendar.html"
+  status = 301
+
+# --- Canonicalize extensionless URLs (GSC crawls them as duplicates) ---
+# No `force`: real files always win, these only catch the .html-less variants.
+[[redirects]]
+  from = "/support"
+  to = "/support.html"
+  status = 301
+
+[[redirects]]
+  from = "/testimonials"
+  to = "/testimonials.html"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/faq.html"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/privacy-policy.html"
+  status = 301
+
+[[redirects]]
+  from = "/terms-of-service"
+  to = "/terms-of-service.html"
+  status = 301
+
+[[redirects]]
+  from = "/compare-google-calendar-extensions"
+  to = "/compare-google-calendar-extensions.html"
+  status = 301
+
+[[redirects]]
+  from = "/google-calendar-event-checker"
+  to = "/google-calendar-event-checker.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/:slug"
+  to = "/blog/:slug.html"
+  status = 301
+
+[[redirects]]
+  from = "/de/blog/:slug"
+  to = "/de/blog/:slug.html"
+  status = 301
+
+[[redirects]]
+  from = "/fr/blog/:slug"
+  to = "/fr/blog/:slug.html"
+  status = 301
+
+[[redirects]]
+  from = "/ja/blog/:slug"
+  to = "/ja/blog/:slug.html"
+  status = 301
+
+[[redirects]]
+  from = "/ko/blog/:slug"
+  to = "/ko/blog/:slug.html"
+  status = 301
+
+[[redirects]]
+  from = "/pt-br/blog/:slug"
+  to = "/pt-br/blog/:slug.html"
+  status = 301
+
+# Language roots have no page of their own — send them to the localized blog.
+[[redirects]]
+  from = "/de/"
+  to = "/de/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/de"
+  to = "/de/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/fr/"
+  to = "/fr/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/fr"
+  to = "/fr/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/ja/"
+  to = "/ja/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/ja"
+  to = "/ja/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/ko/"
+  to = "/ko/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/ko"
+  to = "/ko/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/pt-br/"
+  to = "/pt-br/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/pt-br"
+  to = "/pt-br/blog/"
+  status = 301
 
 # --- Security headers ---
 [[headers]]

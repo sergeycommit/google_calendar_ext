@@ -512,14 +512,8 @@ ARTICLES = [
      "competitor_ref": "https://savvycal.com/articles/how-to-plan-your-day/"},
 
     # ── Cluster 5: Chrome Extension & Browser Workflow (10) ──────────────────
-    {"id": 46, "cluster": 5, "cluster_name": "Chrome Extension Workflow",
-     "slug": "why-chrome-extension-for-calendar",
-     "title": "Why a Chrome Extension Beats Switching to a Full Calendar Tab",
-     "seo_title": "Chrome Calendar Extension vs. Full Tab: Why Lightweight Wins",
-     "category": "Chrome extension",
-     "primary_keyword": "Chrome extension Google Calendar",
-     "secondary_keywords": ["calendar browser extension", "calendar popup chrome", "google calendar extension"],
-     "competitor_ref": "https://savvycal.com/articles/google-calendar-extension/"},
+    # id 46 (why-chrome-extension-for-calendar) merged into id-with slug
+    # why-use-chrome-extension-for-calendar — 301 in netlify.toml.
 
     {"id": 47, "cluster": 5, "cluster_name": "Chrome Extension Workflow",
      "slug": "popup-calendar-workflow",
@@ -1066,7 +1060,7 @@ HTML_TEMPLATE = """\
     <meta name="twitter:title" content="{title}">
     <meta name="twitter:description" content="{meta_description}">
     <meta name="twitter:image" content="{site_url}/images/screenshot1.png">
-    <link rel="stylesheet" href="../css/style.css?v=20260606">
+    <link rel="stylesheet" href="../css/style.css?v=20260707a">
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1106,7 +1100,7 @@ HTML_TEMPLATE = """\
             <div class="container">
                 <div class="nav-brand">
                     <img src="../images/logo.png" alt="Calendar Extension for Google Calendar™ logo" class="logo" width="42" height="42">
-                    <span class="brand-name">Calendar Extension for Google Calendar™</span>
+                    <span class="brand-name">Calendar Extension</span>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="../index.html">Home</a></li>
@@ -1223,7 +1217,7 @@ HTML_TEMPLATE = """\
         </svg>
     </button>
 
-    <script src="../js/script.js?v=20260606"></script>
+    <script src="../js/script.js?v=20260707a"></script>
 </body>
 
 </html>

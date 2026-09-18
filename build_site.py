@@ -143,21 +143,21 @@ def render_html(article, data, related, pub):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{meta_desc}">
-    <title>{seo_title} | Calendar Extension for Google Calendar™</title>
+    <title>{seo_title}</title>
     <link rel="canonical" href="{SITE_URL}/blog/{slug}.html">
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{meta_desc}">
     <meta property="og:image" content="{SITE_URL}/images/screenshot1.png">
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="{pub_str}">
-    <meta property="article:author" content="Calendar Extension for Google Calendar™ Team">
-    <link rel="stylesheet" href="../css/style.css?v=20260606">
+    <meta property="article:author" content="https://www.linkedin.com/in/sergei-ilin-67b63422b/">
+    <link rel="stylesheet" href="../css/style.css?v=20260918">
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script type="application/ld+json">
-    {{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{meta_desc}","author":{{"@type":"Organization","name":"Calendar Extension for Google Calendar™ Team"}},"publisher":{{"@type":"Organization","name":"Calendar Extension for Google Calendar™","logo":{{"@type":"ImageObject","url":"{SITE_URL}/images/logo.png"}}}},"datePublished":"{pub_str}","dateModified":"{pub_str}","mainEntityOfPage":"{SITE_URL}/blog/{slug}.html","image":"{SITE_URL}/images/screenshot1.png"}}
+    {{"@context":"https://schema.org","@type":"Article","headline":"{title}","description":"{meta_desc}","author":{{"@type":"Person","name":"Sergey Ilyin","alternateName":"Sergei Ilin","url":"https://www.linkedin.com/in/sergei-ilin-67b63422b/","sameAs":["https://www.linkedin.com/in/sergei-ilin-67b63422b/","https://github.com/sergeycommit","https://x.com/just_commit_go"]}},"publisher":{{"@type":"Organization","name":"Calendar Extension for Google Calendar™","logo":{{"@type":"ImageObject","url":"{SITE_URL}/images/logo.png"}}}},"datePublished":"{pub_str}","dateModified":"{pub_str}","mainEntityOfPage":"{SITE_URL}/blog/{slug}.html","image":"{SITE_URL}/images/screenshot1.png"}}
     </script>
     <script type="application/ld+json">
     {{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{faq_sch}]}}
@@ -170,11 +170,11 @@ def render_html(article, data, related, pub):
             <div class="container">
                 <div class="nav-brand">
                     <img src="../images/logo.png" alt="Calendar Extension for Google Calendar™ logo" class="logo" width="42" height="42">
-                    <span class="brand-name">Calendar Extension for Google Calendar™</span>
+                    <span class="brand-name">Calendar Extension</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../index.html#features">Features</a></li>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../#features">Features</a></li>
                     <li><a href="./">Blog</a></li>
                     <li><a href="../support.html">Support</a></li>
                     <li><a href="{STORE_URL}" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Add to Chrome</a></li>
@@ -195,7 +195,7 @@ def render_html(article, data, related, pub):
                 <div class="eyebrow">Published {pub_human}</div>
                 <h1 class="article-title">{title}</h1>
                 <p class="article-intro">{intro}</p>
-                <p class="article-meta">{read_time} min read · Written by the Calendar Extension for Google Calendar™ Team</p>
+                <p class="article-meta">{read_time} min read · Written by <a href="https://www.linkedin.com/in/sergei-ilin-67b63422b/" rel="author noopener">Sergey Ilyin</a></p>
             </section>
             <section class="article-layout">
                 <article class="article-body-card">
@@ -234,13 +234,13 @@ def render_html(article, data, related, pub):
                     <p class="footer-description">Workflow notes for people who want their calendar to support the day, not dominate it.</p>
                 </div>
                 <div class="footer-card">
-                    <h4>Read next</h4>
+                    <h3>Read next</h3>
                     <ul class="footer-links">{footer_links_html}</ul>
                 </div>
                 <div class="footer-card">
-                    <h4>Explore</h4>
+                    <h3>Explore</h3>
                     <ul class="footer-links">
-                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../">Home</a></li>
                         <li><a href="../support.html">Support</a></li>
                         <li><a href="../privacy-policy.html">Privacy Policy</a></li>
                     </ul>
@@ -252,7 +252,7 @@ def render_html(article, data, related, pub):
     <button class="back-to-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
     </button>
-    <script src="../js/script.js?v=20260606"></script>
+    <script src="../js/script.js?v=20260918"></script>
 </body>
 </html>"""
 

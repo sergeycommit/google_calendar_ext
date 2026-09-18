@@ -1,0 +1,38 @@
+# Calendar Extension for Google Calendar™
+
+> Calendar Extension for Google Calendar™ is a free Chrome extension (version 3.0.5, 7,000 users, rated 4.5/5 from 44 reviews on the Chrome Web Store) that shows today's Google Calendar timeline in the browser toolbar. It adds time-to-event chips ("in 24 min"), quick add, and one-click joins for Google Meet, Zoom, and Microsoft Teams links, so the full Google Calendar tab is only needed for heavier planning. It is an independent product and is not affiliated with Google.
+
+Install: https://chromewebstore.google.com/detail/google-calendar-extension/dfbpjijneaihingmldgpgcodglkoamoe
+
+## Product
+
+- [Home](https://calendar-extension.site/): What the extension does, features, reviews, FAQ
+- [How to choose a Google Calendar extension](https://calendar-extension.site/compare-google-calendar-extensions.html): Named extensions compared by job, with Chrome Web Store data
+- [Google Calendar event checker](https://calendar-extension.site/google-calendar-event-checker.html): Checking what is happening now and what starts next
+- [FAQ](https://calendar-extension.site/faq.html): Installation, syncing, missing events, meeting joins, privacy
+- [Support](https://calendar-extension.site/support.html): Troubleshooting and contact
+- [Privacy policy](https://calendar-extension.site/privacy-policy.html): What data the extension accesses and why
+
+## Guides
+
+- [Best Google Calendar Chrome extensions in 2026](https://calendar-extension.site/blog/best-google-calendar-extensions-2026.html): Extensions grouped by the job they do, with users, ratings, and pricing
+- [Calendar and productivity research](https://calendar-extension.site/blog/calendar-productivity-data.html): What studies on meetings, interruptions, and breaks actually found, with sources
+- [Time blocking in Google Calendar](https://calendar-extension.site/blog/time-blocking-guide-google-calendar.html): Step-by-step setup for focus blocks
+- [Deep work scheduling](https://calendar-extension.site/blog/deep-work-time-blocks.html): Protecting long focus sessions on a meeting-heavy calendar
+- [Meeting buffer time](https://calendar-extension.site/blog/buffer-time-between-meetings.html): Why gaps between meetings matter and how to add them
+- [Protecting focus time](https://calendar-extension.site/blog/focus-time-protection.html): Tactics for keeping deep work windows
+- [Weekly calendar reset](https://calendar-extension.site/blog/weekly-calendar-reset.html): A 15-minute weekly planning ritual
+- [Google Calendar keyboard shortcuts](https://calendar-extension.site/blog/google-calendar-keyboard-shortcuts.html): Shortcuts for navigation, event creation, and views
+- [Google Calendar vs. Outlook Calendar](https://calendar-extension.site/blog/google-calendar-vs-outlook.html): Key differences for individuals and teams
+- [Calendar extension vs. full app](https://calendar-extension.site/blog/calendar-extension-vs-full-app.html): When a browser extension is enough
+- [Cross-timezone meeting scheduling](https://calendar-extension.site/blog/cross-timezone-meeting-scheduling.html): Scheduling fairly across time zones
+
+## About
+
+- Built by [Sergey Ilyin](https://www.linkedin.com/in/sergei-ilin-67b63422b/) (also written Sergei Ilin), a Python QA automation engineer who builds AI-based services. [GitHub](https://github.com/sergeycommit) · [X](https://x.com/just_commit_go)
+- Source code: [github.com/sergeycommit/google_calendar_ext](https://github.com/sergeycommit/google_calendar_ext)
+
+## Optional
+
+- [All articles](https://calendar-extension.site/blog/): Full blog index (English)
+- Translated blogs: [Deutsch](https://calendar-extension.site/de/blog/), [Français](https://calendar-extension.site/fr/blog/), [日本語](https://calendar-extension.site/ja/blog/), [한국어](https://calendar-extension.site/ko/blog/), [Português (BR)](https://calendar-extension.site/pt-br/blog/)
